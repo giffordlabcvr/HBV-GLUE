@@ -1,0 +1,31 @@
+delete project hbv
+
+create project hbv "A GLUE project for Hepatitis B virus (hbv)" --minVersion 0.1.50
+
+run file glue/hbvSchemaExtensions.glue
+ 
+project hbv
+
+  run file glue/hbvProjectSettings.glue
+  
+  # create modules from files
+  create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
+  create module --fileName modules/hbvCompoundAligner.xml hbvCompoundAligner
+  create module --fileName modules/hbvGenbankXmlPopulator.xml hbvGenbankXmlPopulator
+
+  # this module downloads all hbv from NCBI
+  #create module --fileName modules/ncbiImporter.xml ncbiImporter
+  
+  # Import the reference sequences from files
+  import source sources/ncbi-refseqs 
+
+  # build master reference, with features.
+  run file glue/hbvFeatures.glue
+
+  # Import NCBI curated sequence set
+  import source sources/ncbi-curated 
+  
+  module hbvGenbankXmlPopulator populate
+
+  #validate
+  

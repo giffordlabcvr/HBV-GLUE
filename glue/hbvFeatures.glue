@@ -1,0 +1,73 @@
+  create feature whole_genome "Whole HBV genome"
+  feature whole_genome set field displayName "Whole genome"
+  feature whole_genome set metatag INFORMATIONAL true
+
+  create feature 5UTR -p whole_genome "5' untranslated region"
+  feature 5UTR set field displayName "5' UTR"
+
+    create feature HBeAg -p whole_genome "HBeAg"
+      feature whole_genome set metatag OWN_CODON_NUMBERING true
+      feature whole_genome set metatag CODES_AMINO_ACIDS true
+      feature whole_genome set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+         
+    create feature C -p whole_genome "Core"
+      feature whole_genome set metatag OWN_CODON_NUMBERING true
+      feature whole_genome set metatag CODES_AMINO_ACIDS true
+      feature whole_genome set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+    create feature RT-Pol -p whole_genome "RT-Pol"
+      feature whole_genome set metatag OWN_CODON_NUMBERING true
+      feature whole_genome set metatag CODES_AMINO_ACIDS true
+      feature whole_genome set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+    create feature RT -p RT-Pol "RT"
+      feature whole_genome set metatag OWN_CODON_NUMBERING true
+      feature whole_genome set metatag CODES_AMINO_ACIDS true
+      feature whole_genome set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+    create feature RH -p RT-Pol "RH"
+      feature whole_genome set metatag OWN_CODON_NUMBERING true
+      feature whole_genome set metatag CODES_AMINO_ACIDS true
+      feature whole_genome set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+    create feature large-S -p whole_genome "large-S"
+      feature whole_genome set metatag OWN_CODON_NUMBERING true
+      feature whole_genome set metatag CODES_AMINO_ACIDS true
+      feature whole_genome set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+    create feature medium-S -p whole_genome "middle surface protein"
+      feature whole_genome set metatag OWN_CODON_NUMBERING true
+      feature whole_genome set metatag CODES_AMINO_ACIDS true
+      feature whole_genome set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+    create feature small-S -p whole_genome "small surface protein"
+      feature whole_genome set metatag OWN_CODON_NUMBERING true
+      feature whole_genome set metatag CODES_AMINO_ACIDS true
+      feature whole_genome set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+    create feature X -p whole_genome "X"
+      feature whole_genome set metatag OWN_CODON_NUMBERING true
+      feature whole_genome set metatag CODES_AMINO_ACIDS true
+      feature whole_genome set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+
+
+  create reference V01460 ncbi-refseqs V01460
+  reference V01460
+  
+    add feature-location C
+    feature-location C
+      add segment 1816 2454
+      exit
+
+    add feature-location small-S
+      feature-location small-S
+      add segment 157 837
+      exit
+
+    add feature-location X
+      feature-location X    
+      add segment 1376 1840
+      exit
+
+  exit  
