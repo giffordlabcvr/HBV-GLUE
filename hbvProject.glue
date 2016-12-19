@@ -23,7 +23,7 @@ project hbv
   run file glue/hbvFeatures.glue
 
   # Import NCBI curated sequence set
-  import source sources/ncbi-curated 
+  #import source sources/ncbi-curated 
   
   module hbvGenbankXmlPopulator populate
 
