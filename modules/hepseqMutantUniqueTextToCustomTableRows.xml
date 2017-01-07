@@ -1,0 +1,45 @@
+<textFilePopulator>
+
+	<columnDelimiterRegex>,</columnDelimiterRegex>
+
+	<textFileColumn>
+		<identifier>mutant_id</identifier>
+		<header>mutant_id</header>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>bionumerics_key</header>
+		<fieldName>bionumerics_key</fieldName>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>gene_id</header>
+		<fieldName>gene_id</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>mutant_type</header>
+		<fieldName>mutant_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>mutant_name</header>
+		<fieldName>mutant_name</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>mutant_gene_name</header>
+		<fieldName>mutant_gene_name</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>mutant_description</header>
+		<fieldName>mutant_description</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>user_id</header>
+		<fieldName>user_id</fieldName>
+	</textFileColumn>
+
+</textFilePopulator>

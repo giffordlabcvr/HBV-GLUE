@@ -1,0 +1,250 @@
+<textFilePopulator>
+
+	<columnDelimiterRegex>,</columnDelimiterRegex>
+
+	<textFileColumn>
+		<identifier>sample_id</identifier>
+		<header>sample_id</header>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>bionumerics_key</header>
+		<fieldName>bionumerics_key</fieldName>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>center_id</header>
+		<fieldName>center_id</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>patient_id</header>
+		<fieldName>patient_id</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>sample_date</header>
+		<fieldName>sample_date</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>biochemical_profile</header>
+		<fieldName>biochemical_profile</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>hbsag</header>
+		<fieldName>hbsag</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>anti_hbs</header>
+		<fieldName>anti_hbs</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>anti_hbs_titre</header>
+		<fieldName>anti_hbs_titre</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>hbeag</header>
+		<fieldName>hbeag</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>anti_hbe</header>
+		<fieldName>anti_hbe</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>anti_hbc_igm</header>
+		<fieldName>anti_hbc_igm</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>anti_hbc_titre</header>
+		<fieldName>anti_hbc_titre</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>total_anti_hbc</header>
+		<fieldName>total_anti_hbc</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>hbv_dna</header>
+		<fieldName>hbv_dna</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>hbv_dna_titre</header>
+		<fieldName>hbv_dna_titre</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>liver_transplant</header>
+		<fieldName>liver_transplant</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>transplant_indication</header>
+		<fieldName>transplant_indication</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>genotyping_method</header>
+		<fieldName>genotyping_method</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>genotype</header>
+		<fieldName>genotype</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>genotype</header>
+		<fieldName>genotype</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>user_id</header>
+		<fieldName>user_id</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>treatment</header>
+		<fieldName>treatment</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>outbreak</header>
+		<fieldName>outbreak</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>infection_type</header>
+		<fieldName>infection_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>acute_clinical_details</header>
+		<fieldName>acute_clinical_details</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>acute_illness_duration</header>
+		<fieldName>acute_illness_duration</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>chronic_type</header>
+		<fieldName>chronic_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>liver_disease_type</header>
+		<fieldName>liver_disease_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>biopsy</header>
+		<fieldName>biopsy</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>biopsy_method</header>
+		<fieldName>biopsy_method</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>abnormality_type</header>
+		<fieldName>abnormality_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>coinfection</header>
+		<fieldName>coinfection</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>prophylaxis</header>
+		<fieldName>prophylaxis</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>infection_comments</header>
+		<fieldName>infection_comments</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>biopsy_date</header>
+		<fieldName>biopsy_date</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>alt</header>
+		<fieldName>alt</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>ast</header>
+		<fieldName>ast</fieldName>
+	</textFileColumn>
+		
+	<textFileColumn>
+		<header>globulins</header>
+		<fieldName>globulins</fieldName>
+	</textFileColumn>
+				
+	<textFileColumn>
+		<header>hdv_igm</header>
+		<fieldName>hdv_igm</fieldName>
+	</textFileColumn>
+		
+	<textFileColumn>
+		<header>hdv_igg</header>
+		<fieldName>hdv_igg</fieldName>
+	</textFileColumn>
+			
+	<textFileColumn>
+		<header>hdv_total</header>
+		<fieldName>hdv_total</fieldName>
+	</textFileColumn>
+			
+	<textFileColumn>
+		<header>hdv_rna</header>
+		<fieldName>hdv_rna</fieldName>
+	</textFileColumn>
+			
+	<textFileColumn>
+		<header>hdv_vl</header>
+		<fieldName>hdv_vl</fieldName>
+	</textFileColumn>
+			
+	<textFileColumn>
+		<header>bilirubin</header>
+		<fieldName>bilirubin</fieldName>
+	</textFileColumn>
+			
+	<textFileColumn>
+		<header>platelets</header>
+		<fieldName>platelets</fieldName>
+	</textFileColumn>
+			
+	<textFileColumn>
+		<header>hbv_dna_test</header>
+		<fieldName>hbv_dna_test</fieldName>
+	</textFileColumn>
+			
+	<textFileColumn>
+		<header>hbsag_titre</header>
+		<fieldName>hbsag_titre</fieldName>
+	</textFileColumn>
+			
+	<textFileColumn>
+		<header>hbeag_titre</header>
+		<fieldName>hbeag_titre</fieldName>
+	</textFileColumn>
+	
+</textFilePopulator>

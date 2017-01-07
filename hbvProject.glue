@@ -17,7 +17,7 @@ project hbv
   #create module --fileName modules/ncbiImporter.xml ncbiImporter
   
   # Import the reference sequences from files
-  import source sources/ncbi-refseqs 
+  import source sources/ncbi-refseqs
 
   # build master reference, with features.
   run file glue/hbvFeatures.glue
@@ -25,6 +25,21 @@ project hbv
   # Import NCBI curated sequence set
   #import source sources/ncbi-curated 
   
+  # Populate HEPSEQ tables 
+  create module --fileName modules/hepseqLupTextToCustomTableRows.xml lupTextToCustomTableRows
+  module lupTextToCustomTableRows populate -f tabular/hepseq/lup.txt
+
+  #create module --fileName modules/hepseqMutantUniqueTextToCustomTableRows.xml mutantTextToCustomTableRows
+  #module mutantTextToCustomTableRows transform tabular/hepseq/mutant_unique.txt --run
+  #create module --fileName modules/hepseqPatientOriTextToCustomTableRows.xml samplePatientOriToCustomTableRows
+  #module samplePatientOriToCustomTableRows transform tabular/hepseq/patient_ori.txt --run
+  #create module --fileName modules/hepseqPatientTextToCustomTableRows.xml samplePatientToCustomTableRows
+  module samplePatientToCustomTableRows transform tabular/hepseq/patient.txt --run
+  #create module --fileName modules/hepseqSampleTextToCustomTableRows.xml sampleTextToCustomTableRows
+  #module sampleTextToCustomTableRows transform tabular/hepseq/sample.txt --run
+  #create module --fileName modules/hepseqTreatmentHistoryTextToCustomTableRows.xml treatmentHistoryTextToCustomTableRows
+  #module treatmentHistoryTextToCustomTableRows transform tabular/hepseq/treatment_history.txt --run
+
   module hbvGenbankXmlPopulator populate
 
   #validate

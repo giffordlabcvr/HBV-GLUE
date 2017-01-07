@@ -1,0 +1,156 @@
+<textFilePopulator>
+
+	<columnDelimiterRegex>,</columnDelimiterRegex>
+
+	<textFileColumn>
+		<identifier>true</identifier>
+		<header>lup_id</header>
+		<fieldName>lup_id</fieldName>
+	</textFileColumn>
+		
+	<textFileColumn>
+		<header>date_day</header>
+		<fieldName>date_day</fieldName>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>date_month</header>
+		<fieldName>date_month</fieldName>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>date_year</header>
+		<fieldName>date_year</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>sex</header>
+		<fieldName>sex</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>country</header>
+		<fieldName>country</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>ethnicity</header>
+		<fieldName>ethnicity</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>route_transmission</header>
+		<fieldName>route_transmission</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>outbreak</header>
+		<fieldName>outbreak</fieldName>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>infect_type</header>
+		<fieldName>infect_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>clinical_details</header>
+		<fieldName>clinical_details</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>illness_duration</header>
+		<fieldName>illness_duration</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>chronic_type</header>
+		<fieldName>chronic_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>liver_disease_type</header>
+		<fieldName>liver_disease_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>biopsy_results</header>
+		<fieldName>biopsy_results</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>abnormality_type</header>
+		<fieldName>abnormality_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>y_n_uk</header>
+		<fieldName>y_n_uk</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>coinfection</header>
+		<fieldName>coinfection</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>prophylaxis</header>
+		<fieldName>prophylaxis</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>drug</header>
+		<fieldName>drug</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>biochemical_profile</header>
+		<fieldName>biochemical_profile</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>virological_assay</header>
+		<fieldName>virological_assay</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>transplant</header>
+		<fieldName>transplant</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>transplant_indication</header>
+		<fieldName>transplant_indication</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>genotype_method</header>
+		<fieldName>genotype_method</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>genotype</header>
+		<fieldName>genotype</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>gene_name</header>
+		<fieldName>gene_name</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>mut_type</header>
+		<fieldName>mut_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>mut_gene_name</header>
+		<fieldName>mut_gene_name</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>biopsy_method</header>
+		<fieldName>biopsy_method</fieldName>
+	</textFileColumn>
+
+</textFilePopulator>

@@ -1,0 +1,128 @@
+<textFilePopulator>
+
+	<columnDelimiterRegex>,</columnDelimiterRegex>
+
+	<textFileColumn>
+		<identifier>patient_id</identifier>
+		<header>patient_id</header>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>bionumerics_key</header>
+		<fieldName>bionumerics_key</fieldName>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>birth_date</header>
+		<fieldName>birth_date</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>sex</header>
+		<fieldName>sex</fieldName>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>country_birth</header>
+		<fieldName>country_birth</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>ethnic_origin</header>
+		<fieldName>ethnic_origin</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>infection_date</header>
+		<fieldName>infection_date</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>country_infection</header>
+		<fieldName>country_infection</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>transmission_route</header>
+		<fieldName>transmission_route</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>outbreak</header>
+		<fieldName>outbreak</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>infection_type</header>
+		<fieldName>infection_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>acute_clinical_details</header>
+		<fieldName>acute_clinical_details</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>acute_illness_duration</header>
+		<fieldName>acute_illness_duration</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>chronic_type</header>
+		<fieldName>chronic_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>liver_disease_type</header>
+		<fieldName>liver_disease_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>infection_comments</header>
+		<fieldName>infection_comments</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>biopsy</header>
+		<fieldName>biopsy</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>biopsy_date</header>
+		<fieldName>biopsy_date</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>biopsy_results</header>
+		<fieldName>biopsy_results</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>abnormality_type</header>
+		<fieldName>abnormality_type</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>coinfection</header>
+		<fieldName>coinfection</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>prophylaxis</header>
+		<fieldName>prophylaxis</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>treatment</header>
+		<fieldName>treatment</fieldName>
+	</textFileColumn>
+
+	<textFileColumn>
+		<header>user_id</header>
+		<fieldName>user_id</fieldName>
+	</textFileColumn>
+
+</textFilePopulator>
+
+
+
