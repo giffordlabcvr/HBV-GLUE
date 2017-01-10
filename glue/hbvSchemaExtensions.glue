@@ -17,8 +17,8 @@ schema-project hbv
     create field gb_country VARCHAR 200
     create field gb_country_iso VARCHAR
     create field gb_country_official VARCHAR 200
-    create field gb_create_date DATE
-    create field gb_update_date DATE
+    create field gb_create_date VARCHAR 50
+    create field gb_update_date VARCHAR 50
     exit  
 
   create custom-table treatment_history
@@ -31,9 +31,20 @@ schema-project hbv
   table treatment_history
     create field treatment_id VARCHAR 50
     create field patient_id VARCHAR 50
-    create field start_date DATE
-    create field stop_date DATE
+    create field start_date VARCHAR 50
+    create field stop_date VARCHAR 50
     create field user_id VARCHAR 50
+    exit        
+
+  table mutant_unique
+    create field mutant_id VARCHAR 50
+    create field bionumerics_key VARCHAR 50
+    create field gene_id VARCHAR 50
+    create field mutant_type VARCHAR 50
+    create field mutant_name VARCHAR 50
+    create field mutant_gene_name VARCHAR 50
+    create field mutant_description VARCHAR 50  
+    create field user_id VARCHAR 50      
     exit        
 
   table sample
@@ -89,11 +100,11 @@ schema-project hbv
   table patient
     create field patient_id VARCHAR 50
     create field bionumerics_key VARCHAR 50
-    create field birth_date DATE
+    create field birth_date VARCHAR 50
     create field sex VARCHAR 50
     create field country_birth VARCHAR 50
     create field ethnic_origin VARCHAR 50
-    create field infection_date DATE
+    create field infection_date VARCHAR 50
     create field country_infection VARCHAR 50
     create field transmission_route VARCHAR 50  
     create field user_id VARCHAR 50      
@@ -102,11 +113,11 @@ schema-project hbv
   table patient_ori
     create field patient_id VARCHAR 50
     create field bionumerics_key VARCHAR 50
-    create field birth_date DATE
+    create field birth_date VARCHAR 50
     create field sex VARCHAR 50
     create field country_birth VARCHAR 50
     create field ethnic_origin VARCHAR 50
-    create field infection_date DATE
+    create field infection_date VARCHAR 50
     create field country_infection VARCHAR 50
     create field transmission_route VARCHAR 50  
     create field outbreak VARCHAR 50  
@@ -126,16 +137,6 @@ schema-project hbv
     create field user_id VARCHAR 50      
     exit        
 
-  table mutant_unique
-    create field mutant_id VARCHAR 50
-    create field bionumerics_key VARCHAR 50
-    create field gene_id VARCHAR 50
-    create field mutant_type VARCHAR 50
-    create field mutant_name VARCHAR 50
-    create field mutant_gene_name VARCHAR 50
-    create field mutant_description VARCHAR 50  
-    create field user_id VARCHAR 50      
-    exit        
 
   table lup
     create field lup_id VARCHAR 50
