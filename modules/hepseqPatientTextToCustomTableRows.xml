@@ -1,55 +1,15 @@
-<textFilePopulator>
-
-	<columnDelimiterRegex>,</columnDelimiterRegex>
-
-	<textFileColumn>
-		<identifier>patient_id</identifier>
-		<header>patient_id</header>
-	</textFileColumn>
-	
-	<textFileColumn>
-		<header>bionumerics_key</header>
-		<fieldName>bionumerics_key</fieldName>
-	</textFileColumn>
-	
-	<textFileColumn>
-		<header>birth_date</header>
-		<fieldName>birth_date</fieldName>
-	</textFileColumn>
-
-	<textFileColumn>
-		<header>sex</header>
-		<fieldName>sex</fieldName>
-	</textFileColumn>
-	
-	<textFileColumn>
-		<header>country_birth</header>
-		<fieldName>country_birth</fieldName>
-	</textFileColumn>
-
-	<textFileColumn>
-		<header>ethnic_origin</header>
-		<fieldName>ethnic_origin</fieldName>
-	</textFileColumn>
-
-	<textFileColumn>
-		<header>infection_date</header>
-		<fieldName>infection_date</fieldName>
-	</textFileColumn>
-
-	<textFileColumn>
-		<header>country_infection</header>
-		<fieldName>country_infection</fieldName>
-	</textFileColumn>
-
-	<textFileColumn>
-		<header>transmission_route</header>
-		<fieldName>transmission_route</fieldName>
-	</textFileColumn>
-
-	<textFileColumn>
-		<header>user_id</header>
-		<fieldName>user_id</fieldName>
-	</textFileColumn>
-
-</textFilePopulator>
+<freemarkerTextToGlueTransformer>
+	<freemarkerTemplate><![CDATA[
+<#list rows as row>
+  <#assign patient_id>${row["patient_id"]?trim}</#assign>
+  <#assign bionumerics_key>${row["bionumerics_key"]?trim}</#assign>
+  <#assign id>${patient_id}_${bionumerics_key}</#assign>
+  <#assign id>${id?replace("/","_")}</#assign>
+  create custom-table-row patient "${id}"
+  custom-table-row patient "${id}"
+    set field patient_id "${patient_id}"
+    set field bionumerics_key "${bionumerics_key}"
+    exit
+</#list>
+]]></freemarkerTemplate>
+</freemarkerTextToGlueTransformer>
