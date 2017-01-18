@@ -5,9 +5,7 @@
   <#assign date_day>${row["date_day"]?trim}</#assign>
   <#assign date_month>${row["date_month"]?trim}</#assign>
   <#assign date_year>${row["date_year"]?trim}</#assign>
-
   <#assign id>${lup_id}_${date_day}</#assign>
-
   <#assign sex>${row["sex"]?trim}</#assign>
   <#assign country>${row["country"]?trim}</#assign>
   <#assign ethnicity>${row["ethnicity"]?trim}</#assign>
