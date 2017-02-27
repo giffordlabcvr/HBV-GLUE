@@ -23,12 +23,13 @@ project hbv
   run file glue/hbvFeatures.glue
 
   # Import NCBI curated sequence set
-  #import source sources/ncbi-curated 
-  
+  import source sources/ncbi-curated 
+  module hbvGenbankXmlPopulator populate
+
   # Populate HEPSEQ tables 
   create module --fileName modules/hepseqLupTextToCustomTableRows.xml lupTextToCustomTableRows
   module lupTextToCustomTableRows populate -f tabular/hepseq/lup.txt
-
+  
   #create module --fileName modules/hepseqMutantUniqueTextToCustomTableRows.xml mutantTextToCustomTableRows
   #module mutantTextToCustomTableRows transform tabular/hepseq/mutant_unique.txt --run
   #create module --fileName modules/hepseqPatientOriTextToCustomTableRows.xml samplePatientOriToCustomTableRows
@@ -40,7 +41,4 @@ project hbv
   #create module --fileName modules/hepseqTreatmentHistoryTextToCustomTableRows.xml treatmentHistoryTextToCustomTableRows
   #module treatmentHistoryTextToCustomTableRows transform tabular/hepseq/treatment_history.txt --run
 
-  module hbvGenbankXmlPopulator populate
-
   #validate
-  
