@@ -3,32 +3,33 @@
 	<columnDelimiterRegex>,</columnDelimiterRegex>
 
 	<textFileColumn>
-		<identifier>treatment_id</identifier>
+		<identifier>true</identifier>
 		<header>treatment_id</header>
+		<fieldName>treatment_id</fieldName>
 	</textFileColumn>
 	
 	<textFileColumn>
-		<identifier>patient_id</identifier>
+		<fieldName>patient_id</fieldName>
 		<header>patient_id</header>
 	</textFileColumn>
 	
 	<textFileColumn>
-		<identifier>drug</identifier>
+		<fieldName>drug</fieldName>
 		<header>drug</header>
 	</textFileColumn>
 	
 	<textFileColumn>
-		<identifier>start_date</identifier>
+		<fieldName>start_date</fieldName>
 		<header>start_date</header>
 	</textFileColumn>
 	
 	<textFileColumn>
-		<identifier>stop_date</identifier>
+		<fieldName>stop_date</fieldName>
 		<header>stop_date</header>
 	</textFileColumn>
 	
 	<textFileColumn>
-		<identifier>user_id</identifier>
+		<fieldName>user_id</fieldName>
 		<header>user_id</header>
 	</textFileColumn>
 

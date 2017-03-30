@@ -3,10 +3,10 @@
 <#list rows as row>
   <#assign sample_id>${row["sample_id"]?trim}</#assign>
   <#assign bionumerics_key>${row["bionumerics_key"]?trim}</#assign>
-  <#assign id>${patient_id}_${bionumerics_key}</#assign>
+  <#assign patient_id>${row["patient_id"]?trim}</#assign>
+  <#assign id>${sample_id}</#assign>
   <#assign id>${id?replace("/","_")}</#assign>
   <#assign center_id>${row["center_id"]?trim}</#assign>
-  <#assign patient_id>${row["patient_id"]?trim}</#assign>
   <#assign sample_date>${row["sample_date"]?trim}</#assign>
   <#assign biochemical_profile>${row["biochemical_profile"]?trim}</#assign>
   <#assign hbsag>${row["hbsag"]?trim}</#assign>
