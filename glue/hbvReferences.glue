@@ -1,0 +1,20 @@
+# Declare reference sequences
+create reference V01460 ncbi-refseqs V01460
+reference V01460
+  
+  add feature-location C
+  feature-location C
+    add segment 1816 2454
+    exit
+
+  add feature-location small-S
+    feature-location small-S
+    add segment 157 837
+    exit
+
+  add feature-location X
+    feature-location X    
+    add segment 1376 1840
+    exit
+
+exit 
