@@ -28,7 +28,7 @@ X69798,C,Brazil,Human
 D23681,C,Japan,Human
 D28880,C,Japan,Human
 M38636,C,Korea,Human
-AF068756,C,Thaliand,Human
+AF068756,C,Thailand,Human
 X75665,C,New Caledonia,Human
 Y18857,C,China,Human
 AB033559,D,Papua New Guinea,Human
