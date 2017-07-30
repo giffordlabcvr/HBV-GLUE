@@ -21,17 +21,14 @@ project hbv
   # Create references
   run file glue/hbvReferences.glue
 
+  # Import alignment 
+  #module unconstrainedAlignmentImporter import AL_UNCONSTRAINED -f alignments/hbv-references.fna
 
   # Populate HEPSEQ tables   
-  #create module --fileName hepseq/hepseqSampleTextToCustomTableRows.xml sampleTextToCustomTableRows
+  #create module --fileName modules/hepseqSampleTextToCustomTableRows.xml sampleTextToCustomTableRows
   #module sampleTextToCustomTableRows transform tabular/hepseq/sample.txt --run
 
-  # Import alignment 
-  #module unconstrainedAlignmentImporter import AL_UNCONSTRAINED -f alignments/rabv509seqs.fna
-
   # Validate
-  #validate
-
-
+  validate
 
 exit
