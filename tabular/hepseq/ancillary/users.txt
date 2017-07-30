@@ -1,0 +1,18 @@
+user_id	username	pwd	access_level	title	firstname	surname	email	center
+1	joannem	guinness101	admin1	Ms	Joanne	Moran	Joanne.Moran@hpa.org.uk	\N
+10	elizabeth.boxall	liz99hep07	medium2	Dr	Elizabeth	Boxall	elizabeth.boxall@heartofengland.nhs.uk	\N
+11	peter.karayiannis 	karayiannis99hep07	medium2	Dr	Peter	Karayiannis 	p.karayiannis@imperial.ac.uk 	\N
+14	brendan.crowley	crowley99hep07	medium2	Dr	Brendan	Crowley	BCrowley@STJAMES.IE 	\N
+7	natalia.chueca	natalia0056	basic3	Ms	Natalia	Chueca	naisses@yahoo.es	\N
+3	gnani	ggg	admin1	Dr	Gnani	Gnaneshan	Saravanamuttu.Gnaneshan@hpa.org.uk	\N
+16	graham.foster	gf0ster_hep723	medium2	Dr	Graham	Foster	\N	\N
+17	ines.ushiro-lumb	iulum6_hep868	medium2	Dr	Ines	Ushiro-Lumb	\N	\N
+18	smay	sh010m2	admin1	Ms	Shoshanna	May	Shoshanna.may@hpa.org.uk	\N
+2	jgreen	ulm0103	admin1	Dr	Jon	Green	Jonathan.Green@hpa.org.uk	HPA
+4	samreen	sam	admin1	Dr	Samreen	Ijaz	Samreen.Ijaz@hpa.org.uk	HPA
+9	hugh.kikuchi	hugh99	admin1	Mr	Hugh	Kikuchi	Hugh.Kikuchi@hpa.org.uk	HPA
+12	annamaria.geretti	geretti99hep07	medium2	Dr	Anna Maria	Geretti	a.geretti@medsch.ucl.ac.uk	RFH
+13	william.carman	carman99hep07	medium2	Dr	William	Carman	w.carman@vir.gla.ac.uk	GAR
+15	rmyers	rem1one	admin1	Dr	Richard	Myers	richard.myers@hpa.org.uk	HPA
+6	buser	bb	basic3	Mr	Bas	Basic	Not known	GAR
+5	muser	newmm101	medium2	Mr	Med	Medium	Not known	RFH
