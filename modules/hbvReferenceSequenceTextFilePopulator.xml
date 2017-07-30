@@ -10,7 +10,7 @@
 	
 	<textFileColumn>
 		<header>Subtype</header>
-		<property>gb_subtype</property>
+		<property>subtype</property>
 	</textFileColumn>
 	
 	<textFileColumn>
