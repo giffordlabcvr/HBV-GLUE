@@ -1,0 +1,28 @@
+<textFilePopulator>
+	<columnDelimiterRegex>,</columnDelimiterRegex>
+	
+	<textFileColumn>
+		<identifier>true</identifier>
+		<header>Accession</header>
+		<property>gb_primary_accession</property>
+		<overwriteExistingNonNull>true</overwriteExistingNonNull> <!-- will not update to NULL --> 
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>Subtype</header>
+		<property>gb_subtype</property>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>Country</header>
+		<property>gb_country</property>
+		<overwriteExistingNonNull>true</overwriteExistingNonNull> <!-- will not update to NULL --> 
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>Host</header>
+		<property>gb_host</property>
+		<overwriteExistingNonNull>true</overwriteExistingNonNull> <!-- will not update to NULL --> 		
+	</textFileColumn>
+	
+</textFilePopulator>

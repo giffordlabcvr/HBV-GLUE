@@ -8,6 +8,7 @@
      <!-- Master HBV reference strain -->
 	<primaryAccession>V01460</primaryAccession>
      <!-- Other HBV reference strains -->
+	<primaryAccession>KU668446</primaryAccession>
 	<primaryAccession>AY090460</primaryAccession>
 	<primaryAccession>AB059659</primaryAccession>
 	<primaryAccession>AY090457</primaryAccession>
