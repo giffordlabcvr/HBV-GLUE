@@ -7,27 +7,31 @@ run file glue/hbvSchemaExtensions.glue
 project hbv
 
   run file glue/hbvProjectSettings.glue
-  
-  # create modules from files
-  create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
-  create module --fileName modules/hbvCompoundAligner.xml hbvCompoundAligner
-  create module --fileName modules/hbvGenbankXmlPopulator.xml hbvGenbankXmlPopulator
-
-  # this module downloads all hbv from NCBI
-  #create module --fileName modules/ncbiImporter.xml ncbiImporter
+  run file glue/hbvModules.glue
   
   # Import the reference sequences from files
   import source sources/ncbi-refseqs
 
-  # build master reference, with features.
+  # Populate sequence table fields from GenBank XML
+  module genbankXmlPopulator populate
+
+  # Features
   run file glue/hbvFeatures.glue
 
-  # Import NCBI curated sequence set
-  #import source sources/ncbi-curated 
-  #module hbvGenbankXmlPopulator populate
+  # Create references
+  run file glue/hbvReferences.glue
+
 
   # Populate HEPSEQ tables   
-  create module --fileName hepseq/hepseqSampleTextToCustomTableRows.xml sampleTextToCustomTableRows
-  module sampleTextToCustomTableRows transform tabular/hepseq/sample.txt --run
+  #create module --fileName hepseq/hepseqSampleTextToCustomTableRows.xml sampleTextToCustomTableRows
+  #module sampleTextToCustomTableRows transform tabular/hepseq/sample.txt --run
+
+  # Import alignment 
+  #module unconstrainedAlignmentImporter import AL_UNCONSTRAINED -f alignments/rabv509seqs.fna
+
+  # Validate
+  #validate
+
+
 
 exit

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<fastaProteinAlignmentExporter>
-    <idTemplate>${sequence.sequenceID}.${renderNestedProperty('sequence.gb_country')}.${renderNestedProperty('sequence.gb_host')}</idTemplate>
-</fastaProteinAlignmentExporter>

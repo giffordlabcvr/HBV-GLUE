@@ -1,0 +1,49 @@
+<!-- NCBI Importer for HBV reference sequences -->
+<ncbiImporter>
+  <giNumberFieldName>gb_gi_number</giNumberFieldName>
+  <sequenceFormat>GENBANK_XML</sequenceFormat>
+  <sourceName>ncbi-refseqs</sourceName>
+  <specificPrimaryAccessions>
+
+     <!-- HBV reference strains -->
+	<primaryAccession>AY090460</primaryAccession>
+	<primaryAccession>AB059659</primaryAccession>
+	<primaryAccession>AY090457</primaryAccession>
+	<primaryAccession>AY090454</primaryAccession>
+	<primaryAccession>AY373432</primaryAccession>
+	<primaryAccession>AY233274</primaryAccession>
+	<primaryAccession>AY233281</primaryAccession>
+	<primaryAccession>AB116093</primaryAccession>
+	<primaryAccession>AB116091</primaryAccession>
+	<primaryAccession>AB116080</primaryAccession>
+	<primaryAccession>AY233277</primaryAccession>
+	<primaryAccession>AY373428</primaryAccession>
+	<primaryAccession>AY373429</primaryAccession>
+	<primaryAccession>AB076679</primaryAccession>
+	<primaryAccession>AF536524</primaryAccession>
+	<primaryAccession>AF305327</primaryAccession>
+	<primaryAccession>AB056513</primaryAccession>
+	<primaryAccession>AF405706</primaryAccession>
+	<primaryAccession>AF241407</primaryAccession>
+	<primaryAccession>AB064310</primaryAccession>
+	<primaryAccession>AB048704</primaryAccession>
+	<primaryAccession>AB048705</primaryAccession>
+	<primaryAccession>AF223965</primaryAccession>
+	<primaryAccession>AB036910</primaryAccession>
+	<primaryAccession>X69798</primaryAccession>
+	<primaryAccession>D23681</primaryAccession>
+	<primaryAccession>D28880</primaryAccession>
+	<primaryAccession>M38636</primaryAccession>
+	<primaryAccession>AF068756</primaryAccession>
+	<primaryAccession>X75665</primaryAccession>
+	<primaryAccession>Y18857</primaryAccession>
+	<primaryAccession>AB033559</primaryAccession>
+	<primaryAccession>L27106</primaryAccession>
+	<primaryAccession>X65259</primaryAccession>
+	<primaryAccession>X68292</primaryAccession>
+	<primaryAccession>AY066028</primaryAccession>
+	<primaryAccession>AY247030</primaryAccession>
+  
+  </specificPrimaryAccessions>  
+  <sequenceIdField>PRIMARY_ACCESSION</sequenceIdField>
+</ncbiImporter>
