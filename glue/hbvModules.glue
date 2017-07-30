@@ -1,7 +1,7 @@
 # Basic modules
 create module --fileName modules/hbvNcbiImporter.xml hbvNcbiImporter
 create module --fileName modules/hbvGenbankXmlPopulator.xml genbankXmlPopulator
-create module --fileName modules/hbvReferenceSequenceTextFilePopulator.xml 
+create module --fileName modules/hbvReferenceSequenceTextFilePopulator.xml hbvReferenceSequenceTextFilePopulator
 
 # HepSeq data import modules
 #create module --fileName modules/hepseqLupTextToCustomTableRows.xml

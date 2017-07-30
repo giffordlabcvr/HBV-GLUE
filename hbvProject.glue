@@ -21,7 +21,10 @@ project hbv
   # Create references
   run file glue/hbvReferences.glue
 
-  # Import alignment 
+  # Import reference data from tabular file
+  module hbvReferenceSequenceTextFilePopulator populate -f tabular/hbv_reference_data.txt
+
+  # Import reference alignment 
   #module unconstrainedAlignmentImporter import AL_UNCONSTRAINED -f alignments/hbv-references.fna
 
   # Populate HEPSEQ tables   
