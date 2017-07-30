@@ -4,8 +4,10 @@
   <sequenceFormat>GENBANK_XML</sequenceFormat>
   <sourceName>ncbi-refseqs</sourceName>
   <specificPrimaryAccessions>
-
-     <!-- HBV reference strains -->
+     
+     <!-- Master HBV reference strain -->
+	<primaryAccession>V01460</primaryAccession>
+     <!-- Other HBV reference strains -->
 	<primaryAccession>AY090460</primaryAccession>
 	<primaryAccession>AB059659</primaryAccession>
 	<primaryAccession>AY090457</primaryAccession>
