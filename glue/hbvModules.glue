@@ -1,12 +1,12 @@
 # Basic modules
 create module --fileName modules/hbvNcbiImporter.xml hbvNcbiImporter
 create module --fileName modules/hbvGenbankXmlPopulator.xml genbankXmlPopulator
-create module --fileName modules/unconstrainedAlignmentImporter.xml
+create module --fileName modules/hbvReferenceSequenceTextFilePopulator.xml 
 
 # HepSeq data import modules
-create module --fileName modules/hepseqLupTextToCustomTableRows.xml
-create module --fileName modules/hepseqMutantUniqueTextToCustomTableRows.xml
-create module --fileName modules/hepseqPatientOriTextToCustomTableRows.xml
-create module --fileName modules/hepseqPatientTextToCustomTableRows.xml
-create module --fileName modules/hepseqSampleTextToCustomTableRows.xml
-create module --fileName modules/hepseqTreatmentHistoryTextToCustomTableRows.xml
+#create module --fileName modules/hepseqLupTextToCustomTableRows.xml
+#create module --fileName modules/hepseqMutantUniqueTextToCustomTableRows.xml
+#create module --fileName modules/hepseqPatientOriTextToCustomTableRows.xml
+#create module --fileName modules/hepseqPatientTextToCustomTableRows.xml
+#create module --fileName modules/hepseqSampleTextToCustomTableRows.xml
+#create module --fileName modules/hepseqTreatmentHistoryTextToCustomTableRows.xml
