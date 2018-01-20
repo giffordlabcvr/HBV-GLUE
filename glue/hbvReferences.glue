@@ -1,6 +1,34 @@
-# Declare reference sequences
-create reference V01460 fasta-refseqs V01460
-reference V01460
+  # Declare reference sequences
+ 
+  ### MASTER reference (subtype D)
+  create reference REF_MASTER_HBV fasta-refseqs V01460  
+
+  ## Subtype references
+  
+  # Subtype A
+  create reference REF_MASTER_HBV-A fasta-refseqs AB116093
+
+  # Subtype B
+  create reference REF_MASTER_HBV-B fasta-refseqs EU579441
+
+  # Subtype C
+  create reference REF_MASTER_HBV-C fasta-refseqs AB064310
+
+  # Subtype D
+  create reference REF_MASTER_HBV-D fasta-refseqs V01460
+
+  # Subtype F
+  create reference REF_MASTER_HBV-F fasta-refseqs AF223965
+
+  # Subtype G
+  create reference REF_MASTER_HBV-G fasta-refseqs AB056513
+ 
+  # Subtype H
+  create reference REF_MASTER_HBV-H fasta-refseqs AY090460
+
+ 
+ 
+ reference REF_MASTER_HBV
   
   add feature-location Core
   feature-location Core
@@ -24,3 +52,6 @@ reference V01460
 #    exit
 
 exit 
+
+
+
