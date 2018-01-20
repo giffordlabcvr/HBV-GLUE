@@ -29,8 +29,8 @@
 	<gbOrganism>
 		<propertyPopulator property="gb_organism">
 			<valueConverter>
-				<matchPattern>.*Hepatitis E [vV]irus.*</matchPattern>
-				<outputTemplate>Hepatitis E virus</outputTemplate>
+				<matchPattern>.*Hepatitis B [vV]irus.*</matchPattern>
+				<outputTemplate>Hepatitis B virus</outputTemplate>
 			</valueConverter>
 		</propertyPopulator>
 	</gbOrganism>
@@ -49,9 +49,9 @@
 		</gbQualifier>
 
 		<gbQualifier name="country">
-			<isoCountryPropertyPopulator property="gb_country_iso" codeStyle="ALPHA_3"/>
-			<isoCountryPropertyPopulator property="gb_country_official" codeStyle="OFFICIAL"/>
-			<propertyPopulator property="gb_country"/>
+			<isoCountryPropertyPopulator property="country_iso" codeStyle="ALPHA_3"/>
+			<isoCountryPropertyPopulator property="country_official" codeStyle="OFFICIAL"/>
+			<propertyPopulator property="country"/>
 		</gbQualifier>
 		
 		
