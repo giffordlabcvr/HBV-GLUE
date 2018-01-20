@@ -2,8 +2,8 @@
 create reference V01460 ncbi-refseqs V01460
 reference V01460
   
-  add feature-location C
-  feature-location C
+  add feature-location Core
+  feature-location Core
     add segment 1816 2454
     exit
 

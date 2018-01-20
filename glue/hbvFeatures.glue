@@ -63,7 +63,7 @@
   feature small-S set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
   create feature X -p whole_genome "X"
-  feature X set field displayName "X"s
+  feature X set field displayName "X"
   feature X set metatag OWN_CODON_NUMBERING true
   feature X set metatag INCLUDE_IN_SUMMARY true
   feature X set metatag CODES_AMINO_ACIDS true
