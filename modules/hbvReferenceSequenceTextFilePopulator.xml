@@ -4,7 +4,7 @@
 	<textFileColumn>
 		<identifier>true</identifier>
 		<header>Accession</header>
-		<property>gb_primary_accession</property>
+		<property>sequenceID</property>
 		<overwriteExistingNonNull>true</overwriteExistingNonNull> <!-- will not update to NULL --> 
 	</textFileColumn>
 	
@@ -15,7 +15,7 @@
 	
 	<textFileColumn>
 		<header>Country</header>
-		<property>gb_country</property>
+		<property>country</property>
 		<overwriteExistingNonNull>true</overwriteExistingNonNull> <!-- will not update to NULL --> 
 	</textFileColumn>
 	
