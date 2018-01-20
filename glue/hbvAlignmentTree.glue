@@ -1,0 +1,33 @@
+  # Constrained alignment tree
+
+  create alignment AL_HBV_MASTER -r REF_MASTER_HBV
+
+  alignment AL_HBV_MASTER 
+    add member --allSequences
+    
+	extract child AL_HBV_A --refName REF_MASTER_HBV-A
+	demote member AL_HBV_A --whereClause "sequence.subtype = 'A' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_B --refName REF_MASTER_HBV-B
+	demote member AL_HBV_B --whereClause "sequence.subtype = 'B' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_C --refName REF_MASTER_HBV-C
+	demote member AL_HBV_C --whereClause "sequence.subtype = 'C' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_D --refName REF_MASTER_HBV-D
+	demote member AL_HBV_D --whereClause "sequence.subtype = 'D' and sequence.source.name = 'fasta-refseqs'" 
+
+	#extract child AL_HBV_E --refName REF_MASTER_HBV-E
+	#demote member AL_HBV_E --whereClause "sequence.subtype = 'E' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_F --refName REF_MASTER_HBV-F
+	demote member AL_HBV_F --whereClause "sequence.subtype = 'F' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_G --refName REF_MASTER_HBV-G
+	demote member AL_HBV_G --whereClause "sequence.subtype = 'G' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_H --refName REF_MASTER_HBV-H
+	demote member AL_HBV_H --whereClause "sequence.subtype = 'H' and sequence.source.name = 'fasta-refseqs'" 
+
+    exit
+

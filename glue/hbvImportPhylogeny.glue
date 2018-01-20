@@ -1,0 +1,10 @@
+module hbvPhyloImporter
+
+  import phylogeny AL_MASTER \
+  --recursive \
+  --anyAlignment \
+  --whereClause "sequence.referenceSequences.name != null and referenceMember = false" \
+  --inputFile trees/rabvRefs1MidpointRerooted.tree NEWICK_BOOTSTRAPS \
+  --fieldName phylogeny
+
+  exit
