@@ -9,8 +9,8 @@ project hbv
   run file glue/hbvProjectSettings.glue
   run file glue/hbvModules.glue
   
-  # Import the reference sequences from files
-  import source sources/ncbi-refseqs
+  # Import the reference sequences from FASTA files
+  import source sources/fasta-refseqs
 
   # Populate sequence table fields from GenBank XML
   module genbankXmlPopulator populate
@@ -25,7 +25,27 @@ project hbv
   module hbvReferenceSequenceTextFilePopulator populate -f tabular/hbv_reference_data.txt
 
   # Import reference alignment 
-  #module unconstrainedAlignmentImporter import AL_UNCONSTRAINED -f alignments/hbv-references.fna
+  module unconstrainedAlignmentImporter import AL_UNCONSTRAINED -f alignments/hbv-references.fna
+
+  # Import alignment tree
+  run file glue/hbvAlignmentTree.glue
+
+  # Import phylogeny
+  #run file glue/hbvImportPhylogeny.glue
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
 
   # Populate HEPSEQ tables   
   #create module --fileName modules/hepseqSampleTextToCustomTableRows.xml sampleTextToCustomTableRows
