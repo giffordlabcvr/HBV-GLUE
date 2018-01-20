@@ -1,39 +1,1 @@
-Accession,Subtype,Country,Host
-V01460,B,Unknown,Human
-AY090460,H,USA,Human
-AB059659,H,USA,Human
-AY090457,H,Nicaragua,Human
-AY090454,H,Nicaragua,Human
-AY373432,A,India,Human
-AY233274,A,South Africa,Human
-AY233281,A,South Africa,Human
-AB116093,A,Philippines,Human
-AB116091,A,Philippines,Human
-AB116080,A,Japan,Human
-AY233277,A,South Africa,Human
-AY373428,A,India,Human
-AY373429,A,India,Human
-AB076679,A,Malawi,Human
-AF536524,A,USA,Human
-AF305327,E,Nigeria,Chimpanzee
-AB056513,G,USA,Human
-AF405706,G,Germany,Human
-AF241407,G,Vietnam,Human
-AB064310,G,USA,Human
-AB048704,Caa,Australia,Human
-AB048705,Caa,Australia,Human
-AF223965,C,Argentina,Human
-AB036910,C,Venezuela,Human
-X69798,C,Brazil,Human
-D23681,C,Japan,Human
-D28880,C,Japan,Human
-M38636,C,Korea,Human
-AF068756,C,Thailand,Human
-X75665,C,New Caledonia,Human
-Y18857,C,China,Human
-AB033559,D,Papua New Guinea,Human
-L27106,D,UK,Human
-X65259,D,Italy,Human
-X68292,D,Italy,Human
-AY066028,A,China,Human
-AY247030,C,Korea,Human
+Accession,Subtype,Country,HostAB033559,D,Papua New Guinea,HumanAB048704,Caa,Australia,HumanAB048705,Caa,Australia,HumanAB056513,G,USA,HumanAB064310,G,USA,HumanAB076679,A,Malawi,HumanAB116080,A,Japan,HumanAB116091,A,Philippines,HumanAB116093,A,Philippines,HumanAF068756,C,Thaliand,HumanAF223965,F,Argentina,HumanAF241407,G,Vietnam,HumanAF305327,cpz,Nigeria,ChimpanzeeAF405706,G,Germany,HumanAF536524,A,USA,HumanAY066028,C,China,HumanAY090454,H,Nicaragua,HumanAY090457,H,Nicaragua,HumanAY090460,H,USA,HumanAY233277,A,South Africa,HumanAY233281,A,South Africa,HumanAY247030,C,Korea,HumanAY373428,A,India,HumanAY373429,A,India,HumanKM875414,A,China,HumanL27106,D,UK,HumanV01460,D,India,HumanX65259,D,Italy,HumanX68292,D,Italy,HumanX75665,C,Brazil,HumanX75665,C,New Caledonia,HumanY18857,C,China,HumanEU579441,B,China,HumanAB915177,D,Saudi Arabia,Humana
