@@ -1,5 +1,5 @@
 # Declare reference sequences
-create reference V01460 ncbi-refseqs V01460
+create reference V01460 fasta-refseqs V01460
 reference V01460
   
   add feature-location Core
@@ -16,5 +16,11 @@ reference V01460
     feature-location X    
     add segment 1376 1840
     exit
+
+#  add feature-location Pol
+#    feature-location Pol    
+#    add segment 2309 3181
+#    add segment 1 1840
+#    exit
 
 exit 
