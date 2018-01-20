@@ -2,7 +2,7 @@
     export figtree-annotation AL_UNCONSTRAINED \
       --whereClause "sequence.source.name in ('ncbi-refseqs', 'ncbi-refseqs-outgroup')" \
       -f trees/figtreeAnnotationsUnconstrained.txt
-    export figtree-annotation AL_MASTER --recursive \
+    export figtree-annotation AL_HBV_MASTER --recursive \
       --whereClause "sequence.source.name in ('ncbi-refseqs', 'ncbi-refseqs-outgroup')" \
       -f trees/figtreeAnnotationsConstrained.txt
     exit

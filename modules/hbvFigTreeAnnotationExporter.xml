@@ -1,0 +1,22 @@
+<figTreeAnnotationExporter>
+	<figTreeAnnotation>
+		<annotationName>host</annotationName>
+		<valueFreemarkerTemplate>${renderNestedProperty('sequence.host')}</valueFreemarkerTemplate>
+	</figTreeAnnotation>
+	<figTreeAnnotation>
+		<annotationName>major_clade</annotationName>
+		<valueFreemarkerTemplate>${renderNestedProperty('sequence.major_clade')}</valueFreemarkerTemplate>
+	</figTreeAnnotation>
+	<figTreeAnnotation>
+		<annotationName>minor_clade</annotationName>
+		<valueFreemarkerTemplate>${renderNestedProperty('sequence.minor_clade')}</valueFreemarkerTemplate>
+	</figTreeAnnotation>
+	<figTreeAnnotation>
+		<annotationName>sequenceID</annotationName>
+		<valueFreemarkerTemplate>${renderNestedProperty('sequence.sequenceID')}</valueFreemarkerTemplate>
+	</figTreeAnnotation>
+	<figTreeAnnotation>
+		<annotationName>combined</annotationName>
+		<valueFreemarkerTemplate>${renderNestedProperty('sequence.sequenceID')}/${renderNestedProperty('sequence.major_clade')}/${renderNestedProperty('sequence.minor_clade')}/${renderNestedProperty('sequence.host')}}</valueFreemarkerTemplate>
+	</figTreeAnnotation>
+</figTreeAnnotationExporter>

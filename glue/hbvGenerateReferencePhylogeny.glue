@@ -2,7 +2,7 @@ project hbv
   module hbvRaxmlPhylogenyGenerator 
   
     # without outgroup
-    generate nucleotide phylogeny REF_MASTER_HBV \
+    generate nucleotide phylogeny AL_HBV_MASTER \
       --whereClause "sequence.source.name = 'fasta-refseqs'" \
       -o trees/hbvRefs1.tree \
       NEWICK_BOOTSTRAPS

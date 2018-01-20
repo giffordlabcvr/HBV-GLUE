@@ -5,6 +5,7 @@ create module --fileName modules/hbvReferenceSequenceTextFilePopulator.xml hbvRe
 create module --fileName modules/unconstrainedAlignmentImporter.xml
 create module --fileName modules/fastaExporter.xml
 create module --fileName modules/fastaAlignmentExporter.xml
+create module --fileName modules/blastFastaAlignmentImporter.xml
 
 # HepSeq data import modules
 #create module --fileName modules/hepseqLupTextToCustomTableRows.xml
@@ -13,3 +14,12 @@ create module --fileName modules/fastaAlignmentExporter.xml
 #create module --fileName modules/hepseqPatientTextToCustomTableRows.xml
 #create module --fileName modules/hepseqSampleTextToCustomTableRows.xml
 #create module --fileName modules/hepseqTreatmentHistoryTextToCustomTableRows.xml
+
+create module --fileName modules/hbvMafftAligner.xml
+create module --fileName modules/hbvRaxmlPhylogenyGenerator.xml
+create module --fileName modules/hbvPhyloImporter.xml  
+create module --fileName modules/hbvFigTreeAnnotationExporter.xml
+create module --fileName modules/hbvPhyloUtility.xml
+
+create module -f modules/hbvMaxLikelihoodGenotyper.xml
+create module -f modules/hbvMaxLikelihoodPlacer.xml

@@ -24,6 +24,12 @@ schema-project hbv
     create field gb_update_date VARCHAR 50
     exit  
 
+  table alignment
+    create field clade_category VARCHAR 20
+    create field phylogeny CLOB
+    exit 
+
+
   create custom-table treatment_history
   create custom-table sample
   create custom-table patient

@@ -6,9 +6,9 @@
 
 
 	<!-- where the RAxML epa phylogeny will come from -->
-	<phyloAlignmentName>AL_MASTER</phyloAlignmentName>
+	<phyloAlignmentName>AL_HBV_MASTER</phyloAlignmentName>
 	<phyloFieldName>phylogeny</phyloFieldName>
 
 	<!-- where the alignment will come from -->
-	<alignmentAlignmentName>AL_UNCONSTRAINED</alignmentAlignmentName>
+	<alignmentAlignmentName>AL_HBV_MASTER</alignmentAlignmentName>
 </maxLikelihoodPlacer>

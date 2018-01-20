@@ -1,5 +1,5 @@
 <maxLikelihoodGenotyper>
-	<maxLikelihoodPlacerModuleName>rabvMaxLikelihoodPlacer</maxLikelihoodPlacerModuleName>
+	<maxLikelihoodPlacerModuleName>hbvMaxLikelihoodPlacer</maxLikelihoodPlacerModuleName>
 	<cladeCategory>
 		<name>major_clade</name>	
 		<displayName>Major clade</displayName>	
