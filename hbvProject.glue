@@ -32,21 +32,7 @@ project hbv
 
   # Import phylogeny
   #run file glue/hbvImportPhylogeny.glue
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
+  
   # Populate HEPSEQ tables   
   #create module --fileName modules/hepseqSampleTextToCustomTableRows.xml sampleTextToCustomTableRows
   #module sampleTextToCustomTableRows transform tabular/hepseq/sample.txt --run
