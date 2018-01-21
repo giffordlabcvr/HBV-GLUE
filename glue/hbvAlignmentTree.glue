@@ -17,9 +17,6 @@
 	extract child AL_HBV_D --refName REF_MASTER_HBV-D
 	demote member AL_HBV_D --whereClause "sequence.subtype = 'D' and sequence.source.name = 'fasta-refseqs'" 
 
-	#extract child AL_HBV_E --refName REF_MASTER_HBV-E
-	#demote member AL_HBV_E --whereClause "sequence.subtype = 'E' and sequence.source.name = 'fasta-refseqs'" 
-
 	extract child AL_HBV_F --refName REF_MASTER_HBV-F
 	demote member AL_HBV_F --whereClause "sequence.subtype = 'F' and sequence.source.name = 'fasta-refseqs'" 
 
@@ -29,5 +26,35 @@
 	extract child AL_HBV_H --refName REF_MASTER_HBV-H
 	demote member AL_HBV_H --whereClause "sequence.subtype = 'H' and sequence.source.name = 'fasta-refseqs'" 
 
+    exit
+
+  # Derive constrained alignment segments from unconstrained alignments
+ 
+  alignment AL_HBV_A
+    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
+    exit
+
+  alignment AL_HBV_B
+    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
+    exit
+
+  alignment AL_HBV_C
+    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
+    exit
+
+  alignment AL_HBV_D
+    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
+    exit
+
+  alignment AL_HBV_F
+    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
+    exit
+
+  alignment AL_HBV_G
+    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
+    exit
+
+  alignment AL_HBV_H
+    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
     exit
 
