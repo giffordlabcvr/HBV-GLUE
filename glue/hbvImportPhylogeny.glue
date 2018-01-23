@@ -1,6 +1,6 @@
 module hbvPhyloImporter
 
-  import phylogeny AL_HBV_MASTER \
+  import phylogeny AL_UNCONSTRAINED \
   --recursive \
   --anyAlignment \
   --whereClause "sequence.referenceSequences.name != null and referenceMember = false" \
