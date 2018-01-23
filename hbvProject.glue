@@ -31,7 +31,7 @@ project hbv
   run file glue/hbvAlignmentTree.glue
 
   # Import phylogeny
-  #run file glue/hbvImportPhylogeny.glue
+  run file glue/hbvImportPhylogeny.glue
   
   # Populate HEPSEQ tables   
   #create module --fileName modules/hepseqSampleTextToCustomTableRows.xml sampleTextToCustomTableRows

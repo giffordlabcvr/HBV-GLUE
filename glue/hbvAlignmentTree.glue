@@ -30,31 +30,8 @@
 
   # Derive constrained alignment segments from unconstrained alignments
  
-  alignment AL_HBV_A
-    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
+  # derive constrained segments throughout the tree from unconstrained AL_UNCONSTRAINED   
+  alignment AL_HBV_MASTER
+    derive segments AL_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
     exit
-
-  alignment AL_HBV_B
-    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
-    exit
-
-  alignment AL_HBV_C
-    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
-    exit
-
-  alignment AL_HBV_D
-    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
-    exit
-
-  alignment AL_HBV_F
-    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
-    exit
-
-  alignment AL_HBV_G
-    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
-    exit
-
-  alignment AL_HBV_H
-    derive segments AL_UNCONSTRAINED -a --mergeStrategy OVERWRITE
-    exit
-
+ 

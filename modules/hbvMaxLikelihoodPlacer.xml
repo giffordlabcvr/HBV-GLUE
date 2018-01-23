@@ -10,5 +10,5 @@
 	<phyloFieldName>phylogeny</phyloFieldName>
 
 	<!-- where the alignment will come from -->
-	<alignmentAlignmentName>AL_HBV_MASTER</alignmentAlignmentName>
+	<alignmentAlignmentName>AL_UNCONSTRAINED</alignmentAlignmentName>
 </maxLikelihoodPlacer>

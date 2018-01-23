@@ -1,0 +1,149 @@
+  create custom-table treatment_history
+  create custom-table sample
+  create custom-table patient
+  create custom-table patient_ori
+  create custom-table mutant_unique
+  create custom-table lup
+       
+  table treatment_history
+    create field treatment_id VARCHAR 50
+    create field patient_id VARCHAR 50
+    create field start_date VARCHAR 50
+    create field stop_date VARCHAR 50
+    create field user_id VARCHAR 50
+    exit        
+
+  table mutant_unique
+    create field mutant_id VARCHAR 50
+    create field bionumerics_key VARCHAR 50
+    create field gene_id VARCHAR 50
+    create field mutant_type VARCHAR 50
+    create field mutant_name VARCHAR 50
+    create field mutant_gene_name VARCHAR 50
+    create field mutant_description VARCHAR 50  
+    create field user_id VARCHAR 50      
+    exit        
+
+  table sample
+    create field sample_id VARCHAR 50
+    create field bionumerics_key VARCHAR 50
+    create field center_id VARCHAR 50
+    create field patient_id VARCHAR 50
+    create field biochemical_profile VARCHAR 50
+    create field hbsag VARCHAR 50
+    create field anti_hbs VARCHAR 50
+    create field anti_hbs_titre VARCHAR 50
+    create field hbeag VARCHAR 50
+    create field anti_hbe VARCHAR 50
+    create field anti_hbc_igm VARCHAR 50
+    create field anti_hbc_titre VARCHAR 50
+    create field total_anti_hbc VARCHAR 50
+    create field hbv_dna VARCHAR 50
+    create field hbv_dna_titre VARCHAR 50
+    create field liver_transplant VARCHAR 50
+    create field transplant_indication VARCHAR 50
+    create field genotyping_method VARCHAR 50
+    create field genotype VARCHAR 50
+    create field user_id VARCHAR 50    
+    create field treatment VARCHAR 50
+    create field outbreak VARCHAR 50
+    create field infection_type VARCHAR 50
+    create field acute_clinical_details VARCHAR 50
+    create field acute_illness_duration VARCHAR 50
+    create field chronic_type VARCHAR 50
+    create field liver_disease_type VARCHAR 50
+    create field biopsy VARCHAR 50
+    create field biopsy_method VARCHAR 50
+    create field abnormality_type VARCHAR 50
+    create field coinfection VARCHAR 50
+    create field prophylaxis VARCHAR 50
+    create field infection_comments VARCHAR 50
+    create field biopsy_date VARCHAR 50
+    create field alt VARCHAR 50
+    create field ast VARCHAR 50
+    create field globulins VARCHAR 50
+    create field hdv_igm VARCHAR 50
+    create field hdv_igg VARCHAR 50
+    create field hdv_total VARCHAR 50
+    create field hdv_rna VARCHAR 50
+    create field hdv_vl VARCHAR 50
+    create field bilirubin VARCHAR 50
+    create field platelets VARCHAR 50
+    create field hbv_dna_test VARCHAR 50
+    create field hbsag_titre VARCHAR 50
+    create field hbeag_titre VARCHAR 50  
+    exit        
+
+  table patient
+    create field patient_id VARCHAR 50
+    create field bionumerics_key VARCHAR 50
+    create field birth_date VARCHAR 50
+    create field sex VARCHAR 50
+    create field country_birth VARCHAR 50
+    create field ethnic_origin VARCHAR 50
+    create field infection_date VARCHAR 50
+    create field country_infection VARCHAR 50
+    create field transmission_route VARCHAR 50  
+    create field user_id VARCHAR 50      
+    exit        
+
+  table patient_ori
+    create field patient_id VARCHAR 50
+    create field bionumerics_key VARCHAR 50
+    create field birth_date VARCHAR 50
+    create field sex VARCHAR 50
+    create field country_birth VARCHAR 50
+    create field ethnic_origin VARCHAR 50
+    create field infection_date VARCHAR 50
+    create field country_infection VARCHAR 50
+    create field transmission_route VARCHAR 50  
+    create field outbreak VARCHAR 50  
+    create field infection_type VARCHAR 50      
+    create field acute_clinical_details VARCHAR 50  
+    create field acute_illness_duration VARCHAR 50      
+    create field chronic_type VARCHAR 50  
+    create field liver_disease_type VARCHAR 50  
+    create field infection_comments VARCHAR 50      
+    create field biopsy VARCHAR 50  
+    create field biopsy_date VARCHAR 50  
+    create field biopsy_results VARCHAR 50  
+    create field abnormality_type VARCHAR 50  
+    create field coinfection VARCHAR 50  
+    create field prophylaxis VARCHAR 50  
+    create field treatment VARCHAR 50  
+    create field user_id VARCHAR 50      
+    exit        
+
+
+  table lup
+    create field lup_id VARCHAR 50
+    create field date_day VARCHAR 50
+    create field date_month VARCHAR 50
+    create field date_year VARCHAR 50
+    create field sex VARCHAR 50
+    create field country VARCHAR 50
+    create field ethnicity VARCHAR 50  
+    create field route_transmission VARCHAR 50      
+    create field outbreak VARCHAR 50
+    create field infect_type VARCHAR 50
+    create field clinical_details VARCHAR 50
+    create field illness_duration VARCHAR 50  
+    create field chronic_type VARCHAR 50
+    create field liver_disease_type VARCHAR 50
+    create field biopsy_results VARCHAR 50
+    create field abnormality_type VARCHAR 50
+    create field y_n_uk VARCHAR 50
+    create field coinfection VARCHAR 50
+    create field prophylaxis VARCHAR 50
+    create field drug VARCHAR 50
+    create field biochemical_profile VARCHAR 50
+    create field virological_assay VARCHAR 50
+    create field transplant VARCHAR 50
+    create field transplant_indication VARCHAR 50
+    create field genotype_method VARCHAR 50
+    create field genotype VARCHAR 50
+    create field gene_name VARCHAR 50
+    create field mut_type VARCHAR 50
+    create field mut_gene_name VARCHAR 50
+    create field biopsy_method VARCHAR 50    
+    exit        

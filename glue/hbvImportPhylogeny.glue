@@ -1,10 +1,10 @@
 module hbvPhyloImporter
 
-  import phylogeny AL_UNCONSTRAINED \
+  import phylogeny AL_HBV_MASTER \
   --recursive \
   --anyAlignment \
-  --whereClause "sequence.referenceSequences.name != null and referenceMember = false" \
-  --inputFile trees/rabvRefs1MidpointRerooted.tree NEWICK_BOOTSTRAPS \
+  --whereClause "sequence.source.name = 'fasta-refseqs' and referenceMember = false" \
+  --inputFile trees/HBV_AL_UNCONSTRAINED_midpoint.tre NEWICK_BOOTSTRAPS \
   --fieldName phylogeny
 
   exit
