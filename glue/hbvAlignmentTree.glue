@@ -34,4 +34,12 @@
   alignment AL_HBV_MASTER
     derive segments AL_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
     exit
+    
+  alignment AL_HBV_A set field clade_category subtype
+  alignment AL_HBV_B set field clade_category subtype
+  alignment AL_HBV_C set field clade_category subtype
+  alignment AL_HBV_D set field clade_category subtype
+  alignment AL_HBV_F set field clade_category subtype
+  alignment AL_HBV_G set field clade_category subtype
+  alignment AL_HBV_H set field clade_category subtype
  

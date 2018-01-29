@@ -1,7 +1,7 @@
 <maxLikelihoodGenotyper>
 	<maxLikelihoodPlacerModuleName>hbvMaxLikelihoodPlacer</maxLikelihoodPlacerModuleName>
 	<cladeCategory>
-		<name>major_clade</name>	
+		<name>subtype</name>	
 		<displayName>Subtype</displayName>	
 		<whereClause>clade_category = 'subtype'</whereClause>
 		<distanceScalingExponent>-4.5</distanceScalingExponent>
