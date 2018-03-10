@@ -5,20 +5,8 @@
 	<gbAccessionVersion>
 		<propertyPopulator property="gb_accession_version"/>
 	</gbAccessionVersion>
-	<gbLocus>
-		<propertyPopulator property="gb_locus"/>
-	</gbLocus>
-	<gbOtherID>
-		<propertyPopulator property="gb_gi_number">
-			<matchPattern>gi\|(\d+)</matchPattern>
-			<outputTemplate>${g1}</outputTemplate>
-		</propertyPopulator>
-	</gbOtherID>
-	<gbTaxonomy>
-		<propertyPopulator property="gb_taxonomy"/>
-	</gbTaxonomy>
 	<gbLength>
-		<propertyPopulator property="gb_length"/>
+		<propertyPopulator property="length"/>
 	</gbLength>
 	<gbUpdateDate>
 		<propertyPopulator property="gb_update_date"/>
@@ -26,26 +14,20 @@
 	<gbCreateDate>
 		<propertyPopulator property="gb_create_date"/>
 	</gbCreateDate>
-	<gbOrganism>
-		<propertyPopulator property="gb_organism">
-			<valueConverter>
-				<matchPattern>.*Hepatitis B [vV]irus.*</matchPattern>
-				<outputTemplate>Hepatitis B virus</outputTemplate>
-			</valueConverter>
-		</propertyPopulator>
-	</gbOrganism>
-	<gbReferencePubmed>
-		<propertyPopulator property="gb_pubmed_id"/>
-	</gbReferencePubmed>
+	<gbReference>
+		<gbRefPubmed>
+			<propertyPopulator property="pubmed_id"/>
+		</gbRefPubmed>
+	</gbReference>
 	<gbDivision>
-		<propertyPopulator property="gb_lab_construct">
+		<propertyPopulator property="lab_construct">
 			<matchPattern>PAT</matchPattern>
 			<outputTemplate>true</outputTemplate>
 		</propertyPopulator>
 	</gbDivision>
 	<gbFeature key="source">
 		<gbQualifier name="isolate">
-			<propertyPopulator property="gb_isolate"/>
+			<propertyPopulator property="isolate"/>
 		</gbQualifier>
 
 		<gbQualifier name="country">
@@ -56,7 +38,7 @@
 		
 		
 		<gbQualifier name="host">
-			<propertyPopulator property="gb_host">
+			<propertyPopulator property="host_species">
 
 				<!-- #### Primates -->					
 				<valueConverter>
@@ -72,18 +54,20 @@
 			</propertyPopulator>
 		</gbQualifier>
 		<gbQualifier name="collection_date">
-			<propertyPopulator property="gb_collection_month_day">
+			<propertyPopulator property="collection_month_day">
 				<matchPattern>(\d{2})-[A-Za-z]{3}-\d{4}</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
 			</propertyPopulator>
-			<propertyPopulator property="gb_collection_month">
+			<propertyPopulator property="collection_month">
 				<matchPattern>\d{2}-([A-Za-z]{3})-\d{4}</matchPattern>
 				<outputTemplate>${g1?upper_case}</outputTemplate>
 			</propertyPopulator>
-			<propertyPopulator property="gb_collection_year">
+			<propertyPopulator property="collection_year">
 				<matchPattern>(\d{4})</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
 			</propertyPopulator>
 		</gbQualifier>
+		
+		
 	</gbFeature>
 </genbankXmlPopulator>

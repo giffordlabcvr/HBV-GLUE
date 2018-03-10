@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<blastFastaAlignmentImporter>
+    <idClauseExtractorFormatter>
+      <matchPattern>([^_]+)_.*</matchPattern>   
+      <outputTemplate>sequenceID = '${g1}'</outputTemplate>
+    </idClauseExtractorFormatter>
+    <minRowCoveragePercent>90.0</minRowCoveragePercent>
+</blastFastaAlignmentImporter>
+
