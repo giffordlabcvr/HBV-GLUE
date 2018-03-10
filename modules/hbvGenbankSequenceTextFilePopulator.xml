@@ -1,0 +1,21 @@
+<textFilePopulator>
+	<columnDelimiterRegex>,</columnDelimiterRegex>
+	
+	<textFileColumn>
+		<identifier>true</identifier>
+		<header>SequenceID</header>
+		<property>sequenceID</property>
+		<overwriteExistingNonNull>true</overwriteExistingNonNull> <!-- will not update to NULL --> 
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>Genotype</header>
+		<property>genotype</property>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<header>Subgenotype</header>
+		<property>subgenotype</property>
+	</textFileColumn>
+	
+</textFilePopulator>
