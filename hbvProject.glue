@@ -1,0 +1,47 @@
+delete project hbv
+
+create project hbv "A GLUE project for Hepatitis B virus (hbv)" --minVersion 0.1.50
+
+run file glue/hbvSchemaExtensions.glue
+ 
+project hbv
+
+  run file glue/hbvProjectSettings.glue
+  run file glue/hbvModules.glue
+
+  # Import the reference sequences from FASTA files
+  import source sources/ncbi-refseqs
+
+  # Populate sequence table fields from GenBank XML
+  module hbvGenBankSequenceTextFilePopulator populate -f tabular/hbv_refseq_data.txt
+
+  # Import genbank sequences from FASTA files
+  import source sources/fasta-genbank
+
+  # Import genbank data from tabular file
+  module hbvGenBankSequenceTextFilePopulator populate -f tabular/hbv_genbank_data.txt
+
+  # Import alignments
+  run file glue/hbvAlignments.glue
+
+  # Create references
+  run file glue/hbvReferences.glue
+
+  # Features
+  run file glue/hbvFeatures.glue
+  #run file glue/hbvFeatureLocations.glue
+
+  # Import alignment tree
+  run file glue/hbvAlignmentTree.glue
+
+  # Import phylogeny
+  #run file glue/hbvImportPhylogeny.glue
+  
+  # Populate HEPSEQ tables   
+  #create module --fileName modules/hepseqSampleTextToCustomTableRows.xml sampleTextToCustomTableRows
+  #module sampleTextToCustomTableRows transform tabular/hepseq/sample.txt --run
+
+  # Validate
+  #validate
+
+exit
