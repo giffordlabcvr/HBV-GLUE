@@ -1,8 +1,13 @@
   # Constrained alignment tree
 
-  alignment AL_HBV_MASTER 
+  alignment AL_HBV_MASTER_UNCONSTRAINED 
     add member --allSequences
-    
+ 	extract child AL_HBV_MASTER --refName REF_MASTER_HBV-D
+	demote member AL_HBV_MASTER --whereClause "sequence.source.name = 'fasta-refseqs'" 
+    exit
+
+  alignment AL_HBV_MASTER 
+   
 	extract child AL_HBV_A --refName REF_MASTER_HBV-A
 	demote member AL_HBV_A --whereClause "sequence.genotype = 'A' and sequence.source.name = 'fasta-refseqs'" 
 
@@ -30,39 +35,43 @@
 
 
   # derive constrained segments throughout the tree from unconstrained AL_UNCONSTRAINED   
+  alignment AL_HBV_MASTER
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
   alignment AL_HBV_A
-    derive segments AL_HBV_MASTER --recursive --existingMembersOnly --allMembers 
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
     exit
 
   alignment AL_HBV_B
-    derive segments AL_HBV_MASTER --recursive --existingMembersOnly --allMembers 
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
     exit
 
   alignment AL_HBV_C
-    derive segments AL_HBV_MASTER --recursive --existingMembersOnly --allMembers 
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
     exit
 
   alignment AL_HBV_D
-    derive segments AL_HBV_MASTER --recursive --existingMembersOnly --allMembers 
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
     exit
 
   alignment AL_HBV_E
-    derive segments AL_HBV_MASTER --recursive --existingMembersOnly --allMembers 
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
     exit
 
   alignment AL_HBV_F
-    derive segments AL_HBV_MASTER --recursive --existingMembersOnly --allMembers 
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
     exit
 
   alignment AL_HBV_G
-    derive segments AL_HBV_MASTER --recursive --existingMembersOnly --allMembers 
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
     exit
  
   alignment AL_HBV_H
-    derive segments AL_HBV_MASTER --recursive --existingMembersOnly --allMembers 
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
     exit
 
-
+  alignment AL_HBV_MASTER set field clade_category genotype
   alignment AL_HBV_A set field clade_category genotype
   alignment AL_HBV_B set field clade_category genotype
   alignment AL_HBV_C set field clade_category genotype

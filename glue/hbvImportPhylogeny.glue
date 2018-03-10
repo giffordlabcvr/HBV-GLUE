@@ -1,0 +1,10 @@
+module hbvPhyloImporter
+
+  import phylogeny AL_HBV_MASTER \
+  --recursive \
+  --anyAlignment \
+  --whereClause "sequence.source.name = 'ncbi-refseqs' and referenceMember = false" \
+  --inputFile trees/HBV_AL_MASTER_midpoint.tre NEWICK_BOOTSTRAPS \
+  --fieldName phylogeny
+
+  exit

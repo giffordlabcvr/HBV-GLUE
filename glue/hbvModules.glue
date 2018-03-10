@@ -1,0 +1,10 @@
+# Basic modules
+create module --fileName modules/hbvGenbankXmlPopulator.xml genbankXmlPopulator
+create module --fileName modules/hbvReferenceSequenceTextFilePopulator.xml
+create module --fileName modules/hbvReferenceAlignmentImporter.xml 
+create module --fileName modules/hbvMafftAligner.xml
+create module --fileName modules/hbvPhyloImporter.xml  
+
+create module --fileName modules/fastaExporter.xml
+create module --fileName modules/fastaAlignmentExporter.xml
+create module --fileName modules/blastFastaAlignmentImporter.xml

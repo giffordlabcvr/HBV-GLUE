@@ -1,12 +1,11 @@
 schema-project hbv
   table sequence
-    create field gb_gi_number VARCHAR
     create field gb_primary_accession VARCHAR
     create field gb_accession_version VARCHAR
-    create field gb_locus VARCHAR
-    create field gb_length INTEGER
     create field gb_create_date VARCHAR 50
     create field gb_update_date VARCHAR 50
+
+    create field length INTEGER
     create field host_species VARCHAR
     create field isolate VARCHAR
     create field genotype VARCHAR
