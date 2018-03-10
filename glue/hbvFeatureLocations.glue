@@ -1,0 +1,39 @@
+ reference REF_MASTER_HBV
+  
+  add feature-location Core
+  feature-location Core
+    add segment 1 447
+    exit
+  
+  add feature-location P
+  feature-location P
+    add segment 407 2902
+    exit
+  
+  add feature-location S1
+  feature-location S1
+    add segment 948 2114
+    exit
+  
+  add feature-location S2
+  feature-location S2
+    add segment 1272 2114
+    exit
+  
+  add feature-location S3
+  feature-location S3
+    add segment 1437 2114
+    exit
+  
+  add feature-location X
+    feature-location X    
+    add segment 2656 3117
+    exit
+
+  add feature-location HBeAg
+    feature-location HBeAg    
+    add segment 3096 3176
+    exit
+
+exit 
+
