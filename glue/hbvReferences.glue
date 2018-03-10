@@ -1,0 +1,46 @@
+  # Declare reference sequences
+ 
+  ### MASTER reference (subtype D)
+  create reference REF_MASTER_HBV ncbi-refseqs V01460  
+
+  ## Subtype references
+  
+  # Subtype A
+  create reference REF_MASTER_HBV-A   ncbi-refseqs AB116093
+  create reference REF_HBV-A-AB076679 ncbi-refseqs AB076679
+  create reference REF_HBV-A-AB116080 ncbi-refseqs AB116080
+  create reference REF_HBV-A-AB116091 ncbi-refseqs AB116091
+
+  # Subtype B
+  create reference REF_MASTER_HBV-B   ncbi-refseqs EU579441
+
+  # Subtype C
+  create reference REF_MASTER_HBV-C   ncbi-refseqs AY247030
+  create reference REF_HBV-C-X75665   ncbi-refseqs X75665
+  create reference REF_HBV-C-Y18857   ncbi-refseqs Y18857
+  create reference REF_HBV-C-AF068756 ncbi-refseqs AF068756
+
+  # Subtype D
+  create reference REF_MASTER_HBV-D   ncbi-refseqs V01460
+  create reference REF_HBV-D-X68292   ncbi-refseqs X68292
+  create reference REF_HBV-D-X65259   ncbi-refseqs X65259
+  create reference REF_HBV-D-L27106   ncbi-refseqs L27106
+  create reference REF_HBV-D-AB033559 ncbi-refseqs AB033559
+
+  # Subtype E
+  create reference REF_MASTER_HBV-E   ncbi-refseqs HM363593
+
+  # Subtype F
+  create reference REF_MASTER_HBV-F   ncbi-refseqs AF223965
+
+  # Subtype G
+  create reference REF_MASTER_HBV-G   ncbi-refseqs AB056513
+  create reference REF_HBV-G-AB064310 ncbi-refseqs AB064310
+  create reference REF_HBV-G-AF241407 ncbi-refseqs AF241407
+  create reference REF_HBV-G-AF405706 ncbi-refseqs AF405706
+ 
+  # Subtype H
+  create reference REF_MASTER_HBV-H   ncbi-refseqs AY090460
+  create reference REF_HBV-H-AB064310 ncbi-refseqs AY090454
+  create reference REF_HBV-H-AY090457 ncbi-refseqs AY090457
+ 

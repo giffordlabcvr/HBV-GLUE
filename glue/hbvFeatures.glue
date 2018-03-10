@@ -1,0 +1,71 @@
+  create feature whole_genome "Whole HBV genome"
+  feature whole_genome set field displayName "Whole genome"
+  feature whole_genome set metatag INFORMATIONAL true
+
+  create feature 5UTR -p whole_genome "5' Untranslated region"
+  feature 5UTR set field displayName "5' UTR"
+  feature 5UTR set metatag INCLUDE_IN_SUMMARY true
+
+  create feature HBeAg -p whole_genome "HBeAg"
+  feature HBeAg set field displayName "HBV e-antigen"
+  feature HBeAg set metatag OWN_CODON_NUMBERING true
+  feature HBeAg set metatag INCLUDE_IN_SUMMARY true
+  feature HBeAg set metatag CODES_AMINO_ACIDS true
+  feature HBeAg set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+  create feature Core -p whole_genome "Core"
+  feature Core set field displayName "Core"
+  feature Core set metatag OWN_CODON_NUMBERING true
+  feature Core set metatag INCLUDE_IN_SUMMARY true
+  feature Core set metatag CODES_AMINO_ACIDS true
+  feature Core set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+  create feature RT-Pol -p whole_genome "RT-Pol"
+  feature RT-Pol set field displayName "RT-Pol"
+  feature RT-Pol set metatag OWN_CODON_NUMBERING true
+  feature RT-Pol set metatag INCLUDE_IN_SUMMARY true
+  feature RT-Pol set metatag CODES_AMINO_ACIDS true
+  feature RT-Pol set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+  create feature RT -p RT-Pol "RT"
+  feature RT set field displayName "RT"
+  feature RT set metatag OWN_CODON_NUMBERING true
+  feature RT set metatag INCLUDE_IN_SUMMARY true
+  feature RT set metatag CODES_AMINO_ACIDS true
+  feature RT set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+  create feature RH -p RT-Pol "RH"
+  feature RH set field displayName "RH"
+  feature RH set metatag OWN_CODON_NUMBERING true
+  feature RH set metatag INCLUDE_IN_SUMMARY true
+  feature RH set metatag CODES_AMINO_ACIDS true
+  feature RH set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+  create feature large-S -p whole_genome "large-S"
+  feature large-S set field displayName "large-S"
+  feature large-S set metatag OWN_CODON_NUMBERING true
+  feature large-S set metatag INCLUDE_IN_SUMMARY true
+  feature large-S set metatag CODES_AMINO_ACIDS true
+  feature large-S set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+  create feature medium-S -p whole_genome "middle surface protein"
+  feature medium-S set field displayName "middle surface protein"
+  feature medium-S set metatag OWN_CODON_NUMBERING true
+  feature medium-S set metatag INCLUDE_IN_SUMMARY true
+  feature medium-S set metatag CODES_AMINO_ACIDS true
+  feature medium-S set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+  create feature small-S -p whole_genome "small surface protein"
+  feature small-S set field displayName "small surface protein"
+  feature small-S set metatag OWN_CODON_NUMBERING true
+  feature small-S set metatag INCLUDE_IN_SUMMARY true
+  feature small-S set metatag CODES_AMINO_ACIDS true
+  feature small-S set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
+  create feature X -p whole_genome "X"
+  feature X set field displayName "X"
+  feature X set metatag OWN_CODON_NUMBERING true
+  feature X set metatag INCLUDE_IN_SUMMARY true
+  feature X set metatag CODES_AMINO_ACIDS true
+  feature X set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+
