@@ -4,6 +4,9 @@ create module --fileName modules/hbvReferenceSequenceTextFilePopulator.xml
 create module --fileName modules/hbvReferenceAlignmentImporter.xml 
 create module --fileName modules/hbvMafftAligner.xml
 create module --fileName modules/hbvPhyloImporter.xml  
+create module --fileName modules/hbvRaxmlPhylogenyGenerator.xml 
+create module --fileName modules/hbvPhyloUtility.xml
+
 
 create module --fileName modules/fastaExporter.xml
 create module --fileName modules/fastaAlignmentExporter.xml

@@ -1,21 +1,16 @@
-create module --fileName modules/hbvRaxmlPhylogenyGenerator.xml 
-
 module hbvRaxmlPhylogenyGenerator 
   
   # without outgroup
-  generate nucleotide phylogeny AL_HBV_MASTER \
-    --whereClause "sequence.source.name = 'ncbi-refseqs'" \
-    -o trees/hbvRefs1.tree \
+  generate nucleotide phylogeny AL_HBV_MASTER_UNCONSTRAINED \
+    --whereClause "sequence.source.name = 'fasta-refseqs'" \
+    -o trees/AL_HBV_MASTER_UNCONSTRAINED.tree \
     NEWICK_BOOTSTRAPS
     
 exit    
 
-create module --fileName modules/hbvPhyloUtility.xml
 
 module hbvPhyloUtility
-  reroot-phylogeny -i trees/hbvRefs1.tree NEWICK_BOOTSTRAPS -m -o trees/HBV_AL_MASTER_midpoint.tre NEWICK_BOOTSTRAPS
-  exit
-
+  reroot-phylogeny -i trees/AL_HBV_MASTER_UNCONSTRAINED.tree NEWICK_BOOTSTRAPS -m -o trees/AL_HBV_MASTER_UNCONSTRAINED_midpoint.tre NEWICK_BOOTSTRAPS
 exit
-  
-  
+
+ 

@@ -3,8 +3,8 @@ module hbvPhyloImporter
   import phylogeny AL_HBV_MASTER \
   --recursive \
   --anyAlignment \
-  --whereClause "sequence.source.name = 'ncbi-refseqs' and referenceMember = false" \
-  --inputFile trees/HBV_AL_MASTER_midpoint.tre NEWICK_BOOTSTRAPS \
+  --whereClause "sequence.source.name = 'fasta-refseqs' and referenceMember = false" \
+  --inputFile trees/AL_HBV_MASTER_UNCONSTRAINED_midpoint.tre NEWICK_BOOTSTRAPS \
   --fieldName phylogeny
 
   exit

@@ -1,12 +1,10 @@
   # Constrained alignment tree
 
-  alignment AL_HBV_MASTER_UNCONSTRAINED 
-    add member --allSequences
- 	extract child AL_HBV_MASTER --refName REF_MASTER_HBV-D
-	demote member AL_HBV_MASTER --whereClause "sequence.source.name = 'fasta-refseqs'" 
-    exit
+  create alignment AL_HBV_MASTER --refSeqName REF_MASTER_HBV-D
 
   alignment AL_HBV_MASTER 
+
+    add member --allSequences
    
 	extract child AL_HBV_A --refName REF_MASTER_HBV-A
 	demote member AL_HBV_A --whereClause "sequence.genotype = 'A' and sequence.source.name = 'fasta-refseqs'" 
