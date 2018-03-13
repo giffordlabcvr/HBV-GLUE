@@ -9,11 +9,26 @@
 	extract child AL_HBV_A --refName REF_MASTER_HBV-A
 	demote member AL_HBV_A --whereClause "sequence.genotype = 'A' and sequence.source.name = 'fasta-refseqs'" 
 
+	extract child AL_HBV_A1 --refName REF_MASTER_HBV-A1
+	demote member AL_HBV_A1 --whereClause "sequence.subgenotype = 'A1' and sequence.source.name = 'fasta-refseqs'" 
+	
+	
+
 	extract child AL_HBV_B --refName REF_MASTER_HBV-B
 	demote member AL_HBV_B --whereClause "sequence.genotype = 'B' and sequence.source.name = 'fasta-refseqs'" 
 
+	extract child AL_HBV_B3-2 --refName REF_MASTER_HBV-B3-2
+	demote member AL_HBV_B3-2 --whereClause "sequence.subgenotype = 'B3-2' and sequence.source.name = 'fasta-refseqs'" 
+
+
+
 	extract child AL_HBV_C --refName REF_MASTER_HBV-C
 	demote member AL_HBV_C --whereClause "sequence.genotype = 'C' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_C1 --refName REF_MASTER_HBV-C1
+	demote member AL_HBV_C1 --whereClause "sequence.subgenotype = 'C1' and sequence.source.name = 'fasta-refseqs'" 
+
+
 
 	extract child AL_HBV_D --refName REF_MASTER_HBV-D
 	demote member AL_HBV_D --whereClause "sequence.genotype = 'D' and sequence.source.name = 'fasta-refseqs'" 
@@ -40,6 +55,23 @@
   alignment AL_HBV_A
     derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
     exit
+
+  alignment AL_HBV_A1
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
+  alignment AL_HBV_A
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
+  alignment AL_HBV_A
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
+  alignment AL_HBV_A
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
 
   alignment AL_HBV_B
     derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 

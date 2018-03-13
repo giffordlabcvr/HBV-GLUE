@@ -6,16 +6,35 @@
   ## Subtype references
   
   # Subtype A
-  create reference REF_MASTER_HBV-A   fasta-refseqs KP234050
+  create reference REF_MASTER_HBV-A    fasta-refseqs KP234050
+  create reference REF_MASTER_HBV-A1   fasta-refseqs KP234050
+  create reference REF_MASTER_HBV-A2   fasta-refseqs KP234051
+  create reference REF_MASTER_HBV-A3   fasta-refseqs KP234053
+  create reference REF_MASTER_HBV-A5   fasta-refseqs KP234052
 
   # Subtype B
-  create reference REF_MASTER_HBV-B   fasta-refseqs EF473977
+  create reference REF_MASTER_HBV-B    fasta-refseqs EF473977
+  create reference REF_MASTER_HBV-B3-2 fasta-refseqs EF473977
+  create reference REF_MASTER_HBV-B3-3 fasta-refseqs GQ924621
+  create reference REF_MASTER_HBV-B5   fasta-refseqs GQ924624
+  create reference REF_MASTER_HBV-B8   fasta-refseqs GQ358146
+  create reference REF_MASTER_HBV-B9   fasta-refseqs AP011094
 
   # Subtype C
-  create reference REF_MASTER_HBV-C   fasta-refseqs KM999990
+  create reference REF_MASTER_HBV-C    fasta-refseqs KM999990
+  create reference REF_MASTER_HBV-C1   fasta-refseqs KM999990
+  create reference REF_MASTER_HBV-C5   fasta-refseqs AP011100
+  create reference REF_MASTER_HBV-C6   fasta-refseqs KM999991
+  create reference REF_MASTER_HBV-C9   fasta-refseqs AP011108
 
   # Subtype D
-  create reference REF_MASTER_HBV-D   fasta-refseqs V01460
+  create reference REF_MASTER_HBV-D    fasta-refseqs V01460
+  create reference REF_MASTER_HBV-D1   fasta-refseqs JF754607
+  create reference REF_MASTER_HBV-D2   fasta-refseqs AB109479
+  create reference REF_MASTER_HBV-D3   fasta-refseqs AB554024
+  create reference REF_MASTER_HBV-D4   fasta-refseqs FJ692532
+  create reference REF_MASTER_HBV-D7   fasta-refseqs FJ904410
+  create reference REF_MASTER_HBV-D8   fasta-refseqs FJ904406
 
   # Subtype E
   create reference REF_MASTER_HBV-E   fasta-refseqs HM363593
