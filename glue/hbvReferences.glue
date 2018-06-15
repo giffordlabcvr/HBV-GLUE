@@ -3,16 +3,16 @@
   ### MASTER reference (subtype D)
   create reference REF_MASTER_HBV fasta-refseqs V01460  
 
-  ## Subtype references
+  ## Genotype references
   
-  # Subtype A
+  # Genotype A
   create reference REF_MASTER_HBV-A    fasta-refseqs KP234050
   create reference REF_MASTER_HBV-A1   fasta-refseqs KP234050
   create reference REF_MASTER_HBV-A2   fasta-refseqs KP234051
   create reference REF_MASTER_HBV-A3   fasta-refseqs KP234053
   create reference REF_MASTER_HBV-A5   fasta-refseqs KP234052
 
-  # Subtype B
+  # Genotype B
   create reference REF_MASTER_HBV-B    fasta-refseqs EF473977
   create reference REF_MASTER_HBV-B3-2 fasta-refseqs EF473977
   create reference REF_MASTER_HBV-B3-3 fasta-refseqs GQ924621
@@ -20,14 +20,14 @@
   create reference REF_MASTER_HBV-B8   fasta-refseqs GQ358146
   create reference REF_MASTER_HBV-B9   fasta-refseqs AP011094
 
-  # Subtype C
+  # Genotype C
   create reference REF_MASTER_HBV-C    fasta-refseqs KM999990
   create reference REF_MASTER_HBV-C1   fasta-refseqs KM999990
   create reference REF_MASTER_HBV-C5   fasta-refseqs AP011100
   create reference REF_MASTER_HBV-C6   fasta-refseqs KM999991
   create reference REF_MASTER_HBV-C9   fasta-refseqs AP011108
 
-  # Subtype D
+  # Genotype D
   create reference REF_MASTER_HBV-D    fasta-refseqs V01460
   create reference REF_MASTER_HBV-D1   fasta-refseqs JF754607
   create reference REF_MASTER_HBV-D2   fasta-refseqs AB109479
@@ -36,15 +36,15 @@
   create reference REF_MASTER_HBV-D7   fasta-refseqs FJ904410
   create reference REF_MASTER_HBV-D8   fasta-refseqs FJ904406
 
-  # Subtype E
+  # Genotype E
   create reference REF_MASTER_HBV-E   fasta-refseqs HM363593
 
-  # Subtype F
+  # Genotype F
   create reference REF_MASTER_HBV-F   fasta-refseqs JN811655
 
-  # Subtype G
+  # Genotype G
   create reference REF_MASTER_HBV-G   fasta-refseqs KX264500
  
-  # Subtype H
+  # Genotype H
   create reference REF_MASTER_HBV-H   fasta-refseqs AB818694
  
