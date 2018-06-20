@@ -1,6 +1,6 @@
 delete project hbv
 
-create project hbv "A GLUE project for Hepatitis B virus (hbv)" --minVersion 0.1.50
+create project hbv "GLUE project for hepatitis B virus (HBV)" --minVersion 0.1.50
 
 run file glue/hbvSchemaExtensions.glue
  
