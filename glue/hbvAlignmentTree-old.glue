@@ -1,0 +1,262 @@
+  # Constrained alignment tree
+
+  create alignment AL_HBV_MASTER --refSeqName REF_MASTER_HBV-D
+
+  alignment AL_HBV_MASTER 
+
+    add member --allSequences
+   
+	extract child AL_HBV_A --refName REF_MASTER_HBV-A
+	demote member AL_HBV_A --whereClause "sequence.genotype = 'A' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_B --refName REF_MASTER_HBV-B
+	demote member AL_HBV_B --whereClause "sequence.genotype = 'B' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_C --refName REF_MASTER_HBV-C
+	demote member AL_HBV_C --whereClause "sequence.genotype = 'C' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_D --refName REF_MASTER_HBV-D
+	demote member AL_HBV_D --whereClause "sequence.genotype = 'D' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_E --refName REF_MASTER_HBV-E
+	demote member AL_HBV_E --whereClause "sequence.genotype = 'E' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_F --refName REF_MASTER_HBV-F
+	demote member AL_HBV_F --whereClause "sequence.genotype = 'F' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_G --refName REF_MASTER_HBV-G
+	demote member AL_HBV_G --whereClause "sequence.genotype = 'G' and sequence.source.name = 'fasta-refseqs'" 
+
+	extract child AL_HBV_H --refName REF_MASTER_HBV-H
+	demote member AL_HBV_H --whereClause "sequence.genotype = 'H' and sequence.source.name = 'fasta-refseqs'" 
+    exit
+
+
+  # derive constrained segments throughout the tree from unconstrained AL_UNCONSTRAINED   
+  alignment AL_HBV_MASTER
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
+  alignment AL_HBV_A
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
+  alignment AL_HBV_B
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
+  alignment AL_HBV_C
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
+  alignment AL_HBV_D
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
+  alignment AL_HBV_E
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
+  alignment AL_HBV_F
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
+  alignment AL_HBV_G
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+ 
+  alignment AL_HBV_H
+    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+    exit
+
+
+  alignment AL_HBV_A
+    set field displayName "Genotype A"
+    set field clade_category genotype
+
+    extract child AL_HBV_A1 --refName REF_MASTER_HBV-A1
+    demote member AL_HBV_A1 --whereClause "sequence.genotype = 'A' and sequence.subgenotype = 'A1'" 
+    
+    extract child AL_HBV_A2 --refName REF_MASTER_HBV-A2
+    demote member AL_HBV_A2 --whereClause "sequence.genotype = 'A' and sequence.subgenotype = 'A2'" 
+
+    extract child AL_HBV_A3 --refName REF_MASTER_HBV-A3
+    demote member AL_HBV_A3 --whereClause "sequence.genotype = 'A' and sequence.subgenotype = 'A3'" 
+
+    extract child AL_HBV_A5 --refName REF_MASTER_HBV-A5
+    demote member AL_HBV_A5 --whereClause "sequence.genotype = 'A' and sequence.subgenotype = 'A5'" 
+    exit
+
+
+  alignment AL_HBV_B
+    set field displayName "Genotype B"
+    set field clade_category genotype
+
+    extract child AL_HBV_B3-2 --refName REF_MASTER_HBV-B3-2
+    demote member AL_HBV_B3-2 --whereClause "sequence.genotype = 'B' and sequence.subgenotype = 'B3-2'" 
+    
+    extract child AL_HBV_B3-3 --refName REF_MASTER_HBV-B3-3
+    demote member AL_HBV_B3-3 --whereClause "sequence.genotype = 'B' and sequence.subgenotype = 'B3-3'" 
+    
+    extract child AL_HBV_B5   --refName REF_MASTER_HBV-B5
+    demote member AL_HBV_B5   --whereClause "sequence.genotype = 'B' and sequence.subgenotype = 'B5'" 
+
+    extract child AL_HBV_B8   --refName REF_MASTER_HBV-B8
+    demote member AL_HBV_B8   --whereClause "sequence.genotype = 'B' and sequence.subgenotype = 'B8'" 
+    
+    extract child AL_HBV_B9   --refName REF_MASTER_HBV-B9
+    demote member AL_HBV_B9   --whereClause "sequence.genotype = 'B' and sequence.subgenotype = 'B9'"    
+    exit
+
+
+
+  alignment AL_HBV_C
+    set field displayName "Genotype C"
+    set field clade_category genotype
+
+    extract child AL_HBV_C1 --refName REF_MASTER_HBV-C1
+    demote member AL_HBV_C1 --whereClause "sequence.genotype = 'C' and sequence.subgenotype = 'C1'" 
+    
+    extract child AL_HBV_C5 --refName REF_MASTER_HBV-C5
+    demote member AL_HBV_C5 --whereClause "sequence.genotype = 'C' and sequence.subgenotype = 'C5'" 
+
+    extract child AL_HBV_C6 --refName REF_MASTER_HBV-C6
+    demote member AL_HBV_C6 --whereClause "sequence.genotype = 'C' and sequence.subgenotype = 'C6'" 
+
+    extract child AL_HBV_C9 --refName REF_MASTER_HBV-C9
+    demote member AL_HBV_C9 --whereClause "sequence.genotype = 'C' and sequence.subgenotype = 'C9'" 
+    exit
+
+
+
+  alignment AL_HBV_D
+    set field displayName "Genotype D"
+    set field clade_category genotype
+
+    extract child AL_HBV_D1 --refName REF_MASTER_HBV-D1
+    demote member AL_HBV_D1 --whereClause "sequence.genotype = 'D' and sequence.subgenotype = 'D1'" 
+    
+    extract child AL_HBV_D2 --refName REF_MASTER_HBV-D2
+    demote member AL_HBV_D2 --whereClause "sequence.genotype = 'D' and sequence.subgenotype = 'D2'" 
+
+    extract child AL_HBV_D3 --refName REF_MASTER_HBV-D3
+    demote member AL_HBV_D3 --whereClause "sequence.genotype = 'D' and sequence.subgenotype = 'D3'" 
+
+    extract child AL_HBV_D4 --refName REF_MASTER_HBV-D4
+    demote member AL_HBV_D4 --whereClause "sequence.genotype = 'D' and sequence.subgenotype = 'D4'" 
+
+    extract child AL_HBV_D7 --refName REF_MASTER_HBV-D7
+    demote member AL_HBV_D7 --whereClause "sequence.genotype = 'D' and sequence.subgenotype = 'D7'" 
+
+    extract child AL_HBV_D8 --refName REF_MASTER_HBV-D8
+    demote member AL_HBV_D8 --whereClause "sequence.genotype = 'D' and sequence.subgenotype = 'D8'" 
+    exit
+
+
+
+
+  alignment AL_HBV_A1
+    set field displayName "Subgenotype A1"
+    set field clade_category "subgenotype"
+    exit
+    
+  alignment AL_HBV_A2
+    set field displayName "Subgenotype A2"
+    set field clade_category "subgenotype"
+    exit
+    
+  alignment AL_HBV_A3
+    set field displayName "Subgenotype A3"
+    set field clade_category "subgenotype"
+    exit
+    
+  alignment AL_HBV_A5
+    set field displayName "Subgenotype A5"
+    set field clade_category "subgenotype"
+    exit
+    
+  alignment AL_HBV_B3-2
+    set field displayName "Subgenotype B3-2"
+    set field clade_category "subgenotype"
+    exit
+    
+  alignment AL_HBV_B3-3
+    set field displayName "Subgenotype B3-3"
+    set field clade_category "subgenotype"
+    exit
+    
+  alignment AL_HBV_B5
+    set field displayName "Subgenotype B5"
+    set field clade_category "subgenotype"
+    exit
+    
+  alignment AL_HBV_B8
+    set field displayName "Subgenotype B8"
+    set field clade_category "subgenotype"
+    exit
+    
+   alignment AL_HBV_B9
+    set field displayName "Subgenotype B9"
+    set field clade_category "subgenotype"
+    exit
+
+
+    
+  alignment AL_HBV_D1
+    set field displayName "Subgenotype D1"
+    set field clade_category "subgenotype"
+    exit
+
+  alignment AL_HBV_D2
+    set field displayName "Subgenotype D2"
+    set field clade_category "subgenotype"
+    exit
+
+  alignment AL_HBV_D3
+    set field displayName "Subgenotype D3"
+    set field clade_category "subgenotype"
+    exit
+
+  alignment AL_HBV_D4
+    set field displayName "Subgenotype D4"
+    set field clade_category "subgenotype"
+    exit
+
+  alignment AL_HBV_D7
+    set field displayName "Subgenotype D7"
+    set field clade_category "subgenotype"
+    exit
+
+  alignment AL_HBV_D8
+    set field displayName "Subgenotype D8"
+    set field clade_category "subgenotype"
+    exit
+
+
+
+  alignment AL_HBV_F set field clade_category genotype
+  alignment AL_HBV_G set field clade_category genotype
+  alignment AL_HBV_H set field clade_category genotype
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
