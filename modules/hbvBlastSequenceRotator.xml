@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<blastSequenceRotator>
+	<blastRunner>
+	    <generalSearch>
+	        <word_size>8</word_size>
+	    </generalSearch>
+	</blastRunner>
+    <referenceSequence>REF_MASTER_NC_003977</referenceSequence>
+    <minimumBitScore>100.0</minimumBitScore>
+</blastSequenceRotator>

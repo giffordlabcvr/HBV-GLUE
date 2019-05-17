@@ -1,11 +1,21 @@
 # Basic modules
-create module --fileName modules/hbvNcbiImporter.xml
-create module --fileName modules/hbvGenbankXmlPopulator.xml genbankXmlPopulator
-create module --fileName modules/hbvReferenceSequenceTextFilePopulator.xml hbvReferenceSequenceTextFilePopulator
-create module --fileName modules/unconstrainedAlignmentImporter.xml
-create module --fileName modules/fastaExporter.xml
-create module --fileName modules/fastaAlignmentExporter.xml
-create module --fileName modules/blastFastaAlignmentImporter.xml
+create module --fileName modules/hbvGenbankXmlPopulator.xml 
+create module --fileName modules/hbvCollectionBoundsPopulator.xml 
+create module --fileName modules/hbvNcbiImporterReferences.xml
+create module --fileName modules/hbvBlastSequenceRotator.xml
+
+create module --fileName modules/tabularUtilityCsv.xml
+create module --fileName modules/tabularUtilityTab.xml
+
+
+#create module --fileName modules/hbvReferenceSequenceTextFilePopulator.xml hbvReferenceSequenceTextFilePopulator
+#create module --fileName modules/unconstrainedAlignmentImporter.xml
+#create module --fileName modules/fastaExporter.xml
+#create module --fileName modules/fastaAlignmentExporter.xml
+#create module --fileName modules/blastFastaAlignmentImporter.xml
+
+
+#create module --fileName modules/hbvNcbiImporter.xml
 
 # HepSeq data import modules
 #create module --fileName modules/hepseqLupTextToCustomTableRows.xml
@@ -15,11 +25,11 @@ create module --fileName modules/blastFastaAlignmentImporter.xml
 #create module --fileName modules/hepseqSampleTextToCustomTableRows.xml
 #create module --fileName modules/hepseqTreatmentHistoryTextToCustomTableRows.xml
 
-create module --fileName modules/hbvMafftAligner.xml
-create module --fileName modules/hbvRaxmlPhylogenyGenerator.xml
-create module --fileName modules/hbvPhyloImporter.xml  
-create module --fileName modules/hbvFigTreeAnnotationExporter.xml
-create module --fileName modules/hbvPhyloUtility.xml
+#create module --fileName modules/hbvMafftAligner.xml
+#create module --fileName modules/hbvRaxmlPhylogenyGenerator.xml
+#create module --fileName modules/hbvPhyloImporter.xml  
+#create module --fileName modules/hbvFigTreeAnnotationExporter.xml
+#create module --fileName modules/hbvPhyloUtility.xml
 
-create module -f modules/hbvMaxLikelihoodGenotyper.xml
-create module -f modules/hbvMaxLikelihoodPlacer.xml
+#create module -f modules/hbvMaxLikelihoodGenotyper.xml
+#create module -f modules/hbvMaxLikelihoodPlacer.xml

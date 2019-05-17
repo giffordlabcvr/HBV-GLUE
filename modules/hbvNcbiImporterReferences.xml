@@ -6,9 +6,9 @@
   <specificPrimaryAccessions>
      
      <!-- Master HBV reference strain -->
-	<primaryAccession>V01460</primaryAccession>
+	<primaryAccession>NC_003977</primaryAccession>
      <!-- Other HBV reference strains -->
-	<primaryAccession>KU668446</primaryAccession>
+	<!-- <primaryAccession>KU668446</primaryAccession>
 	<primaryAccession>AY090460</primaryAccession>
 	<primaryAccession>AB059659</primaryAccession>
 	<primaryAccession>AY090457</primaryAccession>
@@ -45,7 +45,7 @@
 	<primaryAccession>X65259</primaryAccession>
 	<primaryAccession>X68292</primaryAccession>
 	<primaryAccession>AY066028</primaryAccession>
-	<primaryAccession>AY247030</primaryAccession>
+	<primaryAccession>AY247030</primaryAccession> -->
   
   </specificPrimaryAccessions>  
   <sequenceIdField>PRIMARY_ACCESSION</sequenceIdField>

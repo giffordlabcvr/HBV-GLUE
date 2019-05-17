@@ -20,21 +20,14 @@
   feature Core set metatag CODES_AMINO_ACIDS true
   feature Core set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-  create feature RT-Pol -p whole_genome "RT-Pol"
-  feature RT-Pol set field displayName "RT-Pol"
-  feature RT-Pol set metatag OWN_CODON_NUMBERING true
-  feature RT-Pol set metatag INCLUDE_IN_SUMMARY true
-  feature RT-Pol set metatag CODES_AMINO_ACIDS true
-  feature RT-Pol set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
-
-  create feature RT -p RT-Pol "RT"
+  create feature RT -p whole_genome "RT"
   feature RT set field displayName "RT"
   feature RT set metatag OWN_CODON_NUMBERING true
   feature RT set metatag INCLUDE_IN_SUMMARY true
   feature RT set metatag CODES_AMINO_ACIDS true
   feature RT set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-  create feature RH -p RT-Pol "RH"
+  create feature RH -p whole_genome "RH"
   feature RH set field displayName "RH"
   feature RH set metatag OWN_CODON_NUMBERING true
   feature RH set metatag INCLUDE_IN_SUMMARY true

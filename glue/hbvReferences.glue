@@ -1,51 +1,56 @@
   # Declare reference sequences
  
   ### MASTER reference (subtype D)
-  create reference REF_MASTER_HBV fasta-refseqs V01460  
+  create reference REF_MASTER_NC_003977 ncbi-refseqs NC_003977  
 
   ## Subtype references
   
   # Subtype A
-  create reference REF_MASTER_HBV-A fasta-refseqs AB116093
-  create reference REF_HBV-A-AB076679 fasta-refseqs AB076679
-  create reference REF_HBV-A-AB116080 fasta-refseqs AB116080
-  create reference REF_HBV-A-AB116091 fasta-refseqs AB116091
-  create reference REF_HBV-A-AB116093 fasta-refseqs AB116093
-  create reference REF_HBV-A-KM875414 fasta-refseqs KM875414
+  # create reference REF_MASTER_HBV-A fasta-refseqs AB116093
+  # create reference REF_HBV-A-AB076679 fasta-refseqs AB076679
+  # create reference REF_HBV-A-AB116080 fasta-refseqs AB116080
+  # create reference REF_HBV-A-AB116091 fasta-refseqs AB116091
+  # create reference REF_HBV-A-AB116093 fasta-refseqs AB116093
+  # create reference REF_HBV-A-KM875414 fasta-refseqs KM875414
 
   # Subtype B
-  create reference REF_MASTER_HBV-B fasta-refseqs EU579441
+  # create reference REF_MASTER_HBV-B fasta-refseqs EU579441
 
   # Subtype C
-  create reference REF_MASTER_HBV-C fasta-refseqs AY247030
-  create reference REF_HBV-C-X75665 fasta-refseqs X75665
-  create reference REF_HBV-C-AY247030 fasta-refseqs AY247030
-  create reference REF_HBV-C-Y18857 fasta-refseqs Y18857
-  create reference REF_HBV-C-AF068756 fasta-refseqs AF068756
+  # create reference REF_MASTER_HBV-C fasta-refseqs AY247030
+  # create reference REF_HBV-C-X75665 fasta-refseqs X75665
+  # create reference REF_HBV-C-AY247030 fasta-refseqs AY247030
+  # create reference REF_HBV-C-Y18857 fasta-refseqs Y18857
+  # create reference REF_HBV-C-AF068756 fasta-refseqs AF068756
 
   # Subtype D
-  create reference REF_MASTER_HBV-D fasta-refseqs V01460
-  create reference REF_HBV-D-X68292 fasta-refseqs X68292
-  create reference REF_HBV-D-X65259 fasta-refseqs X65259
-  create reference REF_HBV-D-L27106 fasta-refseqs L27106
-  create reference REF_HBV-D-AB915177 fasta-refseqs AB915177
-  create reference REF_HBV-D-AB033559 fasta-refseqs AB033559
+  # create reference REF_MASTER_HBV-D fasta-refseqs V01460
+  # create reference REF_HBV-D-X68292 fasta-refseqs X68292
+  # create reference REF_HBV-D-X65259 fasta-refseqs X65259
+  # create reference REF_HBV-D-L27106 fasta-refseqs L27106
+  # create reference REF_HBV-D-AB915177 fasta-refseqs AB915177
+  # create reference REF_HBV-D-AB033559 fasta-refseqs AB033559
 
   # Subtype F
-  create reference REF_MASTER_HBV-F fasta-refseqs AF223965
+  # create reference REF_MASTER_HBV-F fasta-refseqs AF223965
 
   # Subtype G
-  create reference REF_MASTER_HBV-G fasta-refseqs AB056513
-  create reference REF_HBV-G-AB064310 fasta-refseqs AB064310
-  create reference REF_HBV-G-AF241407 fasta-refseqs AF241407
-  create reference REF_HBV-G-AF405706 fasta-refseqs AF405706
+  # create reference REF_MASTER_HBV-G fasta-refseqs AB056513
+  # create reference REF_HBV-G-AB064310 fasta-refseqs AB064310
+  # create reference REF_HBV-G-AF241407 fasta-refseqs AF241407
+  # create reference REF_HBV-G-AF405706 fasta-refseqs AF405706
  
   # Subtype H
-  create reference REF_MASTER_HBV-H fasta-refseqs AY090460
-  create reference REF_HBV-H-AB064310 fasta-refseqs AY090454
-  create reference REF_HBV-H-AY090457 fasta-refseqs AY090457
+  # create reference REF_MASTER_HBV-H fasta-refseqs AY090460
+  # create reference REF_HBV-H-AB064310 fasta-refseqs AY090454
+  # create reference REF_HBV-H-AY090457 fasta-refseqs AY090457
  
- reference REF_MASTER_HBV
+ reference REF_MASTER_NC_003977
+  
+  add feature-location whole_genome
+  feature-location whole_genome
+    add segment 1 3182
+    exit
   
   add feature-location Core
   feature-location Core
@@ -62,11 +67,11 @@
     add segment 1376 1840
     exit
 
-#  add feature-location Pol
-#    feature-location Pol    
-#    add segment 2309 3181
-#    add segment 1 1840
-#    exit
+  add feature-location RT
+    feature-location RT   
+    add segment 132 437
+    exit
+
 
 exit 
 
