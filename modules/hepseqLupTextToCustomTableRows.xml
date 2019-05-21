@@ -1,0 +1,75 @@
+<freemarkerTextToGlueTransformer>
+	<freemarkerTemplate><![CDATA[
+<#list rows as row>
+  <#assign lup_id>${row["lup_id"]?trim}</#assign>
+  <#assign date_day>${row["date_day"]?trim}</#assign>
+  <#assign date_month>${row["date_month"]?trim}</#assign>
+  <#assign date_year>${row["date_year"]?trim}</#assign>
+  <#assign id>${lup_id}_${date_day}</#assign>
+  <#assign sex>${row["sex"]?trim}</#assign>
+  <#assign country>${row["country"]?trim}</#assign>
+  <#assign ethnicity>${row["ethnicity"]?trim}</#assign>
+  <#assign route_transmission>${row["route_transmission"]?trim}</#assign>
+  <#assign outbreak>${row["outbreak"]?trim}</#assign>
+  <#assign infect_type>${row["infect_type"]?trim}</#assign>
+  <#assign clinical_details>${row["clinical_details"]?trim}</#assign>
+  <#assign illness_duration>${row["illness_duration"]?trim}</#assign>
+  <#assign chronic_type>${row["chronic_type"]?trim}</#assign>
+  <#assign liver_disease_type>${liver_disease_type["drug"]?trim}</#assign>
+  <#assign biopsy_results>${row["biopsy_results"]?trim}</#assign>
+  <#assign abnormality_type>${row["abnormality_type"]?trim}</#assign>
+  <#assign y_n_uk>${row["y_n_uk"]?trim}</#assign>
+  <#assign coinfection>${row["coinfection"]?trim}</#assign>
+  <#assign prophylaxis>${row["prophylaxis"]?trim}</#assign>
+  <#assign drug>${row["drug"]?trim}</#assign>
+  <#assign biochemical_profile>${row["biochemical_profile"]?trim}</#assign>
+  <#assign virological_assay>${row["virological_assay"]?trim}</#assign>
+  <#assign transplant>${row["transplant"]?trim}</#assign>
+  <#assign transplant_indication>${row["transplant_indication"]?trim}</#assign>  
+  <#assign genotype_method>${row["genotype_method"]?trim}</#assign>
+  <#assign genotype>${row["genotype"]?trim}</#assign>
+  <#assign gene_name>${row["gene_name"]?trim}</#assign>
+  <#assign mut_type>${row["mut_type"]?trim}</#assign>
+  <#assign mut_gene_name>${row["mut_gene_name"]?trim}</#assign>
+  <#assign biopsy_method>${row["biopsy_method"]?trim}</#assign>
+
+  create custom-table-row lup "${id}"
+  custom-table-row lup "${id}"
+    set field date_day "${date_day}"
+    set field lup_id "${lup_id}"
+    set field date_month "${date_month}"
+    set field date_year "${date_year}"
+    set field sex "${sex}"
+    set field country_birth "${country_birth}"
+    set field ethnicity "${ethnicity}"
+    set field route_transmission "${route_transmission}"
+    set field outbreak "${outbreak}"
+    set field infect_type "${infect_type}"
+    set field clinical_details "${clinical_details}"
+    set field illness_duration "${illness_duration}"
+    set field chronic_type "${chronic_type}"
+    set field liver_disease_type "${liver_disease_type}"
+    set field biopsy_results "${biopsy_results}"
+    set field abnormality_type "${abnormality_type}"
+    set field y_n_uk "${y_n_uk}"
+    set field coinfection "${coinfection}"
+    set field prophylaxis "${prophylaxis}"
+    set field drug "${drug}"
+    set field biochemical_profile "${biochemical_profile}"
+    set field virological_assay "${virological_assay}"
+    set field transplant "${transplant}"
+    set field transplant_indication "${transplant_indication}"
+    set field genotype_method "${genotype_method}"
+    set field genotype "${genotype}"
+    set field gene_name "${gene_name}"
+    set field mut_type "${mut_type}"
+    set field mut_gene_name "${mut_gene_name}"
+    set field biopsy_method "${biopsy_method}"
+    exit
+
+</#list>
+]]></freemarkerTemplate>
+</freemarkerTextToGlueTransformer>
+
+
+

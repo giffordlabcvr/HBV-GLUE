@@ -1,0 +1,10 @@
+
+Stanford's HBV seq database and analysis tool
+
+https://hivdb.stanford.edu/HBV/HBVseq/development/HBVseq.html
+
+FASTA file contains 37 sequences suggested by the above tool
+
+Analysis by the above tool does genotyping, detects resistance etc.
+
+Two .txt files in this directory compare HBV-GLUE and Stanford's genotyping outputs as of 29/1/2018 

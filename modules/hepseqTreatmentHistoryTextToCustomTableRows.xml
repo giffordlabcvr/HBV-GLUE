@@ -1,0 +1,36 @@
+<textFilePopulator>
+
+	<columnDelimiterRegex>,</columnDelimiterRegex>
+
+	<textFileColumn>
+		<identifier>true</identifier>
+		<header>treatment_id</header>
+		<fieldName>treatment_id</fieldName>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<fieldName>patient_id</fieldName>
+		<header>patient_id</header>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<fieldName>drug</fieldName>
+		<header>drug</header>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<fieldName>start_date</fieldName>
+		<header>start_date</header>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<fieldName>stop_date</fieldName>
+		<header>stop_date</header>
+	</textFileColumn>
+	
+	<textFileColumn>
+		<fieldName>user_id</fieldName>
+		<header>user_id</header>
+	</textFileColumn>
+
+</textFilePopulator>
