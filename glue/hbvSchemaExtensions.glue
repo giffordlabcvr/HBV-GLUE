@@ -9,8 +9,7 @@ schema-project hbv
     create field patent_related BOOLEAN
     create field exclude_from_almt_tree BOOLEAN
     create field isolate VARCHAR 100
-    create field gb_taxonomy VARCHAR 200
-    create field host VARCHAR 1000
+    create field host_species VARCHAR 1000
     create field iso_source VARCHAR 200
     create field gb_country VARCHAR 200
     create field gb_place_sampled VARCHAR 500

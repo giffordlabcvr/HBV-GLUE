@@ -4,79 +4,9 @@
   <sequenceFormat>GENBANK_XML</sequenceFormat>
   <sourceName>ncbi-refseqs</sourceName>
   <specificPrimaryAccessions>
-     
      <!-- Master HBV reference strain -->
-	<primaryAccession>V01460</primaryAccession>
-     <!-- Other HBV reference strains -->
-	<primaryAccession>KP234050</primaryAccession>
-	<primaryAccession>KP234051</primaryAccession>
-	<primaryAccession>KP234053</primaryAccession>
-	<primaryAccession>KP234052</primaryAccession>
-	<primaryAccession>GQ924651</primaryAccession>
-	<primaryAccession>EF473977</primaryAccession>
-	<primaryAccession>GQ924621</primaryAccession>
-	<primaryAccession>GQ924640</primaryAccession>
-	<primaryAccession>GQ924645</primaryAccession>
-	<primaryAccession>GQ924624</primaryAccession>
-	<primaryAccession>HM011496</primaryAccession>
-	<primaryAccession>GQ358147</primaryAccession>
-	<primaryAccession>GQ358146</primaryAccession>
-	<primaryAccession>AP011094</primaryAccession>
-	<primaryAccession>KM999990</primaryAccession>
-	<primaryAccession>AF533983</primaryAccession>
-	<primaryAccession>AP011100</primaryAccession>
-	<primaryAccession>KM999991</primaryAccession>
-	<primaryAccession>AP011108</primaryAccession>
-	<primaryAccession>JF754607</primaryAccession>
-	<primaryAccession>JN642130</primaryAccession>
-	<primaryAccession>JF754626</primaryAccession>
-	<primaryAccession>EU594400</primaryAccession>
-	<primaryAccession>EU594399</primaryAccession>
-	<primaryAccession>AB109479</primaryAccession>
-	<primaryAccession>AY902777</primaryAccession>
-	<primaryAccession>AY233296</primaryAccession>
-	<primaryAccession>AB554024</primaryAccession>
-	<primaryAccession>FJ692532</primaryAccession>
-	<primaryAccession>GQ922003</primaryAccession>
-	<primaryAccession>FJ904443</primaryAccession>
-	<primaryAccession>FJ904416</primaryAccession>
-	<primaryAccession>FJ904439</primaryAccession>
-	<primaryAccession>FJ904410</primaryAccession>
-	<primaryAccession>FJ904440</primaryAccession>
-	<primaryAccession>FJ904443</primaryAccession>
-	<primaryAccession>FJ904406</primaryAccession>
-	<primaryAccession>HM363593</primaryAccession>
-	<primaryAccession>AB194947</primaryAccession>
-	<primaryAccession>AB205191</primaryAccession>
-	<primaryAccession>AB201289</primaryAccession>
-	<primaryAccession>JN811655</primaryAccession>
-	<primaryAccession>HQ378247</primaryAccession>
-	<primaryAccession>FJ589067</primaryAccession>
-	<primaryAccession>X69798</primaryAccession>
-	<primaryAccession>KX264500</primaryAccession>
-	<primaryAccession>KF414679</primaryAccession>
-	<primaryAccession>AB625342</primaryAccession>
-	<primaryAccession>KF767450</primaryAccession>
-	<primaryAccession>JQ707680</primaryAccession>
-	<primaryAccession>AF160501</primaryAccession>
-	<primaryAccession>AB818694</primaryAccession>
-	<primaryAccession>AB846650</primaryAccession>
-	<primaryAccession>AB516393</primaryAccession>
-	<primaryAccession>HM117850</primaryAccession>
-	<primaryAccession>HM066946</primaryAccession>
-	<primaryAccession>EU498228</primaryAccession>
-	<primaryAccession>AB266536</primaryAccession>
-	<primaryAccession>AY090454</primaryAccession>
-	<primaryAccession>AB179747</primaryAccession>
-	<primaryAccession>AB275308</primaryAccession>
-	<primaryAccession>EF157291</primaryAccession>
-	<primaryAccession>AB205010</primaryAccession>
-	<primaryAccession>KY470993</primaryAccession>
-	<primaryAccession>KY470859</primaryAccession>
-	<primaryAccession>KY470857</primaryAccession>
-	<primaryAccession>KP148510</primaryAccession>
-	<primaryAccession>KP148502</primaryAccession> 
-  
+	<primaryAccession>NC_003977</primaryAccession>
+
   </specificPrimaryAccessions>  
   <sequenceIdField>PRIMARY_ACCESSION</sequenceIdField>
 </ncbiImporter>

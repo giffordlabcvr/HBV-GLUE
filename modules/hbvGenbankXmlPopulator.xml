@@ -6,7 +6,7 @@
 		<propertyPopulator property="gb_accession_version"/>
 	</gbAccessionVersion>
 	<gbLength>
-		<propertyPopulator property="length"/>
+		<propertyPopulator property="gb_length"/>
 	</gbLength>
 	<gbUpdateDate>
 		<propertyPopulator property="gb_update_date"/>
@@ -16,11 +16,11 @@
 	</gbCreateDate>
 	<gbReference>
 		<gbRefPubmed>
-			<propertyPopulator property="pubmed_id"/>
+			<propertyPopulator property="gb_pubmed_id"/>
 		</gbRefPubmed>
 	</gbReference>
 	<gbDivision>
-		<propertyPopulator property="lab_construct">
+		<propertyPopulator property="patent_related">
 			<matchPattern>PAT</matchPattern>
 			<outputTemplate>true</outputTemplate>
 		</propertyPopulator>
@@ -30,10 +30,35 @@
 			<propertyPopulator property="isolate"/>
 		</gbQualifier>
 
+		<gbQualifier name="strain">
+			<propertyPopulator property="isolate"/>
+		</gbQualifier>
+		
+		<gbQualifier name="isolation_source">
+			<propertyPopulator property="iso_source"/>
+		</gbQualifier>
+
+
 		<gbQualifier name="country">
-			<isoCountryPropertyPopulator property="country_iso" codeStyle="ALPHA_3"/>
-			<isoCountryPropertyPopulator property="country_official" codeStyle="OFFICIAL"/>
-			<propertyPopulator property="country"/>
+			<propertyPopulator property="gb_country"></propertyPopulator>
+			<propertyPopulator property="gb_place_sampled">
+				<matchPattern>^.*:(.*)$</matchPattern>
+				<outputTemplate>${g1?trim}</outputTemplate>
+			</propertyPopulator>
+			<isoCountryPropertyPopulator property="m49_country" codeStyle="ALPHA_3">
+				<valueConverter>
+					<matchPattern>.*Yugoslavia.*</matchPattern>
+					<outputTemplate>SRB</outputTemplate>
+				</valueConverter>
+				<valueConverter>
+					<matchPattern>.*Svalbard.*</matchPattern>
+					<outputTemplate>NOR</outputTemplate>
+				</valueConverter>
+				<valueConverter>
+					<matchPattern>.*Zaire.*</matchPattern>
+					<outputTemplate>COD</outputTemplate>
+				</valueConverter>
+			</isoCountryPropertyPopulator>
 		</gbQualifier>
 		
 		

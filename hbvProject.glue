@@ -1,6 +1,6 @@
 delete project hbv
 
-create project hbv "GLUE project for hepatitis B virus (HBV)" --minVersion 0.1.50
+create project hbv "A GLUE project for Hepatitis B virus (hbv)" --minVersion 1.1.40
 
 run file glue/hbvSchemaExtensions.glue
  
@@ -9,27 +9,27 @@ project hbv
   run file glue/hbvProjectSettings.glue
   run file glue/hbvModules.glue
 
-  # Import the reference sequences from FASTA files
-  import source sources/fasta-refseqs
+  run file glue/m49_countries/populateM49All.glue
+  import source sources/ncbi-refseqs
 
   # Populate sequence table fields from GenBank XML
-  module hbvReferenceSequenceTextFilePopulator populate -f tabular/hbv_refseq_data.txt
+  module hbvGenbankXmlPopulator populate -w "source.name = 'ncbi-refseqs'"
 
   # Import alignments
-  run file glue/hbvAlignments.glue
+  # run file glue/hbvAlignments.glue
 
   # Create references
   run file glue/hbvReferences.glue
 
   # Features
-  run file glue/hbvFeatures.glue
-  run file glue/hbvFeatureLocations.glue
+  # run file glue/hbvFeatures.glue
+  # run file glue/hbvFeatureLocations.glue
 
   # Import alignment tree
-  run file glue/hbvAlignmentTree.glue
+  # run file glue/hbvAlignmentTree.glue
 
   # Import phylogeny
-  run file glue/hbvImportPhylogeny.glue
+  # run file glue/hbvImportPhylogeny.glue
   
   # Validate
   validate
