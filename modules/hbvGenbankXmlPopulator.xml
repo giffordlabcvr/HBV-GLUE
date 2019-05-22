@@ -64,18 +64,14 @@
 		
 		<gbQualifier name="host">
 			<propertyPopulator property="host_species">
-
-				<!-- #### Primates -->					
+				<!-- Humans -->					
 				<valueConverter>
 					<matchPattern>.*[Hh]omo [Ss]apiens.*</matchPattern>
 					<matchPattern>.*[Hh]uman.*</matchPattern>
+					<matchPattern>.*[Pp]atient.*</matchPattern>
+					<matchPattern>hepatocellular carcinoma cell line HCC36</matchPattern>
 					<outputTemplate>Homo sapiens</outputTemplate>
 				</valueConverter>
-				<valueConverter>
-					<matchPattern>.*[Jj]apanese monkey.*</matchPattern>
-					<outputTemplate>Macaca fuscata</outputTemplate>
-				</valueConverter>
-
 			</propertyPopulator>
 		</gbQualifier>
 		<gbQualifier name="collection_date">

@@ -3,13 +3,15 @@ create module --fileName modules/hbvGenbankXmlPopulator.xml
 # create module --fileName modules/hbvReferenceSequenceTextFilePopulator.xml
 create module --fileName modules/hbvReferenceAlignmentImporter.xml
 
-create module --fileName modules/fastaExporter.xml
-create module --fileName modules/fastaAlignmentExporter.xml
 create module --fileName modules/blastFastaAlignmentImporter.xml
+
+create module --moduleType fastaExporter hbvFastaExporter
 
 create module --fileName modules/hbvCollectionBoundsPopulator.xml 
 create module --fileName modules/hbvNcbiImporterReferences.xml
 create module --fileName modules/hbvBlastSequenceRotator.xml
+
+create module --fileName modules/hbvGenotypeRecogniser.xml
 
 create module --fileName modules/tabularUtilityCsv.xml
 create module --fileName modules/tabularUtilityTab.xml

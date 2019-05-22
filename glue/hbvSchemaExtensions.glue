@@ -23,6 +23,7 @@ schema-project hbv
     create field gb_pubmed_id VARCHAR
     create field rotation INTEGER
     create field reverse_complement BOOLEAN
+    create field non_n_length INTEGER
     exit
     
   run file glue/m49_countries/m49SchemaExtension.glue

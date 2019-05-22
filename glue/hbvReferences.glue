@@ -1,50 +1,96 @@
   # Declare reference sequences
  
-  ### MASTER reference (subtype D)
+  ### MASTER reference (genotype D)
   create reference REF_MASTER_NC_003977 ncbi-refseqs NC_003977  
 
-  ## Genotype references
+  create reference REF_A1_KP234050 ncbi-refseqs KP234050
+  create reference REF_A1_AB076678 ncbi-refseqs AB076678
+  create reference REF_A1_AB116093 ncbi-refseqs AB116093
+  create reference REF_A1_AY233290 ncbi-refseqs AY233290
+  create reference REF_A1_M57663 ncbi-refseqs M57663
+  create reference REF_A2_KP234051 ncbi-refseqs KP234051
+  create reference REF_A2_AJ012207 ncbi-refseqs AJ012207
+  create reference REF_A2_AY128092 ncbi-refseqs AY128092
+  create reference REF_A2_AB126580 ncbi-refseqs AB126580
+  create reference REF_A3_KP234053 ncbi-refseqs KP234053
+  create reference REF_A3_AB194950 ncbi-refseqs AB194950
+  create reference REF_A5_KP234052 ncbi-refseqs KP234052
+
+  create reference REF_B_EF473977 ncbi-refseqs EF473977
+  create reference REF_B1_D23678 ncbi-refseqs D23678
+  create reference REF_B1_AB205121 ncbi-refseqs AB205121
+  create reference REF_B1_AB073853 ncbi-refseqs AB073853
+  create reference REF_B1_AB106884 ncbi-refseqs AB106884
+  create reference REF_B2_AF121249 ncbi-refseqs AF121249
+  create reference REF_B2_AB073838 ncbi-refseqs AB073838
+  create reference REF_B2_AB031267 ncbi-refseqs AB031267
+  create reference REF_B2_AF121250 ncbi-refseqs AF121250
+  create reference REF_B3_EF473977 ncbi-refseqs EF473977
+  create reference REF_B3_GQ924621 ncbi-refseqs GQ924621
+  create reference REF_B3_AB033554 ncbi-refseqs AB033554
+  create reference REF_B3_D00331 ncbi-refseqs D00331
+  create reference REF_B4_AB117759 ncbi-refseqs AB117759
+  create reference REF_B4_AB212625 ncbi-refseqs AB212625
+  create reference REF_B5_GQ924624 ncbi-refseqs GQ924624
+  create reference REF_B5_AB241116 ncbi-refseqs AB241116
+  create reference REF_B5_AB219429 ncbi-refseqs AB219429
+  create reference REF_B5_AB241117 ncbi-refseqs AB241117
+  create reference REF_B6_DQ463792 ncbi-refseqs DQ463792
+  create reference REF_B8_GQ358146 ncbi-refseqs GQ358146
+  create reference REF_B9_AP011094 ncbi-refseqs AP011094
+
+  create reference REF_C1_KM999990 ncbi-refseqs KM999990
+  create reference REF_C1_AB105174 ncbi-refseqs AB105174
+  create reference REF_C1_AB112063 ncbi-refseqs AB112063
+  create reference REF_C1_AB117758 ncbi-refseqs AB117758
+  create reference REF_C1_AB205125 ncbi-refseqs AB205125
+  create reference REF_C2_AB049609 ncbi-refseqs AB049609
+  create reference REF_C2_AB205123 ncbi-refseqs AB205123
+  create reference REF_C2_X52939 ncbi-refseqs X52939
+  create reference REF_C2_AF241410 ncbi-refseqs AF241410
+  create reference REF_C3_X75656 ncbi-refseqs X75656
+  create reference REF_C3_X75665 ncbi-refseqs X75665
+  create reference REF_C3_AB105174 ncbi-refseqs AB105174
+  create reference REF_C4_AB048704 ncbi-refseqs AB048704
+  create reference REF_C4_AB048705 ncbi-refseqs AB048705
+  create reference REF_C5_AP011100 ncbi-refseqs AP011100
+  create reference REF_C5_AB241109 ncbi-refseqs AB241109
+  create reference REF_C5_EU410080 ncbi-refseqs EU410080
+  create reference REF_C6_KM999991 ncbi-refseqs KM999991
+  create reference REF_C9_AP011108 ncbi-refseqs AP011108
+
+  create reference REF_D_AB126581 ncbi-refseqs AB126581
+  create reference REF_D1_JF754607 ncbi-refseqs JF754607
+  create reference REF_D1_X80926 ncbi-refseqs X80926
+  create reference REF_D2_AB109479 ncbi-refseqs AB109479
+  create reference REF_D2_AB205126 ncbi-refseqs AB205126
+  create reference REF_D3_AB554024 ncbi-refseqs AB554024
+  create reference REF_D3_X85254 ncbi-refseqs X85254
+  create reference REF_D4_FJ692532 ncbi-refseqs FJ692532
+  create reference REF_D7_FJ904410 ncbi-refseqs FJ904410
+  create reference REF_D8_FJ904406 ncbi-refseqs FJ904406
+
+  create reference REF_E_HM363593 ncbi-refseqs HM363593
+  create reference REF_E_AB205192 ncbi-refseqs AB205192
+  create reference REF_E_AB091255 ncbi-refseqs AB091255
+
+  create reference REF_F_JN811655 ncbi-refseqs JN811655
+  create reference REF_F_AB166850 ncbi-refseqs AB166850
+  create reference REF_F1_AB116654 ncbi-refseqs AB116654
+  create reference REF_F2_AB214516 ncbi-refseqs AB214516
+
+  create reference REF_G_KX264500 ncbi-refseqs KX264500
+  create reference REF_G_AB056513 ncbi-refseqs AB056513
+ 
+  create reference REF_H_AB818694 ncbi-refseqs AB818694
+  create reference REF_H_AY090454 ncbi-refseqs AY090454
+  create reference REF_H_AY090457 ncbi-refseqs AY090457
   
-  # Genotype A
-  # create reference REF_MASTER_HBV-A    fasta-refseqs KP234050
-  # create reference REF_MASTER_HBV-A1   fasta-refseqs KP234050
-  # create reference REF_MASTER_HBV-A2   fasta-refseqs KP234051
-  # create reference REF_MASTER_HBV-A3   fasta-refseqs KP234053
-  # create reference REF_MASTER_HBV-A5   fasta-refseqs KP234052
-
-  # Genotype B
-  # create reference REF_MASTER_HBV-B    fasta-refseqs EF473977
-  # create reference REF_MASTER_HBV-B3-2 fasta-refseqs EF473977
-  # create reference REF_MASTER_HBV-B3-3 fasta-refseqs GQ924621
-  # create reference REF_MASTER_HBV-B5   fasta-refseqs GQ924624
-  # create reference REF_MASTER_HBV-B8   fasta-refseqs GQ358146
-  # create reference REF_MASTER_HBV-B9   fasta-refseqs AP011094
-
-  # Genotype C
-  # create reference REF_MASTER_HBV-C    fasta-refseqs KM999990
-  # create reference REF_MASTER_HBV-C1   fasta-refseqs KM999990
-  # create reference REF_MASTER_HBV-C5   fasta-refseqs AP011100
-  # create reference REF_MASTER_HBV-C6   fasta-refseqs KM999991
-  # create reference REF_MASTER_HBV-C9   fasta-refseqs AP011108
-
-  # Genotype D
-  # create reference REF_MASTER_HBV-D    fasta-refseqs V01460
-  # create reference REF_MASTER_HBV-D1   fasta-refseqs JF754607
-  # create reference REF_MASTER_HBV-D2   fasta-refseqs AB109479
-  # create reference REF_MASTER_HBV-D3   fasta-refseqs AB554024
-  # create reference REF_MASTER_HBV-D4   fasta-refseqs FJ692532
-  # create reference REF_MASTER_HBV-D7   fasta-refseqs FJ904410
-  # create reference REF_MASTER_HBV-D8   fasta-refseqs FJ904406
-
-  # Genotype E
-  # create reference REF_MASTER_HBV-E   fasta-refseqs HM363593
-
-  # Genotype F
-  # create reference REF_MASTER_HBV-F   fasta-refseqs JN811655
-
-  # Genotype G
-  # create reference REF_MASTER_HBV-G   fasta-refseqs KX264500
- 
-  # Genotype H
-  # create reference REF_MASTER_HBV-H   fasta-refseqs AB818694
- 
+  create reference REF_I_AF241409 ncbi-refseqs AF241409
+  create reference REF_I_AB231908 ncbi-refseqs AB231908
+  create reference REF_I_AF241407 ncbi-refseqs AF241407
+  create reference REF_I_AF241408 ncbi-refseqs AF241408
+  create reference REF_I_FJ023672 ncbi-refseqs FJ023672
+  
+  create reference REF_J_AB486012 ncbi-refseqs AB486012
+  

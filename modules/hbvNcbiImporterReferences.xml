@@ -7,6 +7,108 @@
      <!-- Master HBV reference strain -->
 	<primaryAccession>NC_003977</primaryAccession>
 
+     <!-- Genotype A -->
+	<primaryAccession>KP234050</primaryAccession>
+	<primaryAccession>AB076678</primaryAccession>
+	<primaryAccession>AB116093</primaryAccession>
+	<primaryAccession>AY233290</primaryAccession>
+	<primaryAccession>M57663</primaryAccession>
+	<primaryAccession>KP234051</primaryAccession>
+	<primaryAccession>AJ012207</primaryAccession>
+	<primaryAccession>AY128092</primaryAccession>
+	<primaryAccession>AB126580</primaryAccession>
+	<primaryAccession>KP234053</primaryAccession>
+	<primaryAccession>AB194950</primaryAccession>
+	<primaryAccession>KP234052</primaryAccession>
+
+     <!-- Genotype B -->
+	<primaryAccession>EF473977</primaryAccession>
+	<primaryAccession>D23678</primaryAccession>
+	<primaryAccession>AB205121</primaryAccession>
+	<primaryAccession>AB073853</primaryAccession>
+	<primaryAccession>AB106884</primaryAccession>
+	<primaryAccession>AF121249</primaryAccession>
+	<primaryAccession>AB073838</primaryAccession>
+	<primaryAccession>AB031267</primaryAccession>
+	<primaryAccession>AF121250</primaryAccession>
+	<primaryAccession>EF473977</primaryAccession>
+	<primaryAccession>GQ924621</primaryAccession>
+	<primaryAccession>AB033554</primaryAccession>
+	<primaryAccession>D00331</primaryAccession>
+	<primaryAccession>AB117759</primaryAccession>
+	<primaryAccession>AB212625</primaryAccession>
+	<primaryAccession>GQ924624</primaryAccession>
+	<primaryAccession>AB241116</primaryAccession>
+	<primaryAccession>AB219429</primaryAccession>
+	<primaryAccession>AB241117</primaryAccession>
+	<primaryAccession>DQ463792</primaryAccession>
+	<primaryAccession>GQ358146</primaryAccession>
+	<primaryAccession>AP011094</primaryAccession>
+
+     <!-- Genotype C -->
+	<primaryAccession>KM999990</primaryAccession>
+	<primaryAccession>AB105174</primaryAccession>
+	<primaryAccession>AB112063</primaryAccession>
+	<primaryAccession>AB117758</primaryAccession>
+	<primaryAccession>AB205125</primaryAccession>
+	<primaryAccession>AB049609</primaryAccession>
+	<primaryAccession>AB205123</primaryAccession>
+	<primaryAccession>X52939</primaryAccession>
+	<primaryAccession>AF241410</primaryAccession>
+	<primaryAccession>X75656</primaryAccession>
+	<primaryAccession>X75665</primaryAccession>
+	<primaryAccession>AB105174</primaryAccession>
+	<primaryAccession>AB048704</primaryAccession>
+	<primaryAccession>AB048705</primaryAccession>
+	<primaryAccession>AP011100</primaryAccession>
+	<primaryAccession>AB241109</primaryAccession>
+	<primaryAccession>EU410080</primaryAccession>
+	<primaryAccession>KM999991</primaryAccession>
+	<primaryAccession>AP011108</primaryAccession>
+
+     <!-- Genotype D -->
+	<primaryAccession>AB126581</primaryAccession>
+	<primaryAccession>JF754607</primaryAccession>
+	<primaryAccession>X80926</primaryAccession>
+	<primaryAccession>AB109479</primaryAccession>
+	<primaryAccession>AB205126</primaryAccession>
+	<primaryAccession>AB554024</primaryAccession>
+	<primaryAccession>X85254</primaryAccession>
+	<primaryAccession>FJ692532</primaryAccession>
+	<primaryAccession>FJ904410</primaryAccession>
+	<primaryAccession>FJ904406</primaryAccession>
+
+     <!-- Genotype E -->
+	<primaryAccession>HM363593</primaryAccession>
+	<primaryAccession>AB205192</primaryAccession>
+	<primaryAccession>AB091255</primaryAccession>
+
+     <!-- Genotype F -->
+	<primaryAccession>JN811655</primaryAccession>
+	<primaryAccession>AB166850</primaryAccession>
+	<primaryAccession>AB116654</primaryAccession>
+	<primaryAccession>AB214516</primaryAccession>
+
+     <!-- Genotype G -->
+	<primaryAccession>KX264500</primaryAccession>
+	<primaryAccession>AB056513</primaryAccession>
+ 
+     <!-- Genotype H -->
+	<primaryAccession>AB818694</primaryAccession>
+	<primaryAccession>AY090454</primaryAccession>
+	<primaryAccession>AY090457</primaryAccession>
+  
+     <!-- Genotype I -->
+	<primaryAccession>AF241409</primaryAccession>
+	<primaryAccession>AB231908</primaryAccession>
+	<primaryAccession>AF241407</primaryAccession>
+	<primaryAccession>AF241408</primaryAccession>
+	<primaryAccession>FJ023672</primaryAccession>
+  
+     <!-- Genotype J -->
+	<primaryAccession>AB486012</primaryAccession>
+
+
   </specificPrimaryAccessions>  
   <sequenceIdField>PRIMARY_ACCESSION</sequenceIdField>
 </ncbiImporter>
