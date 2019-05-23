@@ -15,14 +15,14 @@ project hbv
   # Populate sequence table fields from GenBank XML
   module hbvGenbankXmlPopulator populate -w "source.name = 'ncbi-refseqs'"
 
-  # rotate reference sequences where necessary
-  run script glue/hbvRefseqsApplyRotations.js
-
   # Import alignments
   # run file glue/hbvAlignments.glue
 
   # Create references
   run file glue/hbvReferences.glue
+
+  # rotate reference sequences where necessary
+  run script glue/hbvRefseqsApplyRotations.js
 
   # Features
   # run file glue/hbvFeatures.glue
