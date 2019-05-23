@@ -99,6 +99,7 @@
   
   <recognitionCategory>
     <id>A</id>
+    <minimumBitScore>200.0</minimumBitScore>
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
     <referenceSequence>REF_A1_KP234050</referenceSequence>
@@ -117,6 +118,7 @@
 
   <recognitionCategory>
     <id>B</id>
+    <minimumBitScore>200.0</minimumBitScore>
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
     <referenceSequence>REF_B_EF473977</referenceSequence>
@@ -145,6 +147,7 @@
 
   <recognitionCategory>
     <id>C</id>
+    <minimumBitScore>200.0</minimumBitScore>
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
     <referenceSequence>REF_C1_KM999990</referenceSequence>
@@ -170,6 +173,7 @@
 
   <recognitionCategory>
     <id>D</id>
+    <minimumBitScore>200.0</minimumBitScore>
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
     <referenceSequence>REF_D_AB126581</referenceSequence>
@@ -186,6 +190,7 @@
 
   <recognitionCategory>
     <id>E</id>
+    <minimumBitScore>200.0</minimumBitScore>
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
     <referenceSequence>REF_E_HM363593</referenceSequence>
@@ -195,6 +200,7 @@
 
   <recognitionCategory>
     <id>F</id>
+    <minimumBitScore>200.0</minimumBitScore>
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
     <referenceSequence>REF_F_JN811655</referenceSequence>
@@ -205,6 +211,7 @@
 
   <recognitionCategory>
     <id>G</id>
+    <minimumBitScore>200.0</minimumBitScore>
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
     <referenceSequence>REF_G_KX264500</referenceSequence>
@@ -213,6 +220,7 @@
 
   <recognitionCategory>
     <id>H</id>
+    <minimumBitScore>200.0</minimumBitScore>
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
     <referenceSequence>REF_H_AB818694</referenceSequence>
@@ -222,6 +230,7 @@
 
   <recognitionCategory>
     <id>I</id>
+    <minimumBitScore>200.0</minimumBitScore>
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
     <referenceSequence>REF_I_AF241409</referenceSequence>
@@ -233,6 +242,7 @@
 
   <recognitionCategory>
     <id>J</id>
+    <minimumBitScore>200.0</minimumBitScore>
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
     <referenceSequence>REF_J_AB486012</referenceSequence>
@@ -253,7 +263,5 @@
   	<minDifference>1.0</minDifference>
   </maxIdentityPctCategoryResultResolver>
 
-  <!-- otherwise, just pick arbitrarily on category name -->
-  <categoryNameResultResolver/>
-
+  
 </blastSequenceRecogniser>
