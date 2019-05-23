@@ -88,6 +88,69 @@
 				<outputTemplate>${g1}</outputTemplate>
 			</propertyPopulator>
 		</gbQualifier>
+
+		<gbQualifier name="note">
+			<propertyPopulator property="gb_genotype">
+				<matchPattern>(?:[Gg]enotype|[Ss]ubtype|[Ss]ubgenotype):?\s*([A-Za-z])(?:[0-9]*)</matchPattern>
+				<outputTemplate>${g1?upper_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</propertyPopulator>
+			<propertyPopulator property="gb_subgenotype">
+				<matchPattern>(?:[Gg]enotype|[Ss]ubtype|[Ss]ubgenotype):?\s*([A-Za-z][0-9]+)</matchPattern>
+				<outputTemplate>${g1?upper_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</propertyPopulator>
+		</gbQualifier>
+		<gbQualifier name="genotype">
+			<propertyPopulator property="gb_genotype">
+				<matchPattern>([A-Za-z])(?:[0-9]*)</matchPattern>
+				<outputTemplate>${g1?upper_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</propertyPopulator>
+			<propertyPopulator property="gb_subgenotype">
+				<matchPattern>([A-Za-z][0-9]+)</matchPattern>
+				<outputTemplate>${g1?upper_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</propertyPopulator>
+		</gbQualifier>
+		<gbQualifier name="type">
+			<propertyPopulator property="gb_genotype">
+				<matchPattern>([A-Za-z])(?:[0-9]*)</matchPattern>
+				<outputTemplate>${g1?upper_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</propertyPopulator>
+			<propertyPopulator property="gb_subgenotype">
+				<matchPattern>([A-Za-z][0-9]+)</matchPattern>
+				<outputTemplate>${g1?upper_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</propertyPopulator>
+		</gbQualifier>
+		<gbQualifier name="subtype">
+			<propertyPopulator property="gb_genotype">
+				<matchPattern>([A-Za-z])(?:[0-9]*)</matchPattern>
+				<outputTemplate>${g1?upper_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</propertyPopulator>
+			<propertyPopulator property="gb_subgenotype">
+				<matchPattern>([A-Za-z][0-9]+)</matchPattern>
+				<outputTemplate>${g1?upper_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</propertyPopulator>
+		</gbQualifier>
+		<gbQualifier name="subgenotype">
+			<propertyPopulator property="gb_genotype">
+				<matchPattern>([A-Za-z])(?:[0-9]*)</matchPattern>
+				<outputTemplate>${g1?upper_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</propertyPopulator>
+			<propertyPopulator property="gb_subgenotype">
+				<matchPattern>([A-Za-z][0-9]+)</matchPattern>
+				<outputTemplate>${g1?upper_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</propertyPopulator>
+		</gbQualifier>
+		
+		
 		
 		
 	</gbFeature>
