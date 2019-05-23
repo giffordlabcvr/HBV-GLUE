@@ -91,7 +91,12 @@
 
 		<gbQualifier name="note">
 			<propertyPopulator property="gb_genotype">
-				<matchPattern>(?:[Gg]enotype|[Ss]ubtype|[Ss]ubgenotype):?\s*([A-Za-z])(?:[0-9]*)</matchPattern>
+				<matchPattern>(?:[Gg]enotype):?\s*([A-Za-z])(?:$|[^A-Za-z])</matchPattern>
+				<outputTemplate>${g1?upper_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</propertyPopulator>
+			<propertyPopulator property="gb_genotype">
+				<matchPattern>(?:[Ss]ubtype|[Ss]ubgenotype):?\s*([A-Za-z])(?:$|[^A-Za-z])</matchPattern>
 				<outputTemplate>${g1?upper_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</propertyPopulator>
@@ -103,7 +108,7 @@
 		</gbQualifier>
 		<gbQualifier name="genotype">
 			<propertyPopulator property="gb_genotype">
-				<matchPattern>([A-Za-z])(?:[0-9]*)</matchPattern>
+				<matchPattern>([A-Za-z])(?:$|[^A-Za-z])</matchPattern>
 				<outputTemplate>${g1?upper_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</propertyPopulator>
@@ -115,7 +120,7 @@
 		</gbQualifier>
 		<gbQualifier name="type">
 			<propertyPopulator property="gb_genotype">
-				<matchPattern>([A-Za-z])(?:[0-9]*)</matchPattern>
+				<matchPattern>([A-Za-z])(?:$|[^A-Za-z])</matchPattern>
 				<outputTemplate>${g1?upper_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</propertyPopulator>
@@ -127,7 +132,7 @@
 		</gbQualifier>
 		<gbQualifier name="subtype">
 			<propertyPopulator property="gb_genotype">
-				<matchPattern>([A-Za-z])(?:[0-9]*)</matchPattern>
+				<matchPattern>([A-Za-z])(?:$|[^A-Za-z])</matchPattern>
 				<outputTemplate>${g1?upper_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</propertyPopulator>
@@ -139,7 +144,7 @@
 		</gbQualifier>
 		<gbQualifier name="subgenotype">
 			<propertyPopulator property="gb_genotype">
-				<matchPattern>([A-Za-z])(?:[0-9]*)</matchPattern>
+				<matchPattern>([A-Za-z])(?:$|[^A-Za-z])</matchPattern>
 				<outputTemplate>${g1?upper_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</propertyPopulator>
