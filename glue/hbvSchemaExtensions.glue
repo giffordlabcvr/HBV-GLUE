@@ -17,6 +17,7 @@ schema-project hbv
     create field gb_update_date DATE
     create field gb_genotype VARCHAR
     create field gb_subgenotype VARCHAR
+    create field recogniser_genotypes VARCHAR
     create field collection_year INTEGER 
     create field collection_month VARCHAR
     create field collection_month_day INTEGER
