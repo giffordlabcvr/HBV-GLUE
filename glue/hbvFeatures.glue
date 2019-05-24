@@ -2,66 +2,80 @@
   feature whole_genome set field displayName "Whole genome"
   feature whole_genome set metatag INFORMATIONAL true
 
-  create feature HBeAg -p whole_genome "HBeAg"
-  feature HBeAg set field displayName "HBV e-antigen"
-  feature HBeAg set metatag OWN_CODON_NUMBERING true
-  feature HBeAg set metatag INCLUDE_IN_SUMMARY true
-  feature HBeAg set metatag CODES_AMINO_ACIDS true
-  feature HBeAg set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
-
-  create feature Core -p whole_genome "Core"
-  feature Core set field displayName "Core"
-  feature Core set metatag OWN_CODON_NUMBERING true
-  feature Core set metatag INCLUDE_IN_SUMMARY true
-  feature Core set metatag CODES_AMINO_ACIDS true
-  feature Core set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
-
+  # separate numbering for regions within the P gene
+  # https://doi.org/10.1053/jhep.2001.22166 
   create feature P -p whole_genome "Polymerase"
   feature P set field displayName "P"
   feature P set metatag OWN_CODON_NUMBERING true
   feature P set metatag INCLUDE_IN_SUMMARY true
   feature P set metatag CODES_AMINO_ACIDS true
-  feature P set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  feature P set metatag CIRCULAR_BRIDGING true
+  feature P set metatag FLOC_START_TRANSCRIPTION_FIELD start_transcription_ref_nt
 
-  create feature RT -p P "RT"
+  create feature TP -p P "Terminal protein"
+  feature TP set field displayName "TP"
+  feature TP set metatag OWN_CODON_NUMBERING true
+  feature TP set metatag INCLUDE_IN_SUMMARY true
+  feature TP set metatag CODES_AMINO_ACIDS true
+
+  create feature SPACER -p P "Spacer domain"
+  feature SPACER set field displayName "Spacer"
+  feature SPACER set metatag OWN_CODON_NUMBERING true
+  feature SPACER set metatag INCLUDE_IN_SUMMARY true
+  feature SPACER set metatag CODES_AMINO_ACIDS true
+  feature SPACER set metatag CIRCULAR_BRIDGING true
+  feature SPACER set metatag FLOC_START_TRANSCRIPTION_FIELD start_transcription_ref_nt
+
+  create feature RT -p P "Reverse transcriptase"
   feature RT set field displayName "RT"
   feature RT set metatag OWN_CODON_NUMBERING true
   feature RT set metatag INCLUDE_IN_SUMMARY true
   feature RT set metatag CODES_AMINO_ACIDS true
-  feature RT set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-  create feature RH -p P "RH"
+  create feature RH -p P "Ribonuclease H domain"
   feature RH set field displayName "RH"
   feature RH set metatag OWN_CODON_NUMBERING true
   feature RH set metatag INCLUDE_IN_SUMMARY true
   feature RH set metatag CODES_AMINO_ACIDS true
-  feature RH set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-  create feature S1 -p whole_genome "S1"
-  feature S1 set field displayName "S1"
-  feature S1 set metatag OWN_CODON_NUMBERING true
-  feature S1 set metatag INCLUDE_IN_SUMMARY true
-  feature S1 set metatag CODES_AMINO_ACIDS true
-  feature S1 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  # "For the HBV surface gene, amino acid numbering restarts at the first methionine of each of the subparts."
+  # https://doi.org/10.1053/jhep.2001.22166 
+  create feature PRE_S1 -p whole_genome "Pre-S1 large surface protein"
+  feature PRE_S1 set field displayName "Pre-S1"
+  feature PRE_S1 set metatag OWN_CODON_NUMBERING true
+  feature PRE_S1 set metatag INCLUDE_IN_SUMMARY true
+  feature PRE_S1 set metatag CODES_AMINO_ACIDS true
+  feature PRE_S1 set metatag CIRCULAR_BRIDGING true
+  feature PRE_S1 set metatag FLOC_START_TRANSCRIPTION_FIELD start_transcription_ref_nt
 
-  create feature S2 -p whole_genome "middle surface protein"
-  feature S2 set field displayName "middle surface protein"
-  feature S2 set metatag OWN_CODON_NUMBERING true
-  feature S2 set metatag INCLUDE_IN_SUMMARY true
-  feature S2 set metatag CODES_AMINO_ACIDS true
-  feature S2 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  create feature PRE_S2 -p whole_genome "Pre-S2 middle surface protein"
+  feature PRE_S2 set field displayName "Pre-S2"
+  feature PRE_S2 set metatag OWN_CODON_NUMBERING true
+  feature PRE_S2 set metatag INCLUDE_IN_SUMMARY true
+  feature PRE_S2 set metatag CODES_AMINO_ACIDS true
+  feature PRE_S2 set metatag CIRCULAR_BRIDGING true
+  feature PRE_S2 set metatag FLOC_START_TRANSCRIPTION_FIELD start_transcription_ref_nt
 
-  create feature S3 -p whole_genome "small surface protein"
-  feature S3 set field displayName "small surface protein"
-  feature S3 set metatag OWN_CODON_NUMBERING true
-  feature S3 set metatag INCLUDE_IN_SUMMARY true
-  feature S3 set metatag CODES_AMINO_ACIDS true
-  feature S3 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  create feature S -p whole_genome "S small surface protein"
+  feature S set field displayName "S"
+  feature S set metatag OWN_CODON_NUMBERING true
+  feature S set metatag INCLUDE_IN_SUMMARY true
+  feature S set metatag CODES_AMINO_ACIDS true
 
-  create feature X -p whole_genome "X"
+  create feature X -p whole_genome "HBx"
   feature X set field displayName "X"
   feature X set metatag OWN_CODON_NUMBERING true
   feature X set metatag INCLUDE_IN_SUMMARY true
   feature X set metatag CODES_AMINO_ACIDS true
-  feature X set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
+  create feature PRE_C -p whole_genome "Pre-core"
+  feature PRE_C set field displayName "Pre-C"
+  feature PRE_C set metatag OWN_CODON_NUMBERING true
+  feature PRE_C set metatag INCLUDE_IN_SUMMARY true
+  feature PRE_C set metatag CODES_AMINO_ACIDS true
+
+  create feature C -p whole_genome "Core"
+  feature C set field displayName "C"
+  feature C set metatag OWN_CODON_NUMBERING true
+  feature C set metatag INCLUDE_IN_SUMMARY true
+  feature C set metatag CODES_AMINO_ACIDS true

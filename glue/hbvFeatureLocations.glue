@@ -1,39 +1,68 @@
- reference REF_MASTER_HBV
-  
-  add feature-location Core
-  feature-location Core
-    add segment 1 447
-    exit
+ reference REF_MASTER_NC_003977
   
   add feature-location P
   feature-location P
-    add segment 407 2902
-    exit
-  
-  add feature-location S1
-  feature-location S1
-    add segment 948 2114
-    exit
-  
-  add feature-location S2
-  feature-location S2
-    add segment 1272 2114
-    exit
-  
-  add feature-location S3
-  feature-location S3
-    add segment 1437 2114
-    exit
-  
-  add feature-location X
-    feature-location X    
-    add segment 2656 3117
+    add segment 2309 3182
+    add segment 1 1625
+	set field start_transcription_ref_nt 2309
     exit
 
-  add feature-location HBeAg
-    feature-location HBeAg    
-    add segment 3096 3176
+  add feature-location TP
+  feature-location TP
+    add segment 2309 2839
     exit
+
+  add feature-location SPACER
+  feature-location SPACER
+    add segment 2840 3182
+    add segment 1 131
+	set field start_transcription_ref_nt 2840
+    exit
+  
+  add feature-location RT
+  feature-location RT
+    add segment 132 1163
+    exit
+
+  add feature-location RH
+  feature-location RH
+    add segment 1164 1622
+    exit
+
+  add feature-location PRE_S1
+  feature-location PRE_S1
+    add segment 2850 3182
+    add segment 1 837
+	set field start_transcription_ref_nt 2850
+    exit
+
+  add feature-location PRE_S2
+  feature-location PRE_S2
+	add segment 3174 3182
+    add segment 1 837
+	set field start_transcription_ref_nt 3174
+    exit
+
+  add feature-location S
+  feature-location S
+    add segment 157 837
+    exit
+
+  add feature-location X
+  feature-location X
+    add segment 1376 1840
+    exit
+
+  add feature-location PRE_C
+  feature-location PRE_C
+    add segment 1816 2454
+    exit
+
+  add feature-location C
+  feature-location C
+    add segment 1903 2454
+    exit
+
 
 exit 
 
