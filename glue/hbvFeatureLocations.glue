@@ -1,66 +1,74 @@
  reference REF_MASTER_NC_003977
   
+  ## note that these coordinates differ from the GenBank record because NC_003977
+  ## must be rotated left by two nucleotides to conform with the standard numbering.
+  
+  add feature-location whole_genome
+  feature-location whole_genome
+    add segment 1 3182
+    exit
+  
   add feature-location P
   feature-location P
-    add segment 2309 3182
-    add segment 1 1625
-	set field start_transcription_ref_nt 2309
+    add segment 2307 3182
+    add segment 1 1623
+	set field start_transcription_ref_nt 2307
     exit
 
   add feature-location TP
   feature-location TP
-    add segment 2309 2839
+    add segment 2307 2837
     exit
 
   add feature-location SPACER
   feature-location SPACER
-    add segment 2840 3182
-    add segment 1 131
-	set field start_transcription_ref_nt 2840
+    add segment 2838 3182
+    add segment 1 129
+	set field start_transcription_ref_nt 2838
     exit
   
   add feature-location RT
   feature-location RT
-    add segment 132 1163
+    add segment 130 1161
     exit
 
   add feature-location RH
   feature-location RH
-    add segment 1164 1622
+    add segment 1162 1620
     exit
 
   add feature-location PRE_S1
   feature-location PRE_S1
-    add segment 2850 3182
-    add segment 1 837
-	set field start_transcription_ref_nt 2850
+    add segment 2848 3182
+    add segment 1 835
+	set field start_transcription_ref_nt 2848
     exit
 
   add feature-location PRE_S2
   feature-location PRE_S2
-	add segment 3174 3182
-    add segment 1 837
-	set field start_transcription_ref_nt 3174
+	add segment 3172 3182
+    add segment 1 835
+	set field start_transcription_ref_nt 3172
     exit
 
   add feature-location S
   feature-location S
-    add segment 157 837
+    add segment 155 835
     exit
 
   add feature-location X
   feature-location X
-    add segment 1376 1840
+    add segment 1374 1838
     exit
 
   add feature-location PRE_C
   feature-location PRE_C
-    add segment 1816 2454
+    add segment 1814 2452
     exit
 
   add feature-location C
   feature-location C
-    add segment 1903 2454
+    add segment 1901 2452
     exit
 
 

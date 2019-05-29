@@ -10,13 +10,10 @@
   <referenceSequence>REF_A1_AB076678</referenceSequence>
   <referenceSequence>REF_A1_AB116093</referenceSequence>
   <referenceSequence>REF_A1_AY233290</referenceSequence>
-  <referenceSequence>REF_A1_M57663</referenceSequence>
   <referenceSequence>REF_A2_KP234051</referenceSequence>
   <referenceSequence>REF_A2_AJ012207</referenceSequence>
   <referenceSequence>REF_A2_AY128092</referenceSequence>
-  <referenceSequence>REF_A2_AB126580</referenceSequence>
   <referenceSequence>REF_A3_KP234053</referenceSequence>
-  <referenceSequence>REF_A3_AB194950</referenceSequence>
   <referenceSequence>REF_A5_KP234052</referenceSequence>
 
   <referenceSequence>REF_B_EF473977</referenceSequence>
@@ -35,27 +32,19 @@
   <referenceSequence>REF_B4_AB117759</referenceSequence>
   <referenceSequence>REF_B4_AB212625</referenceSequence>
   <referenceSequence>REF_B5_GQ924624</referenceSequence>
-  <referenceSequence>REF_B5_AB241116</referenceSequence>
   <referenceSequence>REF_B5_AB219429</referenceSequence>
-  <referenceSequence>REF_B5_AB241117</referenceSequence>
   <referenceSequence>REF_B6_DQ463792</referenceSequence>
   <referenceSequence>REF_B8_GQ358146</referenceSequence>
   <referenceSequence>REF_B9_AP011094</referenceSequence>
 
   <referenceSequence>REF_C1_KM999990</referenceSequence>
-  <referenceSequence>REF_C1_AB105174</referenceSequence>
   <referenceSequence>REF_C1_AB112063</referenceSequence>
   <referenceSequence>REF_C1_AB117758</referenceSequence>
-  <referenceSequence>REF_C1_AB205125</referenceSequence>
-  <referenceSequence>REF_C2_AB049609</referenceSequence>
   <referenceSequence>REF_C2_AB205123</referenceSequence>
-  <referenceSequence>REF_C2_X52939</referenceSequence>
   <referenceSequence>REF_C2_AF241410</referenceSequence>
   <referenceSequence>REF_C3_X75656</referenceSequence>
   <referenceSequence>REF_C3_X75665</referenceSequence>
-  <referenceSequence>REF_C3_AB105174</referenceSequence>
   <referenceSequence>REF_C4_AB048704</referenceSequence>
-  <referenceSequence>REF_C4_AB048705</referenceSequence>
   <referenceSequence>REF_C5_AP011100</referenceSequence>
   <referenceSequence>REF_C5_AB241109</referenceSequence>
   <referenceSequence>REF_C5_EU410080</referenceSequence>
@@ -68,7 +57,6 @@
   <referenceSequence>REF_D2_AB109479</referenceSequence>
   <referenceSequence>REF_D2_AB205126</referenceSequence>
   <referenceSequence>REF_D3_AB554024</referenceSequence>
-  <referenceSequence>REF_D3_X85254</referenceSequence>
   <referenceSequence>REF_D4_FJ692532</referenceSequence>
   <referenceSequence>REF_D7_FJ904410</referenceSequence>
   <referenceSequence>REF_D8_FJ904406</referenceSequence>
@@ -106,13 +94,10 @@
     <referenceSequence>REF_A1_AB076678</referenceSequence>
     <referenceSequence>REF_A1_AB116093</referenceSequence>
     <referenceSequence>REF_A1_AY233290</referenceSequence>
-    <referenceSequence>REF_A1_M57663</referenceSequence>
     <referenceSequence>REF_A2_KP234051</referenceSequence>
     <referenceSequence>REF_A2_AJ012207</referenceSequence>
     <referenceSequence>REF_A2_AY128092</referenceSequence>
-    <referenceSequence>REF_A2_AB126580</referenceSequence>
     <referenceSequence>REF_A3_KP234053</referenceSequence>
-    <referenceSequence>REF_A3_AB194950</referenceSequence>
     <referenceSequence>REF_A5_KP234052</referenceSequence>
   </recognitionCategory>
 
@@ -137,9 +122,7 @@
     <referenceSequence>REF_B4_AB117759</referenceSequence>
     <referenceSequence>REF_B4_AB212625</referenceSequence>
     <referenceSequence>REF_B5_GQ924624</referenceSequence>
-    <referenceSequence>REF_B5_AB241116</referenceSequence>
     <referenceSequence>REF_B5_AB219429</referenceSequence>
-    <referenceSequence>REF_B5_AB241117</referenceSequence>
     <referenceSequence>REF_B6_DQ463792</referenceSequence>
     <referenceSequence>REF_B8_GQ358146</referenceSequence>
     <referenceSequence>REF_B9_AP011094</referenceSequence>
@@ -151,19 +134,13 @@
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
     <referenceSequence>REF_C1_KM999990</referenceSequence>
-    <referenceSequence>REF_C1_AB105174</referenceSequence>
     <referenceSequence>REF_C1_AB112063</referenceSequence>
     <referenceSequence>REF_C1_AB117758</referenceSequence>
-    <referenceSequence>REF_C1_AB205125</referenceSequence>
-    <referenceSequence>REF_C2_AB049609</referenceSequence>
     <referenceSequence>REF_C2_AB205123</referenceSequence>
-    <referenceSequence>REF_C2_X52939</referenceSequence>
     <referenceSequence>REF_C2_AF241410</referenceSequence>
     <referenceSequence>REF_C3_X75656</referenceSequence>
     <referenceSequence>REF_C3_X75665</referenceSequence>
-    <referenceSequence>REF_C3_AB105174</referenceSequence>
     <referenceSequence>REF_C4_AB048704</referenceSequence>
-    <referenceSequence>REF_C4_AB048705</referenceSequence>
     <referenceSequence>REF_C5_AP011100</referenceSequence>
     <referenceSequence>REF_C5_AB241109</referenceSequence>
     <referenceSequence>REF_C5_EU410080</referenceSequence>
@@ -182,7 +159,6 @@
     <referenceSequence>REF_D2_AB109479</referenceSequence>
     <referenceSequence>REF_D2_AB205126</referenceSequence>
     <referenceSequence>REF_D3_AB554024</referenceSequence>
-    <referenceSequence>REF_D3_X85254</referenceSequence>
     <referenceSequence>REF_D4_FJ692532</referenceSequence>
     <referenceSequence>REF_D7_FJ904410</referenceSequence>
     <referenceSequence>REF_D8_FJ904406</referenceSequence>

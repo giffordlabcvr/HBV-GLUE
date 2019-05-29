@@ -1,0 +1,7 @@
+module hbvReferenceAlignmentImporter import AL_UNCONSTRAINED -f alignments/refseqs_mafft.fna  --sourceName ncbi-refseqs
+
+# to regenerate:
+# create alignment AL_UNCONSTRAINED
+# alignment AL_UNCONSTRAINED add member -w "source.name = 'ncbi-refseqs'"
+# compute alignment AL_UNCONSTRAINED hbvMafftAligner
+# module hbvFastaAlignmentExporter export AL_UNCONSTRAINED -a -o alignments/refseqs_mafft.fna

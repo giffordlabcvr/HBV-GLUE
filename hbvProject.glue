@@ -9,30 +9,32 @@ project hbv
   run file glue/hbvProjectSettings.glue
   run file glue/hbvModules.glue
 
+  # M49 country extension
   run file glue/m49_countries/populateM49All.glue
+
+  # NCBI refseqs
   import source sources/ncbi-refseqs
 
-  # Populate sequence table fields from GenBank XML
-  module hbvGenbankXmlPopulator populate -w "source.name = 'ncbi-refseqs'"
-
-  # Import alignments
-  # run file glue/hbvAlignments.glue
-
-  # Create references
-  run file glue/hbvReferences.glue
-
-  # rotate reference sequences where necessary
+  # rotate reference sequences to the standard numbering where necessary
   run script glue/hbvRefseqsApplyRotations.js
 
+  # Populate refseq metadata from GenBank XML
+  module hbvGenbankXmlPopulator populate -w "source.name = 'ncbi-refseqs'"
+
+  # Import unconstrained alignment
+  run file glue/hbvUnconstrainedAlignment.glue
+  
+  # Create reference sequences
+  run file glue/hbvReferences.glue
+
   # Features
-  # run file glue/hbvFeatures.glue
-  # run file glue/hbvFeatureLocations.glue
+  run file glue/hbvFeatures.glue
 
-  # Import alignment tree
-  # run file glue/hbvAlignmentTree.glue
-
-  # Import phylogeny
-  # run file glue/hbvImportPhylogeny.glue
+  # Feature locations on the master reference
+  run file glue/hbvFeatureLocations.glue
+  
+  # inherit feature locations across other references
+  run script glue/hbvRefseqsInheritFeatureLocations.js
   
   # Validate
   validate
