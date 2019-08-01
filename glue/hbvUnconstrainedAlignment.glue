@@ -1,4 +1,7 @@
-module hbvReferenceAlignmentImporter import AL_UNCONSTRAINED -f alignments/refseqs_mafft.fna  --sourceName ncbi-refseqs
+module hbvReferenceAlignmentImporter import AL_UNCONSTRAINED -f alignments/refseqs_mafft_edited.fna  --sourceName ncbi-refseqs
+
+# edits, in the 2900 region, moved one nucleotide from the left side of the gap to the right side for a few sequences, 
+# this enables a kuiken2006 labeler in this region.
 
 # to regenerate:
 # create alignment AL_UNCONSTRAINED
