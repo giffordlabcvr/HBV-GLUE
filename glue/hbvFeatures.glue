@@ -10,7 +10,6 @@
   feature P set metatag INCLUDE_IN_SUMMARY true
   feature P set metatag CODES_AMINO_ACIDS true
   feature P set metatag CIRCULAR_BRIDGING true
-  feature P set metatag FLOC_START_TRANSCRIPTION_FIELD start_transcription_ref_nt
 
   create feature TP -p P "Terminal protein"
   feature TP set field displayName "TP"
@@ -24,7 +23,6 @@
   feature SPACER set metatag INCLUDE_IN_SUMMARY true
   feature SPACER set metatag CODES_AMINO_ACIDS true
   feature SPACER set metatag CIRCULAR_BRIDGING true
-  feature SPACER set metatag FLOC_START_TRANSCRIPTION_FIELD start_transcription_ref_nt
 
   create feature RT -p P "Reverse transcriptase"
   feature RT set field displayName "RT"
@@ -46,7 +44,6 @@
   feature PRE_S1 set metatag INCLUDE_IN_SUMMARY true
   feature PRE_S1 set metatag CODES_AMINO_ACIDS true
   feature PRE_S1 set metatag CIRCULAR_BRIDGING true
-  feature PRE_S1 set metatag FLOC_START_TRANSCRIPTION_FIELD start_transcription_ref_nt
 
   create feature PRE_S2 -p whole_genome "Pre-S2 middle surface protein"
   feature PRE_S2 set field displayName "Pre-S2"
@@ -54,7 +51,6 @@
   feature PRE_S2 set metatag INCLUDE_IN_SUMMARY true
   feature PRE_S2 set metatag CODES_AMINO_ACIDS true
   feature PRE_S2 set metatag CIRCULAR_BRIDGING true
-  feature PRE_S2 set metatag FLOC_START_TRANSCRIPTION_FIELD start_transcription_ref_nt
 
   create feature S -p whole_genome "S small surface protein"
   feature S set field displayName "S"

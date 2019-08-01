@@ -10,9 +10,8 @@
   
   add feature-location P
   feature-location P
-    add segment 2307 3182
-    add segment 1 1623
-	set field start_transcription_ref_nt 2307
+    add segment 2307 3182 --spliceIndex 2 --transcriptionIndex 1
+    add segment 1 1623 --spliceIndex 1 --transcriptionIndex 2
     exit
 
   add feature-location TP
@@ -22,9 +21,8 @@
 
   add feature-location SPACER
   feature-location SPACER
-    add segment 2838 3182
-    add segment 1 129
-	set field start_transcription_ref_nt 2838
+    add segment 2838 3182 --spliceIndex 2 --transcriptionIndex 1
+    add segment 1 129 --spliceIndex 1 --transcriptionIndex 2
     exit
   
   add feature-location RT
@@ -39,16 +37,14 @@
 
   add feature-location PRE_S1
   feature-location PRE_S1
-    add segment 2848 3182
-    add segment 1 835
-	set field start_transcription_ref_nt 2848
+    add segment 2848 3182 --spliceIndex 2 --transcriptionIndex 1
+    add segment 1 835 --spliceIndex 1 --transcriptionIndex 2
     exit
 
   add feature-location PRE_S2
   feature-location PRE_S2
-	add segment 3172 3182
-    add segment 1 835
-	set field start_transcription_ref_nt 3172
+	add segment 3172 3182 --spliceIndex 2 --transcriptionIndex 1
+    add segment 1 835 --spliceIndex 1 --transcriptionIndex 2
     exit
 
   add feature-location S
