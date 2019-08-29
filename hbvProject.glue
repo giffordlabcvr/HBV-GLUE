@@ -27,6 +27,9 @@ project hbv
   # Create reference sequences
   run file glue/hbvReferences.glue
 
+  # Alignment tree
+  run file glue/hbvAlignmentTree.glue
+
   # Features
   run file glue/hbvFeatures.glue
 

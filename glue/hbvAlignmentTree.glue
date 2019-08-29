@@ -1,85 +1,52 @@
   # Constrained alignment tree
 
-  create alignment AL_HBV_MASTER --refSeqName REF_MASTER_HBV-D
+  create alignment AL_MASTER --refSeqName REF_MASTER_NC_003977
 
 
-  alignment AL_HBV_MASTER 
+  alignment AL_MASTER 
 
     add member --allSequences
    
-	extract child AL_HBV_A --refName REF_MASTER_HBV-A
-	demote member AL_HBV_A --whereClause "sequence.genotype = 'A' and sequence.source.name = 'fasta-refseqs'" 
+	extract child AL_A --refName REF_A_KP234050
 
-	extract child AL_HBV_B --refName REF_MASTER_HBV-B
-	demote member AL_HBV_B --whereClause "sequence.genotype = 'B' and sequence.source.name = 'fasta-refseqs'" 
+	extract child AL_B --refName REF_B_EF473977
 
-	extract child AL_HBV_C --refName REF_MASTER_HBV-C
-	demote member AL_HBV_C --whereClause "sequence.genotype = 'C' and sequence.source.name = 'fasta-refseqs'" 
+	extract child AL_C --refName REF_C_KM999990
 
-	extract child AL_HBV_D --refName REF_MASTER_HBV-D
-	demote member AL_HBV_D --whereClause "sequence.genotype = 'D' and sequence.source.name = 'fasta-refseqs'" 
+	extract child AL_D --refName REF_D_AB126581
 
-	extract child AL_HBV_E --refName REF_MASTER_HBV-E
-	demote member AL_HBV_E --whereClause "sequence.genotype = 'E' and sequence.source.name = 'fasta-refseqs'" 
+	extract child AL_E --refName REF_E_HM363593
 
-	extract child AL_HBV_F --refName REF_MASTER_HBV-F
-	demote member AL_HBV_F --whereClause "sequence.genotype = 'F' and sequence.source.name = 'fasta-refseqs'" 
+	extract child AL_F --refName REF_F_JN811655
 
-	extract child AL_HBV_G --refName REF_MASTER_HBV-G
-	demote member AL_HBV_G --whereClause "sequence.genotype = 'G' and sequence.source.name = 'fasta-refseqs'" 
+	extract child AL_G --refName REF_G_KX264500
 
-	extract child AL_HBV_H --refName REF_MASTER_HBV-H
-	demote member AL_HBV_H --whereClause "sequence.genotype = 'H' and sequence.source.name = 'fasta-refseqs'" 
+	extract child AL_H --refName REF_H_AB818694
+
+	extract child AL_I --refName REF_I_AF241409
+
+	extract child AL_J --refName REF_J_AB486012
+	
     exit
 
 
 
   # derive constrained segments throughout the tree from unconstrained AL_UNCONSTRAINED   
-  alignment AL_HBV_MASTER
-    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
-    exit
-
-  alignment AL_HBV_A
-    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
-    exit
-
-  alignment AL_HBV_B
-    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
-    exit
-
-  alignment AL_HBV_C
-    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
-    exit
-
-  alignment AL_HBV_D
-    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
-    exit
-
-  alignment AL_HBV_E
-    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
-    exit
-
-  alignment AL_HBV_F
-    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
-    exit
-
-  alignment AL_HBV_G
-    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
-    exit
- 
-  alignment AL_HBV_H
-    derive segments AL_HBV_MASTER_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
+  alignment AL_MASTER
+    derive segments AL_UNCONSTRAINED --recursive --existingMembersOnly --allMembers 
     exit
 
 
 
-  alignment AL_HBV_A set field clade_category genotype
-  alignment AL_HBV_B set field clade_category genotype
-  alignment AL_HBV_C set field clade_category genotype
-  alignment AL_HBV_D set field clade_category genotype
-  alignment AL_HBV_F set field clade_category genotype
-  alignment AL_HBV_G set field clade_category genotype
-  alignment AL_HBV_H set field clade_category genotype
+  alignment AL_A set field clade_category genotype
+  alignment AL_B set field clade_category genotype
+  alignment AL_C set field clade_category genotype
+  alignment AL_D set field clade_category genotype
+  alignment AL_F set field clade_category genotype
+  alignment AL_G set field clade_category genotype
+  alignment AL_H set field clade_category genotype
+  alignment AL_I set field clade_category genotype
+  alignment AL_J set field clade_category genotype
 
 
 

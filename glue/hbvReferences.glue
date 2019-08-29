@@ -3,7 +3,7 @@
   ### MASTER reference (genotype D)
   create reference REF_MASTER_NC_003977 ncbi-refseqs NC_003977  
 
-  create reference REF_A1_KP234050 ncbi-refseqs KP234050
+  create reference REF_A_KP234050 ncbi-refseqs KP234050
   create reference REF_A1_AB076678 ncbi-refseqs AB076678
   create reference REF_A1_AB116093 ncbi-refseqs AB116093
   create reference REF_A1_AY233290 ncbi-refseqs AY233290
@@ -34,7 +34,7 @@
   create reference REF_B8_GQ358146 ncbi-refseqs GQ358146
   create reference REF_B9_AP011094 ncbi-refseqs AP011094
 
-  create reference REF_C1_KM999990 ncbi-refseqs KM999990
+  create reference REF_C_KM999990 ncbi-refseqs KM999990
   create reference REF_C1_AB112063 ncbi-refseqs AB112063
   create reference REF_C1_AB117758 ncbi-refseqs AB117758
   create reference REF_C2_AB205123 ncbi-refseqs AB205123

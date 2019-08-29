@@ -6,7 +6,7 @@
     <restrictSearchOrResults>
     </restrictSearchOrResults>
   </blastRunner>
-  <referenceSequence>REF_A1_KP234050</referenceSequence>
+  <referenceSequence>REF_A_KP234050</referenceSequence>
   <referenceSequence>REF_A1_AB076678</referenceSequence>
   <referenceSequence>REF_A1_AB116093</referenceSequence>
   <referenceSequence>REF_A1_AY233290</referenceSequence>
@@ -37,7 +37,7 @@
   <referenceSequence>REF_B8_GQ358146</referenceSequence>
   <referenceSequence>REF_B9_AP011094</referenceSequence>
 
-  <referenceSequence>REF_C1_KM999990</referenceSequence>
+  <referenceSequence>REF_C_KM999990</referenceSequence>
   <referenceSequence>REF_C1_AB112063</referenceSequence>
   <referenceSequence>REF_C1_AB117758</referenceSequence>
   <referenceSequence>REF_C2_AB205123</referenceSequence>
@@ -90,7 +90,7 @@
     <minimumBitScore>200.0</minimumBitScore>
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
-    <referenceSequence>REF_A1_KP234050</referenceSequence>
+    <referenceSequence>REF_A_KP234050</referenceSequence>
     <referenceSequence>REF_A1_AB076678</referenceSequence>
     <referenceSequence>REF_A1_AB116093</referenceSequence>
     <referenceSequence>REF_A1_AY233290</referenceSequence>
@@ -133,7 +133,7 @@
     <minimumBitScore>200.0</minimumBitScore>
     <minimumIdentityPct>93.0</minimumIdentityPct>
     <minimumTotalAlignLength>50</minimumTotalAlignLength>
-    <referenceSequence>REF_C1_KM999990</referenceSequence>
+    <referenceSequence>REF_C_KM999990</referenceSequence>
     <referenceSequence>REF_C1_AB112063</referenceSequence>
     <referenceSequence>REF_C1_AB117758</referenceSequence>
     <referenceSequence>REF_C2_AB205123</referenceSequence>
