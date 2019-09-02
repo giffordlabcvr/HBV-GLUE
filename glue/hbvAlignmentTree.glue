@@ -4,6 +4,7 @@
 
 
   alignment AL_MASTER 
+	set field displayName "Hepatitis B Virus"
 
     add member --allSequences
    
@@ -48,6 +49,16 @@
   alignment AL_I set field clade_category genotype
   alignment AL_J set field clade_category genotype
 
+  alignment AL_A set field displayName "Genotype A"
+  alignment AL_B set field displayName "Genotype B"
+  alignment AL_C set field displayName "Genotype C"
+  alignment AL_D set field displayName "Genotype D"
+  alignment AL_E set field displayName "Genotype E"
+  alignment AL_F set field displayName "Genotype F"
+  alignment AL_G set field displayName "Genotype G"
+  alignment AL_H set field displayName "Genotype H"
+  alignment AL_I set field displayName "Genotype I"
+  alignment AL_J set field displayName "Genotype J"
 
 
 
