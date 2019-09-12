@@ -166,11 +166,7 @@ def scmCustomKey = '/Users/joshsinger/.ssh/github_id_rsa'
 scmVersion {
 	hooks {
         pre 'fileUpdate', [file: 'glue/hbvProjectSettings.glue', pattern: {v, c -> /set setting project-version $v/}, replacement: {v, c -> "set setting project-version $v"}]
-        pre 'fileUpdate', [file: 'WebContent/index.html', pattern: {v, c -> /hbvGlueVersion=$v/}, replacement: {v, c -> "hbvGlueVersion=$v"}]
-        pre 'fileUpdate', [file: 'WebContent/hbvAppDependencies.html', pattern: {v, c -> /hbvGlueVersion=$v/}, replacement: {v, c -> "hbvGlueVersion=$v"}]
-        pre 'fileUpdate', [file: 'WebContent/modules/home/home.html', pattern: {v, c -> /hbvGlueVersion=$v/}, replacement: {v, c -> "hbvGlueVersion=$v"}]
-        pre 'fileUpdate', [file: 'WebContent/views/aboutGlueProject.html', pattern: {v, c -> /hbvGlueVersion=$v/}, replacement: {v, c -> "hbvGlueVersion=$v"}]
-
+  
 		pre 'commit', {v, p -> "Release version $v"}
     }
 
