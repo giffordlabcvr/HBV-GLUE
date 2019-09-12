@@ -3,5 +3,5 @@
   set setting translate-beyond-definite-stop true
   set setting sequence-reverse-complement-boolean-field reverse_complement
   set setting sequence-rotation-integer-field rotation
-  set setting project-version 0.1.1
+  set setting project-version 0.1.2
   
