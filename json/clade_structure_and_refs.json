@@ -1,0 +1,627 @@
+{
+  "referenceSourceName": "ncbi-refseqs",
+  "alignmentName": "AL_MASTER",
+  "almtDisplayName": "Hepatitis B Virus",
+  "cladeCategory": "species",
+  "constrainingRef": {
+    "sequenceID": "NC_003977"
+  },
+  "childAlignments": [
+    {
+      "constrainingRef": {
+        "sequenceID": "FJ692557"
+      },
+      "alignmentName": "AL_A",
+      "almtDisplayName": "Genotype A",
+      "cladeCategory": "genotype",
+      "referenceSequences": [],
+      "childAlignments": [
+        {
+          "alignmentName": "AL_A1_1",
+          "almtDisplayName": "Subgenotype A1 (1)",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "KP168423"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KP168423"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_A1_2",
+          "almtDisplayName": "Subgenotype A1 (2)",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "FJ692557"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ692557"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_A2",
+          "almtDisplayName": "Subgenotype A2",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "EU594385"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EU594385"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_A3",
+          "almtDisplayName": "Subgenotype A3",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "AM184126"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AM184126"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_A4",
+          "almtDisplayName": "Subgenotype A4",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "KM606737"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KM606737"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_A5",
+          "almtDisplayName": "Subgenotype A5",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "FJ692601"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ692601"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_A6",
+          "almtDisplayName": "Subgenotype A6",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "GQ331046"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "GQ331046"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "GU815637"
+      },
+      "alignmentName": "AL_B",
+      "almtDisplayName": "Genotype B",
+      "cladeCategory": "genotype",
+      "referenceSequences": [],
+      "childAlignments": [
+        {
+          "alignmentName": "AL_B1",
+          "almtDisplayName": "Subgenotype B1",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "D23679"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "D23679"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_B2_1",
+          "almtDisplayName": "Subgenotype B2 (1)",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "JQ801514"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JQ801514"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_B2_2",
+          "almtDisplayName": "Subgenotype B2 (2)",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "GU815637"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "GU815637"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_B3",
+          "almtDisplayName": "Subgenotype B3",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "AP011085"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AP011085"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_B4",
+          "almtDisplayName": "Subgenotype B4",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "AB073835"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AB073835"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_B6",
+          "almtDisplayName": "Subgenotype B6",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "AB287314"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AB287314"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "GQ377617"
+      },
+      "alignmentName": "AL_C",
+      "almtDisplayName": "Genotype C",
+      "cladeCategory": "genotype",
+      "referenceSequences": [],
+      "childAlignments": [
+        {
+          "alignmentName": "AL_C1",
+          "almtDisplayName": "Subgenotype C1",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "DQ089781"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ089781"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_C2_1",
+          "almtDisplayName": "Subgenotype C2 (1)",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "KC774182"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC774182"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_C2_2",
+          "almtDisplayName": "Subgenotype C2 (2)",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "GQ377617"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "GQ377617"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_C2_3",
+          "almtDisplayName": "Subgenotype C2 (3)",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "AP011098"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AP011098"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_C4",
+          "almtDisplayName": "Subgenotype C4",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "KF873526"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KF873526"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_C5",
+          "almtDisplayName": "Subgenotype C5",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "AP011099"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AP011099"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_C6",
+          "almtDisplayName": "Subgenotype C6",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "EU670263"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EU670263"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_C8",
+          "almtDisplayName": "Subgenotype C8",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "AP011107"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AP011107"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_C10",
+          "almtDisplayName": "Subgenotype C10",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "KJ173333"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ173333"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_C11",
+          "almtDisplayName": "Subgenotype C11",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "AB554015"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AB554015"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_C_UA_1",
+          "almtDisplayName": "Subgenotype C_UA_1",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "KC774298"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC774298"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_C_UA_2",
+          "almtDisplayName": "Subgenotype C_UA_2",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "DQ089802"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ089802"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "KC875277"
+      },
+      "alignmentName": "AL_D",
+      "almtDisplayName": "Genotype D",
+      "cladeCategory": "genotype",
+      "referenceSequences": [],
+      "childAlignments": [
+        {
+          "alignmentName": "AL_D1_1",
+          "almtDisplayName": "Subgenotype D1 (1)",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "AB222711"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AB222711"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_D1_2",
+          "almtDisplayName": "Subgenotype D1 (2)",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "KC875277"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC875277"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_D2",
+          "almtDisplayName": "Subgenotype D2",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "MF925358"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "MF925358"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_D3",
+          "almtDisplayName": "Subgenotype D3",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "FJ692507"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ692507"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_D4",
+          "almtDisplayName": "Subgenotype D4",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "FJ692533"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ692533"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_D5",
+          "almtDisplayName": "Subgenotype D5",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "GQ205389"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "GQ205389"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_D7",
+          "almtDisplayName": "Subgenotype D7",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "FJ904435"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ904435"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "GQ161817"
+      },
+      "alignmentName": "AL_E",
+      "almtDisplayName": "Genotype E",
+      "cladeCategory": "genotype",
+      "referenceSequences": [
+        {
+          "sequenceID": "GQ161817"
+        }
+      ],
+      "childAlignments": []
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "HM585194"
+      },
+      "alignmentName": "AL_F",
+      "almtDisplayName": "Genotype F",
+      "cladeCategory": "genotype",
+      "referenceSequences": [],
+      "childAlignments": [
+        {
+          "alignmentName": "AL_F1",
+          "almtDisplayName": "Subgenotype F1",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "HM585194"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "HM585194"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_F2",
+          "almtDisplayName": "Subgenotype F2",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "DQ899143"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ899143"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_F3",
+          "almtDisplayName": "Subgenotype F3",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "MH051986"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "MH051986"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_F4",
+          "almtDisplayName": "Subgenotype F4",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "KJ843175"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ843175"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "AB056513"
+      },
+      "alignmentName": "AL_G",
+      "almtDisplayName": "Genotype G",
+      "cladeCategory": "genotype",
+      "referenceSequences": [
+        {
+          "sequenceID": "AB056513"
+        }
+      ],
+      "childAlignments": []
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "FJ356715"
+      },
+      "alignmentName": "AL_H",
+      "almtDisplayName": "Genotype H",
+      "cladeCategory": "genotype",
+      "referenceSequences": [
+        {
+          "sequenceID": "FJ356715"
+        }
+      ],
+      "childAlignments": []
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "AB562463"
+      },
+      "alignmentName": "AL_I",
+      "almtDisplayName": "Genotype I",
+      "cladeCategory": "genotype",
+      "referenceSequences": [],
+      "childAlignments": [
+        {
+          "alignmentName": "AL_I1",
+          "almtDisplayName": "Subgenotype I1",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "AB562463"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AB562463"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_I2",
+          "almtDisplayName": "Subgenotype I2",
+          "cladeCategory": "subgenotype",
+          "constrainingRef": {
+            "sequenceID": "FJ023669"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ023669"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "AB486012"
+      },
+      "alignmentName": "AL_J",
+      "almtDisplayName": "Genotype J",
+      "cladeCategory": "genotype",
+      "referenceSequences": [
+        {
+          "sequenceID": "AB486012"
+        }
+      ],
+      "childAlignments": []
+    }
+  ]
+}

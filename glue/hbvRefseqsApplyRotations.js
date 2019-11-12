@@ -28,15 +28,17 @@ glue.command(["multi-unset", "field", "sequence", "-w", whereClause, "rotation"]
  * Most refseqs meet the standard. Those that don't are just a little bit off.
  */
 shiftLeft("NC_003977", 2);
-shiftLeft("AB126581", 2);
-shiftLeft("AY090454", 3);
-shiftLeft("AY090457", 3);
-shiftLeft("AY128092", 2);
-shiftLeft("X80926", 2);
+shiftRight("X02763", 1812)
 
 function shiftLeft(refSeqId, leftShift) {
 	glue.inMode("sequence/ncbi-refseqs/"+refSeqId, function() {
 		var length = glue.command(["show", "length"]).lengthResult.length;
 		glue.command(["set", "field", "rotation", length-leftShift]);
+	});
+}
+
+function shiftRight(refSeqId, rightShift) {
+	glue.inMode("sequence/ncbi-refseqs/"+refSeqId, function() {
+		glue.command(["set", "field", "rotation", rightShift]);
 	});
 }

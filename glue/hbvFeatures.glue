@@ -10,12 +10,14 @@
   feature P set metatag INCLUDE_IN_SUMMARY true
   feature P set metatag CODES_AMINO_ACIDS true
   feature P set metatag CIRCULAR_BRIDGING true
+  feature P set metatag CODON_LABELER_MODULE hbvCodonLabeler
 
   create feature TP -p P "Terminal protein"
   feature TP set field displayName "TP"
   feature TP set metatag OWN_CODON_NUMBERING true
   feature TP set metatag INCLUDE_IN_SUMMARY true
   feature TP set metatag CODES_AMINO_ACIDS true
+  feature TP set metatag CODON_LABELER_MODULE hbvCodonLabeler
 
   create feature SPACER -p P "Spacer domain"
   feature SPACER set field displayName "Spacer"
@@ -23,18 +25,21 @@
   feature SPACER set metatag INCLUDE_IN_SUMMARY true
   feature SPACER set metatag CODES_AMINO_ACIDS true
   feature SPACER set metatag CIRCULAR_BRIDGING true
+  feature SPACER set metatag CODON_LABELER_MODULE hbvCodonLabeler
 
   create feature RT -p P "Reverse transcriptase"
   feature RT set field displayName "RT"
   feature RT set metatag OWN_CODON_NUMBERING true
   feature RT set metatag INCLUDE_IN_SUMMARY true
   feature RT set metatag CODES_AMINO_ACIDS true
+  feature RT set metatag CODON_LABELER_MODULE hbvCodonLabeler
 
   create feature RH -p P "Ribonuclease H domain"
   feature RH set field displayName "RH"
   feature RH set metatag OWN_CODON_NUMBERING true
   feature RH set metatag INCLUDE_IN_SUMMARY true
   feature RH set metatag CODES_AMINO_ACIDS true
+  feature RH set metatag CODON_LABELER_MODULE hbvCodonLabeler
 
   # "For the HBV surface gene, amino acid numbering restarts at the first methionine of each of the subparts."
   # https://doi.org/10.1053/jhep.2001.22166 
@@ -44,6 +49,7 @@
   feature PRE_S1 set metatag INCLUDE_IN_SUMMARY true
   feature PRE_S1 set metatag CODES_AMINO_ACIDS true
   feature PRE_S1 set metatag CIRCULAR_BRIDGING true
+  feature PRE_S1 set metatag CODON_LABELER_MODULE hbvCodonLabeler
 
   create feature PRE_S2 -p whole_genome "Pre-S2 middle surface protein"
   feature PRE_S2 set field displayName "Pre-S2"
@@ -51,27 +57,33 @@
   feature PRE_S2 set metatag INCLUDE_IN_SUMMARY true
   feature PRE_S2 set metatag CODES_AMINO_ACIDS true
   feature PRE_S2 set metatag CIRCULAR_BRIDGING true
+  feature PRE_S2 set metatag CODON_LABELER_MODULE hbvCodonLabeler
 
   create feature S -p whole_genome "S small surface protein"
   feature S set field displayName "S"
   feature S set metatag OWN_CODON_NUMBERING true
   feature S set metatag INCLUDE_IN_SUMMARY true
   feature S set metatag CODES_AMINO_ACIDS true
+  feature S set metatag CODON_LABELER_MODULE hbvCodonLabeler
 
   create feature X -p whole_genome "HBx"
   feature X set field displayName "X"
   feature X set metatag OWN_CODON_NUMBERING true
   feature X set metatag INCLUDE_IN_SUMMARY true
   feature X set metatag CODES_AMINO_ACIDS true
+  feature X set metatag CODON_LABELER_MODULE hbvCodonLabeler
 
   create feature PRE_C -p whole_genome "Pre-core"
   feature PRE_C set field displayName "Pre-C"
   feature PRE_C set metatag OWN_CODON_NUMBERING true
   feature PRE_C set metatag INCLUDE_IN_SUMMARY true
   feature PRE_C set metatag CODES_AMINO_ACIDS true
+  feature PRE_C set metatag CODON_LABELER_MODULE hbvCodonLabeler
 
   create feature C -p whole_genome "Core"
   feature C set field displayName "C"
   feature C set metatag OWN_CODON_NUMBERING true
   feature C set metatag INCLUDE_IN_SUMMARY true
   feature C set metatag CODES_AMINO_ACIDS true
+  feature C set metatag CODON_LABELER_MODULE hbvCodonLabeler
+  

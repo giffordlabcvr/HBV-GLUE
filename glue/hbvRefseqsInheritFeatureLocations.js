@@ -1,6 +1,6 @@
-glue.command(["multi-delete", "feature_location", "-w", "referenceSequence.name != 'REF_MASTER_NC_003977'"]);
+glue.command(["multi-delete", "feature_location", "-w", "referenceSequence.name != 'REF_NUMBERING_X02763'"]);
 
-var refSeqObjs = glue.tableToObjects(glue.command(["list", "reference", "-w", "name != 'REF_MASTER_NC_003977'", "name", "sequence.gb_length"]));
+var refSeqObjs = glue.tableToObjects(glue.command(["list", "reference", "-w", "name != 'REF_NUMBERING_X02763'", "name", "sequence.gb_length"]));
 
 // pre-Core is allowed to be non-functional. This happens sometimes and is well documented.
 
@@ -16,12 +16,14 @@ _.each(refSeqObjs, function(refSeqObj) {
 		});
 		glue.command(["inherit", "feature-location", 
 			"--recursive", "--spanGaps", 
-			"AL_UNCONSTRAINED", "--relRefName", "REF_MASTER_NC_003977", "whole_genome"]);
+			"AL_UNCONSTRAINED", "--relRefName", "REF_NUMBERING_X02763", "whole_genome"]);
 		_.each(codingFeaturesToCheck, function(featureName) {
 			glue.inMode("feature-location/"+featureName, function() {
 				var aaRows = glue.tableToObjects(glue.command(["amino-acid"]));
 				for(var i = 0; i < aaRows.length; i++) {
 					var aa = aaRows[i].aminoAcid;
+					// GQ331046, GenBank record: nonfunctional middle S [PRE_S2] protein due to mutation of codon 1 M to V.
+					// KM606737 and D23679 -- have same mutation but no mention of this in GenBank.
 					if(i == 0 && aa != "M") {
 						glue.log("WARNING", "Residue "+aaRows[i].codonLabel+" of feature "+featureName+" on reference "+refSeqObj.name+" should be M");
 						problematicRefs[refSeqObj.name] = "yes";

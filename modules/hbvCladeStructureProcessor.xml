@@ -1,0 +1,20 @@
+<ecmaFunctionInvoker>
+    <scriptFileName>hbvCladeStructureProcessor.js</scriptFileName>
+    <function>
+        <name>generateRefSeqNcbiImporter</name>
+        <parameter>
+            <name>ncbiImporterFile</name>
+            <pathCompleter/>
+        </parameter>
+		<okFromNullResultType/>
+    </function>
+    <function>
+        <name>createGlueReferenceSequences</name>
+		<okFromNullResultType/>
+    </function>
+    <function>
+        <name>createAlignmentTree</name>
+		<okFromNullResultType/>
+	</function>
+</ecmaFunctionInvoker>
+

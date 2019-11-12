@@ -25,10 +25,10 @@ project hbv
   run file glue/hbvUnconstrainedAlignment.glue
   
   # Create reference sequences
-  run file glue/hbvReferences.glue
+  module hbvCladeStructureProcessor invoke-function createGlueReferenceSequences
 
   # Alignment tree
-  run file glue/hbvAlignmentTree.glue
+  module hbvCladeStructureProcessor invoke-function createAlignmentTree
 
   # Features
   run file glue/hbvFeatures.glue

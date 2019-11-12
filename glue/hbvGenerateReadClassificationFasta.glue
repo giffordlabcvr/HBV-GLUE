@@ -1,0 +1,3 @@
+module hbvReadClassificationFastaExporter 
+  export -w "source.name = 'ncbi-refseqs' and not (sequenceID in ('NC_003977', 'X02763') )" --fileName hbvReadClassification.fasta
+  exit

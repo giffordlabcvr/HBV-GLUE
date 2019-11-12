@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fastaExporter>
+    <idTemplate><![CDATA[<#list referenceSequences as ref><#list ref.alignmentsWhereRefSequence as almt><#if almt.children?size = 0>${ref.name?replace('REF_', '')}</#if></#list></#list>]]></idTemplate>
+</fastaExporter>

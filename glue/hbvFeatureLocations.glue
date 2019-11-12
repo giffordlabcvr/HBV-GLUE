@@ -1,27 +1,27 @@
- reference REF_MASTER_NC_003977
+ reference REF_NUMBERING_X02763
   
-  ## note that these coordinates differ from the GenBank record because NC_003977
-  ## must be rotated left by two nucleotides to conform with the standard numbering.
+  ## note that these coordinates differ from the GenBank record because X02763
+  ## must be rotated to conform with the standard numbering.
   
   add feature-location whole_genome
   feature-location whole_genome
-    add segment 1 3182
+    add segment 1 3221
     exit
   
   add feature-location P
   feature-location P
-    add segment 2307 3182 --spliceIndex 2 --transcriptionIndex 1
+    add segment 2307 3221 --spliceIndex 2 --transcriptionIndex 1
     add segment 1 1623 --spliceIndex 1 --transcriptionIndex 2
     exit
 
   add feature-location TP
   feature-location TP
-    add segment 2307 2837
+    add segment 2307 2843
     exit
 
   add feature-location SPACER
   feature-location SPACER
-    add segment 2838 3182 --spliceIndex 2 --transcriptionIndex 1
+    add segment 2844 3221 --spliceIndex 2 --transcriptionIndex 1
     add segment 1 129 --spliceIndex 1 --transcriptionIndex 2
     exit
   
@@ -37,13 +37,13 @@
 
   add feature-location PRE_S1
   feature-location PRE_S1
-    add segment 2848 3182 --spliceIndex 2 --transcriptionIndex 1
+    add segment 2854 3221 --spliceIndex 2 --transcriptionIndex 1
     add segment 1 835 --spliceIndex 1 --transcriptionIndex 2
     exit
 
   add feature-location PRE_S2
   feature-location PRE_S2
-	add segment 3172 3182 --spliceIndex 2 --transcriptionIndex 1
+	add segment 3211 3221 --spliceIndex 2 --transcriptionIndex 1
     add segment 1 835 --spliceIndex 1 --transcriptionIndex 2
     exit
 
@@ -59,12 +59,12 @@
 
   add feature-location PRE_C
   feature-location PRE_C
-    add segment 1814 2452
+    add segment 1814 2458
     exit
 
   add feature-location C
   feature-location C
-    add segment 1901 2452
+    add segment 1901 2458
     exit
 
 

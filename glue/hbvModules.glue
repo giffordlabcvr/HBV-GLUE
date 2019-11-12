@@ -12,7 +12,11 @@ create module --fileName modules/hbvCollectionBoundsPopulator.xml
 create module --fileName modules/hbvNcbiImporterReferences.xml
 create module --fileName modules/hbvBlastSequenceRotator.xml
 
-create module --fileName modules/hbvGenotypeRecogniser.xml
+create module --fileName modules/hbvMcNaughton2019AlignmentImporter.xml
+
+create module --fileName modules/hbvCodonLabeler.xml
+
+# create module --fileName modules/hbvGenotypeRecogniser.xml
 
 create module --fileName modules/tabularUtilityCsv.xml
 create module --fileName modules/tabularUtilityTab.xml
@@ -21,6 +25,12 @@ create module --fileName modules/hbvFastaUtility.xml
 create module --fileName modules/hbvCompoundAligner.xml
 create module --fileName modules/hbvFastaSequenceReporter.xml
 create module --fileName modules/hbvMafftAligner.xml
+
+create module --fileName modules/hbvCladeStructureProcessor.xml --loadResources
+
+create module --fileName modules/hbvReadClassificationFastaExporter.xml
+
+create module --fileName modules/hbvSamReporter.xml
 
 # create module --fileName modules/hbvRaxmlPhylogenyGenerator.xml 
 # create module --fileName modules/hbvPhyloImporter.xml  
