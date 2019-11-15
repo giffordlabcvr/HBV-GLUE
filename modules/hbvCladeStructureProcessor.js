@@ -114,7 +114,7 @@ function createAlignmentTree() {
 			});
 		}
 		glue.inMode("/alignment/"+alignment.alignmentName, function() {
-			// glue.command(["derive", "segments", "AL_UNCONSTRAINED", "--existingMembersOnly", "--allMembers"]);
+			glue.command(["derive", "segments", "AL_UNCONSTRAINED", "--existingMembersOnly", "--allMembers"]);
 		});
 			
 	});
