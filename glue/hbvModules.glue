@@ -34,10 +34,10 @@ create module --fileName modules/hbvReadClassificationFastaExporter.xml
 create module --fileName modules/hbvSamReporter.xml
 
 create module --fileName modules/hbvRaxmlPhylogenyGenerator.xml 
+create module --fileName modules/hbvPhyloImporter.xml  
+create module --fileName modules/hbvPhyloUtility.xml
 
-# create module --fileName modules/hbvPhyloImporter.xml  
 # create module --fileName modules/hbvFigTreeAnnotationExporter.xml
-# create module --fileName modules/hbvPhyloUtility.xml
 
 # create module --fileName modules/hbvMaxLikelihoodGenotyper.xml
 # create module --fileName modules/hbvMaxLikelihoodPlacer.xml

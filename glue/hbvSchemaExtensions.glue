@@ -31,6 +31,7 @@ schema-project hbv
 
   table alignment
     create field clade_category VARCHAR
+    create field phylogeny CLOB
     exit
 
   run file glue/m49_countries/m49SchemaExtension.glue
