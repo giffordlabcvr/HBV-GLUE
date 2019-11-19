@@ -1,8 +1,10 @@
 module hbvRaxmlPhylogenyGenerator 
+
+  # note that the master ref NC_003977 and numbering reference X02763 do not play a role in the reference phylogeny
   
-  # with outgroup
+  # with outgroups
   generate nucleotide phylogeny AL_UNCONSTRAINED \
-    --whereClause "sequence.source.name in ('ncbi-refseqs', 'ncbi-outgroups')" \
+    --whereClause "sequence.source.name in ('ncbi-refseqs', 'ncbi-outgroups') and (not sequence.sequenceID in ('NC_003977', 'X02763'))" \
     -o trees/AL_UNCONSTRAINED.tree \
     NEWICK_BOOTSTRAPS
     
