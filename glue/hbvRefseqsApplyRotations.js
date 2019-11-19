@@ -1,6 +1,6 @@
 var rotationResultObjs;
 
-var whereClause = "source.name = 'ncbi-refseqs'";
+var whereClause = "source.name in ('ncbi-refseqs', 'ncbi-outgroups')";
 
 glue.command(["multi-unset", "field", "sequence", "-w", whereClause, "rotation"]);
 
@@ -27,18 +27,20 @@ glue.command(["multi-unset", "field", "sequence", "-w", whereClause, "rotation"]
 /**
  * Most refseqs meet the standard. Those that don't are just a little bit off.
  */
-shiftLeft("NC_003977", 2);
-shiftRight("X02763", 1812)
+shiftLeft("ncbi-refseqs/NC_003977", 2);
+shiftRight("ncbi-refseqs/X02763", 1812)
+shiftLeft("ncbi-outgroups/AF046996", 2)
+shiftLeft("ncbi-outgroups/KY703886", 11)
 
 function shiftLeft(refSeqId, leftShift) {
-	glue.inMode("sequence/ncbi-refseqs/"+refSeqId, function() {
+	glue.inMode("sequence/"+refSeqId, function() {
 		var length = glue.command(["show", "length"]).lengthResult.length;
 		glue.command(["set", "field", "rotation", length-leftShift]);
 	});
 }
 
 function shiftRight(refSeqId, rightShift) {
-	glue.inMode("sequence/ncbi-refseqs/"+refSeqId, function() {
+	glue.inMode("sequence/"+refSeqId, function() {
 		glue.command(["set", "field", "rotation", rightShift]);
 	});
 }

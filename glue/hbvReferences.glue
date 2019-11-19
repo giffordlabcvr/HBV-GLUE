@@ -3,4 +3,9 @@
   ### MASTER reference (genotype D)
   create reference REF_MASTER_NC_003977 ncbi-refseqs NC_003977  
 
+  ### Woolly Monkey HBV outgroup
+  # create reference REF_WMHBV_AF046996 ncbi-outgroups AF046996  
+
+  ### Capuchin Monkey HBV outgroup
+  # create reference REF_CMHBV_KY703886 ncbi-outgroups KY703886  
   

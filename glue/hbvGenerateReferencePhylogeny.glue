@@ -1,16 +1,11 @@
 module hbvRaxmlPhylogenyGenerator 
   
-  # without outgroup
-  generate nucleotide phylogeny AL_HBV_MASTER_UNCONSTRAINED \
-    --whereClause "sequence.source.name = 'fasta-refseqs'" \
-    -o trees/AL_HBV_MASTER_UNCONSTRAINED.tree \
+  # with outgroup
+  generate nucleotide phylogeny AL_UNCONSTRAINED \
+    --whereClause "sequence.source.name in ('ncbi-refseqs', 'ncbi-outgroups')" \
+    -o trees/AL_UNCONSTRAINED.tree \
     NEWICK_BOOTSTRAPS
     
 exit    
 
 
-module hbvPhyloUtility
-  reroot-phylogeny -i trees/AL_HBV_MASTER_UNCONSTRAINED.tree NEWICK_BOOTSTRAPS -m -o trees/AL_HBV_MASTER_UNCONSTRAINED_midpoint.tre NEWICK_BOOTSTRAPS
-exit
-
- 

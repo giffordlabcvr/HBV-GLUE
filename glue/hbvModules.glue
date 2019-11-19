@@ -10,6 +10,7 @@ create module --moduleType fastaAlignmentExporter hbvFastaAlignmentExporter
 
 create module --fileName modules/hbvCollectionBoundsPopulator.xml 
 create module --fileName modules/hbvNcbiImporterReferences.xml
+create module --fileName modules/hbvNcbiImporterOutgroups.xml
 create module --fileName modules/hbvBlastSequenceRotator.xml
 
 create module --fileName modules/hbvMcNaughton2019AlignmentImporter.xml
@@ -32,7 +33,8 @@ create module --fileName modules/hbvReadClassificationFastaExporter.xml
 
 create module --fileName modules/hbvSamReporter.xml
 
-# create module --fileName modules/hbvRaxmlPhylogenyGenerator.xml 
+create module --fileName modules/hbvRaxmlPhylogenyGenerator.xml 
+
 # create module --fileName modules/hbvPhyloImporter.xml  
 # create module --fileName modules/hbvFigTreeAnnotationExporter.xml
 # create module --fileName modules/hbvPhyloUtility.xml

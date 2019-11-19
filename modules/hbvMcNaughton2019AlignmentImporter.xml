@@ -2,7 +2,7 @@
 <blastFastaAlignmentImporter>
   <idClauseExtractorFormatter>
     <matchPattern><![CDATA[(?<seqID>(?:NC_)?[A-Za-z0-9]+)$]]></matchPattern>
-    <outputTemplate>source.name = 'ncbi-refseqs' and sequenceID = '${seqID}'</outputTemplate>
+    <outputTemplate>source.name in ('ncbi-refseqs', 'ncbi-outgroups') and sequenceID = '${seqID}'</outputTemplate>
   </idClauseExtractorFormatter>
     <minRowCoveragePercent>90.0</minRowCoveragePercent>
 </blastFastaAlignmentImporter>

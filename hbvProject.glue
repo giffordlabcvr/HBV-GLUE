@@ -15,6 +15,9 @@ project hbv
   # NCBI refseqs
   import source sources/ncbi-refseqs
 
+  # NCBI refseqs
+  import source sources/ncbi-outgroups
+
   # rotate reference sequences to the standard numbering where necessary
   run script glue/hbvRefseqsApplyRotations.js
 

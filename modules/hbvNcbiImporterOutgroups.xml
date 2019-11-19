@@ -1,0 +1,12 @@
+<ncbiImporter>
+  <sequenceFormat>GENBANK_XML</sequenceFormat>
+  <specificPrimaryAccessions>
+	<!-- Capuchin monkey hepatitis B virus -->
+    <primaryAccession>KY703886</primaryAccession>
+    
+    <!-- Woolly monkey hepatitis B Virus -->
+    <primaryAccession>AF046996</primaryAccession>
+  </specificPrimaryAccessions>
+  <sequenceIdField>PRIMARY_ACCESSION</sequenceIdField>
+  <sourceName>ncbi-outgroups</sourceName>
+</ncbiImporter>

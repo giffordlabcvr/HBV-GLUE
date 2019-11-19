@@ -1,3 +1,5 @@
+delete alignment AL_UNCONSTRAINED
+
 module hbvMcNaughton2019AlignmentImporter 
-  import AL_UNCONSTRAINED -f alignments/McNaughton_2019/HBV_reference_sequences.fna
+  import AL_UNCONSTRAINED -f alignments/McNaughton2019_refs_plus_outgroups.fna
   exit
