@@ -1,0 +1,16 @@
+<ncbiImporter>
+  <sequenceFormat>GENBANK_XML</sequenceFormat>
+  <specificPrimaryAccessions>
+	<!-- Chimpanzee hepatitis B virus -->
+    <primaryAccession>D00220</primaryAccession>
+    
+    <!-- Orangutan hepatitis B Virus -->
+    <primaryAccession>AF193863</primaryAccession>
+
+    <!-- Gibbon hepatitis B Virus -->
+    <primaryAccession>U46935</primaryAccession>
+
+  </specificPrimaryAccessions>
+  <sequenceIdField>PRIMARY_ACCESSION</sequenceIdField>
+  <sourceName>ncbi-nonhuman</sourceName>
+</ncbiImporter>

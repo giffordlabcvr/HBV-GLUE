@@ -12,11 +12,16 @@ project hbv
   # M49 country extension
   run file glue/m49_countries/populateM49All.glue
 
-  # NCBI refseqs
+  # NCBI refseqs -- taxa in the reference phylogeny, plus the RefSeq master reference and a numbering reference
   import source sources/ncbi-refseqs
 
-  # NCBI refseqs
+  # NCBI outgroups -- closely related non HBV orthohepadnaviruses used to root the reference phylogeny
+  # Should get assigned species = null in genotyping
   import source sources/ncbi-outgroups
+
+  # Non-human HBV strains from some great apes. Useful for calibrating the genotyping
+  # Should get assigned species = HBV in genotyping, but genotype = null
+  import source sources/ncbi-nonhuman
 
   # rotate reference sequences to the standard numbering where necessary
   run script glue/hbvRefseqsApplyRotations.js

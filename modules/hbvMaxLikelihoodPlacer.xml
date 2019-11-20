@@ -1,14 +1,10 @@
 <maxLikelihoodPlacer>
-
 	<raxmlEpaRunner>
 		<substitutionModel>GTRGAMMAI</substitutionModel>
 	</raxmlEpaRunner>
-
-
 	<!-- where the RAxML epa phylogeny will come from -->
-	<phyloAlignmentName>AL_HBV_MASTER</phyloAlignmentName>
+	<phyloAlignmentName>AL_MASTER</phyloAlignmentName>
 	<phyloFieldName>phylogeny</phyloFieldName>
-
 	<!-- where the alignment will come from -->
-	<alignmentAlignmentName>AL_HBV_MASTER_UNCONSTRAINED</alignmentAlignmentName>
+	<alignmentAlignmentName>AL_UNCONSTRAINED</alignmentAlignmentName>
 </maxLikelihoodPlacer>
