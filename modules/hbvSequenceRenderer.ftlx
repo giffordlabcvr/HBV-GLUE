@@ -1,0 +1,73 @@
+<#include "/utils/glueDocUtils.ftlx">
+
+<sequence>
+	<sourceName>${source.name}</sourceName>
+	<sequenceID>${sequenceID}</sequenceID>
+<#list alignmentMemberships as alignmentMembership>
+	<alignmentMembership glueType="Object[]">
+		<name>${alignmentMembership.alignment.name}</name>
+		<renderedName>${alignmentMembership.alignment.getRenderedName()}</renderedName>
+<#if alignmentMembership.alignment.refSequence ??>
+<#assign constrainingRefName=alignmentMembership.alignment.refSequence.name>
+		<constrainingReference>
+			<name>${constrainingRefName}</name>
+			<renderedName>${alignmentMembership.alignment.refSequence.getRenderedName()}</renderedName>
+		</constrainingReference>
+		<#list alignmentMembership.fLocNotes as fLocNote>
+		<#if fLocNote.featureLoc.referenceSequence.name = constrainingRefName>
+		<featureCoverage glueType="Object[]">
+			<featureName>${fLocNote.featureLoc.feature.name}</featureName>
+			<featureRenderedName>${fLocNote.featureLoc.feature.getRenderedName()}</featureRenderedName>
+			<@elem tag="coveragePct" expr="context.ref_nt_coverage_pct" type="Double" context=fLocNote/>
+		</featureCoverage>	
+		</#if>	
+		</#list>
+</#if>
+	</alignmentMembership>
+</#list>
+<#list referenceSequences as referenceSequence>
+	<referenceSequence glueType="Object[]">
+		<name>${referenceSequence.name}</name>
+		<renderedName>${referenceSequence.getRenderedName()}</renderedName>
+	</referenceSequence>
+</#list>
+	<@elem tag="country" expr="context.display_name" context=m49_country/>
+	<@elem tag="country_iso" expr="context.id" context=m49_country/>
+<#if m49_country ??>
+	<@elem tag="m49_region" expr="context.id" context=m49_country.m49_region/>
+	<@elem tag="m49_region_display_name" expr="context.display_name" context=m49_country.m49_region/>
+	<@elem tag="m49_sub_region" expr="context.id" context=m49_country.m49_sub_region/>
+	<@elem tag="m49_sub_region_display_name" expr="context.display_name" context=m49_country.m49_sub_region/>
+	<@elem tag="m49_intermediate_region" expr="context.id" context=m49_country.m49_intermediate_region/>
+	<@elem tag="m49_intermediate_region_display_name" expr="context.display_name" context=m49_country.m49_intermediate_region/>
+	<@elem tag="country_development_status" expr="context.development_status" context=m49_country/>
+	<@elem tag="country_is_ldc" expr="context.is_ldc" type="Boolean" context=m49_country/>
+	<@elem tag="country_is_lldc" expr="context.is_lldc" type="Boolean" context=m49_country/>
+	<@elem tag="country_is_sids" expr="context.is_sids" type="Boolean" context=m49_country/>
+</#if>
+	<@elem tag="placeSampled" expr="gb_place_sampled"/>
+	<@elem tag="earliestCollectionYear" expr="earliest_collection_year"/>
+	<@elem tag="latestCollectionYear" expr="latest_collection_year"/>
+<#if earliest_collection_year ?? || latest_collection_year ??>	
+<#if earliest_collection_year ?? && latest_collection_year ??>
+<#if earliest_collection_year == latest_collection_year>
+	<collectionYearRange>${renderProperty('earliest_collection_year')}</collectionYearRange>
+<#else>
+	<collectionYearRange>${renderProperty('earliest_collection_year')} to ${renderProperty('latest_collection_year')}</collectionYearRange>
+</#if>
+<#else>
+<#if earliest_collection_year ??>	
+	<collectionYearRange>${renderProperty('earliest_collection_year')} or later</collectionYearRange>
+<#else>
+	<collectionYearRange>${renderProperty('latest_collection_year')} or earlier</collectionYearRange>
+</#if>
+</#if>
+</#if>
+	<@elem tag="length" expr="gb_length"/>
+	<@elem tag="patentRelated" expr="patent_related" type="Boolean"/>
+	<creationDate>${renderProperty('gb_create_date')}</creationDate>
+	<updateDate>${renderProperty('gb_update_date')}</updateDate>
+	<@elem tag="isolate" expr="isolate"/>
+	<@elem tag="host" expr="host_species"/>
+	<@elem tag="pubmedId" expr="gb_pubmed_id"/>
+</sequence>

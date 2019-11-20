@@ -39,8 +39,13 @@ create module --fileName modules/hbvRaxmlPhylogenyGenerator.xml
 create module --fileName modules/hbvPhyloImporter.xml  
 create module --fileName modules/hbvPhyloUtility.xml
 
+create module --fileName modules/hbvAlignmentRenderer.xml --loadResources
+create module --fileName modules/hbvSequenceRenderer.xml --loadResources
+
+
 # create module --fileName modules/hbvFigTreeAnnotationExporter.xml
 
 create module --fileName modules/hbvMaxLikelihoodGenotyper.xml
 create module --fileName modules/hbvMaxLikelihoodPlacer.xml
 
+create module --fileName modules/m49RegionTreeRenderer.xml --loadResources
