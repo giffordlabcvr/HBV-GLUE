@@ -1,6 +1,8 @@
 # import generated trees so that they are associated with almt members.
 module hbvPhyloImporter 
-  import phylogeny AL_UNCONSTRAINED -w "sequence.source.name in ('ncbi-refseqs', 'ncbi-outgroups')" -i trees/AL_UNCONSTRAINED.tree NEWICK_BOOTSTRAPS -f phylogeny
+  import phylogeny AL_UNCONSTRAINED \
+  	-w "sequence.source.name in ('ncbi-refseqs', 'ncbi-outgroups') and (not sequence.sequenceID in ('NC_003977', 'X02763'))" \
+  	-i trees/AL_UNCONSTRAINED.tree NEWICK_BOOTSTRAPS -f phylogeny
   exit
 
 # reroot the trees based on the selected outgroups
