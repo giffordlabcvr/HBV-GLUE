@@ -21,8 +21,8 @@ project hbv
   # rotate reference sequences to the standard numbering where necessary
   run script glue/hbvRefseqsApplyRotations.js
 
-  # Populate refseq metadata from GenBank XML
-  module hbvGenbankXmlPopulator populate -w "source.name = 'ncbi-refseqs'"
+  # Populate refseq + outgroup metadata from GenBank XML
+  module hbvGenbankXmlPopulator populate -w "source.name in ('ncbi-refseqs', 'ncbi-outgroups')"
 
   # Import unconstrained alignment
   run file glue/hbvUnconstrainedAlignment.glue
@@ -36,11 +36,14 @@ project hbv
   # Features
   run file glue/hbvFeatures.glue
 
-  # Feature locations on the master reference
+  # Feature locations on the numbering reference
   run file glue/hbvFeatureLocations.glue
   
   # inherit feature locations across other references
   run script glue/hbvRefseqsInheritFeatureLocations.js
+
+  # import the reference phylogeny into the alignment tree
+  run file glue/hbvImportPhylogeny.glue
   
   # Validate
   validate
