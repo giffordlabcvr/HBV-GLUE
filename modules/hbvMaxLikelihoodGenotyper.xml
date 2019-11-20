@@ -6,23 +6,23 @@
 		<displayName>Species</displayName>	
 		<whereClause>clade_category = 'species'</whereClause>
 		<distanceScalingExponent>-3.0</distanceScalingExponent>
-		<distanceCutoff>1.0</distanceCutoff>
-		<finalCladeCutoff>80.0</finalCladeCutoff>
+		<distanceCutoff>0.3</distanceCutoff>
+		<finalCladeCutoff>65.0</finalCladeCutoff>
 	</cladeCategory>
 	<cladeCategory>
 		<name>genotype</name>	
 		<displayName>Genotype</displayName>	
 		<whereClause>clade_category = 'genotype'</whereClause>
 		<distanceScalingExponent>-3.0</distanceScalingExponent>
-		<distanceCutoff>0.4</distanceCutoff>
-		<finalCladeCutoff>80.0</finalCladeCutoff>
+		<distanceCutoff>0.08</distanceCutoff>
+		<finalCladeCutoff>65.0</finalCladeCutoff>
 	</cladeCategory>
 	<cladeCategory>
 		<name>subgenotype</name>	
 		<displayName>Subgenotype</displayName>	
 		<whereClause>clade_category = 'subgenotype'</whereClause>
 		<distanceScalingExponent>-3.0</distanceScalingExponent>
-		<distanceCutoff>0.2</distanceCutoff>
-		<finalCladeCutoff>80.0</finalCladeCutoff>
+		<distanceCutoff>0.04</distanceCutoff>
+		<finalCladeCutoff>65.0</finalCladeCutoff>
 	</cladeCategory>
 </maxLikelihoodGenotyper>
