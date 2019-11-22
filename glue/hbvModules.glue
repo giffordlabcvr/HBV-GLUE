@@ -52,6 +52,8 @@ create module --fileName modules/m49RegionTreeRenderer.xml --loadResources
 
 create module --fileName modules/hbvSequenceRotator.xml --loadResources 
 
+create module --fileName modules/hbvFeaturePresenceRecorder.xml
+
 # alignment exporter which includes the rotation/rev compl status in the ID
 # this can be useful for checking in the alignment whether these statuses have been set correctly.
 create module --fileName modules/hbvRotationCheckFastaAlignmentExporter.xml
