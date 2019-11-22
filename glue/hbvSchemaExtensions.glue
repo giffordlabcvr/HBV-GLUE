@@ -15,16 +15,30 @@ schema-project hbv
     create field gb_place_sampled VARCHAR 500
     create field gb_create_date DATE
     create field gb_update_date DATE
+    
+	# extracted from GenBank, can be safely ignored!
     create field gb_genotype VARCHAR
     create field gb_subgenotype VARCHAR
-    create field recogniser_genotypes VARCHAR
+
+    # set to true if the hbvSequenceRecogniser result is positive
+    create field is_hbv BOOLEAN
+    # set to 'HBV' if the hbvMaxLikelihoodGenotyper 'species' result is positive
+    create field species VARCHAR
+    # set to the hbvMaxLikelihoodGenotyper 'genotype' result
+    create field genotype VARCHAR
+    # set to the hbvMaxLikelihoodGenotyper 'subgenotype' result
+    create field subgenotype VARCHAR
+    
     create field collection_year INTEGER 
     create field collection_month VARCHAR
     create field collection_month_day INTEGER
     create field earliest_collection_year INTEGER
     create field latest_collection_year INTEGER
     create field gb_pubmed_id VARCHAR
+    
+    # set based on hbvBlastSequenceRotator result
     create field rotation INTEGER
+    # set to true if the hbvSequenceRecogniser determines reverse complement, or false if it determines forward, null otherwise.
     create field reverse_complement BOOLEAN
     create field non_n_length INTEGER
     exit
@@ -34,8 +48,15 @@ schema-project hbv
     create field phylogeny CLOB
     exit
 
+  table member_floc_note
+    create field ref_nt_coverage_pct DOUBLE
+    exit
+
+
   run file glue/m49_countries/m49SchemaExtension.glue
  
   create link sequence m49_country -m MANY_TO_ONE
+  
+  
   
   exit

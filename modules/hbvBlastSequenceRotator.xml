@@ -1,10 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <blastSequenceRotator>
-	<blastRunner>
-	    <generalSearch>
-	        <word_size>8</word_size>
-	    </generalSearch>
-	</blastRunner>
-    <referenceSequence>REF_MASTER_NC_003977</referenceSequence>
-    <minimumBitScore>100.0</minimumBitScore>
+	<blastRunner/>
+	<referenceSequence>REF_G_AB056513</referenceSequence>
+	<referenceSequence>REF_B4_AB073835</referenceSequence>
+	<referenceSequence>REF_D1_1_AB222711</referenceSequence>
+	<referenceSequence>REF_B6_AB287314</referenceSequence>
+	<referenceSequence>REF_J_AB486012</referenceSequence>
+	<referenceSequence>REF_C11_AB554015</referenceSequence>
+	<referenceSequence>REF_I1_AB562463</referenceSequence>
+	<referenceSequence>REF_I_AB562463</referenceSequence>
+	<referenceSequence>REF_A3_AM184126</referenceSequence>
+	<referenceSequence>REF_B3_AP011085</referenceSequence>
+	<referenceSequence>REF_C2_3_AP011098</referenceSequence>
+	<referenceSequence>REF_C5_AP011099</referenceSequence>
+	<referenceSequence>REF_C8_AP011107</referenceSequence>
+	<referenceSequence>REF_B1_D23679</referenceSequence>
+	<referenceSequence>REF_C1_DQ089781</referenceSequence>
+	<referenceSequence>REF_C_UA_2_DQ089802</referenceSequence>
+	<referenceSequence>REF_F2_DQ899143</referenceSequence>
+	<referenceSequence>REF_A2_EU594385</referenceSequence>
+	<referenceSequence>REF_C6_EU670263</referenceSequence>
+	<referenceSequence>REF_I2_FJ023669</referenceSequence>
+	<referenceSequence>REF_H_FJ356715</referenceSequence>
+	<referenceSequence>REF_D3_FJ692507</referenceSequence>
+	<referenceSequence>REF_D4_FJ692533</referenceSequence>
+	<referenceSequence>REF_A1_2_FJ692557</referenceSequence>
+	<referenceSequence>REF_A_FJ692557</referenceSequence>
+	<referenceSequence>REF_A5_FJ692601</referenceSequence>
+	<referenceSequence>REF_D7_FJ904435</referenceSequence>
+	<referenceSequence>REF_E_GQ161817</referenceSequence>
+	<referenceSequence>REF_D5_GQ205389</referenceSequence>
+	<referenceSequence>REF_A6_GQ331046</referenceSequence>
+	<referenceSequence>REF_C2_2_GQ377617</referenceSequence>
+	<referenceSequence>REF_C_GQ377617</referenceSequence>
+	<referenceSequence>REF_B2_2_GU815637</referenceSequence>
+	<referenceSequence>REF_B_GU815637</referenceSequence>
+	<referenceSequence>REF_F1_HM585194</referenceSequence>
+	<referenceSequence>REF_F_HM585194</referenceSequence>
+	<referenceSequence>REF_B2_1_JQ801514</referenceSequence>
+	<referenceSequence>REF_C2_1_KC774182</referenceSequence>
+	<referenceSequence>REF_C_UA_1_KC774298</referenceSequence>
+	<referenceSequence>REF_D1_2_KC875277</referenceSequence>
+	<referenceSequence>REF_D_KC875277</referenceSequence>
+	<referenceSequence>REF_C4_KF873526</referenceSequence>
+	<referenceSequence>REF_C10_KJ173333</referenceSequence>
+	<referenceSequence>REF_F4_KJ843175</referenceSequence>
+	<referenceSequence>REF_A4_KM606737</referenceSequence>
+	<referenceSequence>REF_A1_1_KP168423</referenceSequence>
+	<referenceSequence>REF_D2_MF925358</referenceSequence>
+	<referenceSequence>REF_F3_MH051986</referenceSequence>
+	<minimumBitScore>100.0</minimumBitScore>
+
+	<!-- category with bit score at least 50 better wins -->
+	<maxBitScoreCategoryResultResolver>
+		<minDifference>50.0</minDifference>
+	</maxBitScoreCategoryResultResolver>
+
+	<!-- otherwise, category with total align length score at least 25 better 
+		wins -->
+	<totalAlignLengthCategoryResultResolver>
+		<minDifference>25</minDifference>
+	</totalAlignLengthCategoryResultResolver>
+
+	<!-- otherwise, category with identity pct at least 1.0 better wins -->
+	<maxIdentityPctCategoryResultResolver>
+		<minDifference>1.0</minDifference>
+	</maxIdentityPctCategoryResultResolver>
+	
+	<applySingleSegmentRotation>true</applySingleSegmentRotation>
+	<singleSegmentRotationMaxLength>40</singleSegmentRotationMaxLength>
+	
 </blastSequenceRotator>

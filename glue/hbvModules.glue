@@ -19,7 +19,7 @@ create module --fileName modules/hbvMcNaughton2019AlignmentImporter.xml
 
 create module --fileName modules/hbvCodonLabeler.xml
 
-# create module --fileName modules/hbvGenotypeRecogniser.xml
+create module --fileName modules/hbvSequenceRecogniser.xml
 
 create module --fileName modules/tabularUtilityCsv.xml
 create module --fileName modules/tabularUtilityTab.xml
@@ -49,3 +49,9 @@ create module --fileName modules/hbvMaxLikelihoodGenotyper.xml
 create module --fileName modules/hbvMaxLikelihoodPlacer.xml
 
 create module --fileName modules/m49RegionTreeRenderer.xml --loadResources
+
+create module --fileName modules/hbvSequenceRotator.xml --loadResources 
+
+# alignment exporter which includes the rotation/rev compl status in the ID
+# this can be useful for checking in the alignment whether these statuses have been set correctly.
+create module --fileName modules/hbvRotationCheckFastaAlignmentExporter.xml

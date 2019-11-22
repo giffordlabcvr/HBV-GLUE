@@ -1,0 +1,26 @@
+<ecmaFunctionInvoker>
+    <scriptFileName>hbvSequenceRotator.js</scriptFileName>
+    <function>
+        <name>rotateSequence</name>
+        <parameter>
+            <name>sequenceWhereClause</name>
+        </parameter>
+		<tableFromObjectsResultType/>
+    </function>
+    <function>
+        <name>rotateFastaFile</name>
+        <parameter>
+            <name>fileName</name>
+            <pathCompleter/>
+        </parameter>
+		<tableFromObjectsResultType/>
+    </function>
+    <function>
+        <name>rotateFastaDocument</name>
+        <parameter>
+            <name>fastaDocument</name>
+        </parameter>
+		<tableFromObjectsResultType/>
+	</function>
+</ecmaFunctionInvoker>
+
