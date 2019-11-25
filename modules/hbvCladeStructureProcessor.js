@@ -61,6 +61,12 @@ function createGlueReferenceSequences() {
 		_.each(allRefs, function(refSeqObj) {
 			var refSeqName = getRefSeqName(alignment, refSeqObj);
 			glue.command(["create", "reference", refSeqName, sourceName, refSeqObj.sequenceID]);
+
+			if(alignment.almtDisplayName != null) {
+				glue.inMode("reference/"+refSeqName, function() {
+					glue.command(["set", "field", "displayName", alignment.almtDisplayName+" Reference ("+refSeqObj.sequenceID+")"]);
+				});
+			}
 		});
 	});
 
@@ -89,7 +95,6 @@ function createAlignmentTree() {
 			if(alignment.almtDisplayName != null) {
 				glue.command(["set", "field", "displayName", alignment.almtDisplayName]);
 				// glue.command(["set", "field", "minimal_name", alignment.almtDisplayName.replace("Genotype ", "").replace("Subgenotype ", "")]);
-				
 			}
 		});
 		if(alignment.childAlignments != null) {
