@@ -1,0 +1,11 @@
+<ecmaFunctionInvoker>
+	<scriptFileName>hbvSvgFeatureVisualisation.js</scriptFileName>
+	<function>
+		<name>visualiseFeatureAsSvg</name>
+		<consumesDocument>true</consumesDocument>
+		<parameter>
+			<name>document</name>
+		</parameter>
+		<documentResultType/> 
+	</function>
+</ecmaFunctionInvoker>

@@ -1,0 +1,4 @@
+<freemarkerDocTransformer>
+	<templateFileName>hbvTreeVisualisationTransformer.ftlh</templateFileName>
+	<resourceFileName>hbvTreeVisualisationTransformer.css</resourceFileName>
+</freemarkerDocTransformer>

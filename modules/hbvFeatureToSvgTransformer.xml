@@ -1,0 +1,4 @@
+<freemarkerDocTransformer>
+	<templateFileName>hbvFeatureToSvgTransformer.ftlx</templateFileName>
+	<resourceFileName>hbvFeatureToSvgTransformer.css</resourceFileName>
+</freemarkerDocTransformer>

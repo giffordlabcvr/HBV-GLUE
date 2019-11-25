@@ -1,0 +1,11 @@
+<ecmaFunctionInvoker>
+	<scriptFileName>hbvSvgPhyloVisualisation.js</scriptFileName>
+	<function>
+		<name>visualisePhyloAsSvg</name>
+		<consumesDocument>true</consumesDocument>
+		<parameter>
+			<name>document</name>
+		</parameter>
+		<documentResultType/> 
+	</function>
+</ecmaFunctionInvoker>

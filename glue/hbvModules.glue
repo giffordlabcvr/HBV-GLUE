@@ -57,3 +57,14 @@ create module --fileName modules/hbvFeaturePresenceRecorder.xml
 # alignment exporter which includes the rotation/rev compl status in the ID
 # this can be useful for checking in the alignment whether these statuses have been set correctly.
 create module --fileName modules/hbvRotationCheckFastaAlignmentExporter.xml
+
+# (web) fasta analysis
+create module --fileName modules/hbvFeatureToSvgTransformer.xml --loadResources
+create module --fileName modules/hbvReportingController.xml --loadResources
+create module --fileName modules/hbvSvgFeatureVisualisation.xml --loadResources
+create module --fileName modules/hbvSvgPhyloVisualisation.xml --loadResources
+create module --fileName modules/hbvTreeVisualisationLegendTransformer.xml --loadResources
+create module --fileName modules/hbvTreeVisualisationTransformer.xml --loadResources
+create module --fileName modules/hbvTreeVisualiser.xml
+create module --fileName modules/hbvVisualisationUtility.xml
+
