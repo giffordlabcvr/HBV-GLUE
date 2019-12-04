@@ -36,6 +36,10 @@ function reportFastaWeb(base64, filePath) {
 	if(numSequencesInFile == 0) {
 		throw new Error("No sequences found in FASTA file");
 	}
+	var maxSequencesWithoutAuth = 50;
+	if(numSequencesInFile > maxSequencesWithoutAuth && !glue.hasAuthorisation("hbvFastaAnalysisLargeSubmissions")) {
+		throw new Error("Not authorised to analyse FASTA files with more than "+maxSequencesWithoutAuth+" sequences");
+	}
 	var fastaMap = {};
 	var resultMap = {};
 	var placerResultContainer = {};
@@ -93,9 +97,14 @@ function initResultMap(fastaDocument, fastaMap, resultMap, placerResultContainer
 	_.each(sequenceObjs, function(sequenceObj) {
 		resultMap[sequenceObj.id] = { id: sequenceObj.id };
 	});
+	
 	// apply recogniser to fastaMap
 	recogniseFasta(fastaMap, resultMap);
 
+	// apply rotator to fastaMap
+	rotateFasta(fastaMap, resultMap);
+
+	
 	glue.log("FINE", "hbvReportingController.initResultMap, result map after recogniser", resultMap);
 
 	// apply genotyping
@@ -103,6 +112,59 @@ function initResultMap(fastaDocument, fastaMap, resultMap, placerResultContainer
 
 	glue.log("FINE", "hbvReportingController.initResultMap, result map after genotyping", resultMap);
 }
+
+function rotateFasta(fastaMap, resultMap) {
+	var rotationFastaMap = {};
+	_.each(_.values(resultMap), function(resultObj) {
+		if(resultObj.isForwardHbv && !resultObj.isReverseHbv) {
+			rotationFastaMap[resultObj.id] = fastaMap[resultObj.id];
+		} 
+	});
+	if(!_.isEmpty(rotationFastaMap)) {
+		var numSeqs = _.values(rotationFastaMap).length;
+		glue.setRunningDescription("Rotation for "+numSeqs+" sequence"+((numSeqs > 1) ? "s" : ""));
+
+		var rotationResultObjs;
+		glue.inMode("module/hbvBlastSequenceRotator", function() {
+			rotationResultObjs = glue.tableToObjects(glue.command({
+				"rotate": {
+					"fasta-document": {
+						"fastaCommandDocument": {
+							"nucleotideFasta" : {
+								"sequences": _.values(rotationFastaMap)
+							}
+						}
+					}
+				}
+			}));
+		});
+		_.each(rotationResultObjs, function(rotationResultObj) {
+			resultMap[rotationResultObj.querySequenceId].rotationStatus = rotationResultObj.status;
+			resultMap[rotationResultObj.querySequenceId].rotationNts = rotationResultObj.rotationNts;
+			if(rotationResultObj.status == "ROTATION_NECESSARY") {
+				resultMap[rotationResultObj.querySequenceId].rotationSuccess = true;
+				var seq = fastaMap[rotationResultObj.querySequenceId].sequence;
+				fastaMap[rotationResultObj.querySequenceId].sequence = rightRotate(seq, rotationResultObj.rotationNts);
+			} else if(rotationResultObj.status == "NO_ROTATION_NECESSARY") {
+				resultMap[rotationResultObj.querySequenceId].rotationSuccess = true;
+			} else {
+				resultMap[rotationResultObj.querySequenceId].rotationSuccess = false;
+			}
+		});
+
+	}
+}
+
+
+// rotates s towards left by d  
+function leftRotate(str, d) { 
+	return str.slice(d) + str.slice(0, d); 
+} 
+
+// rotates s towards right by d  
+function rightRotate(str, d) { 
+	return leftRotate(str, str.length() - d); 
+} 
 
 function generateQueryToTargetRefSegs(targetRefName, nucleotides) {
 	var alignerModule;
@@ -271,6 +333,9 @@ function genotypeFasta(fastaMap, resultMap, placerResultContainer) {
 	});
 	if(!_.isEmpty(genotypingFastaMap)) {
 
+		var numSeqs = _.values(genotypingFastaMap).length;
+		glue.setRunningDescription("Phylogenetic placement for "+numSeqs+" sequence"+((numSeqs > 1) ? "s" : ""));
+
 		// run the placer and generate a placer result document
 		var placerResultDocument;
 		glue.inMode("module/hbvMaxLikelihoodPlacer", function() {
@@ -288,6 +353,8 @@ function genotypeFasta(fastaMap, resultMap, placerResultContainer) {
 		});
 		placerResultContainer.placerResult = placerResultDocument;
 		
+		glue.setRunningDescription("Collating report");
+
 		
 		// list the query summaries within the placer result document
 		var placementSummaries;
@@ -395,6 +462,8 @@ function recogniseFasta(fastaMap, resultMap) {
 			"sequences" : sequenceObjs
 		}
 	};
+	var numSeqs = sequenceObjs.length;
+	glue.setRunningDescription("Sequence recognition for "+numSeqs+" sequence"+((numSeqs > 1) ? "s" : ""));
 	var recogniserResults;
 	glue.inMode("module/hbvSequenceRecogniser", function() {
 		recogniserResults = glue.tableToObjects(glue.command({

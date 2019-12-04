@@ -1,6 +1,6 @@
 <treeVisualiser>
 	<freemarkerAnnotationGenerator>
 		<annotationName>sequenceIDPlusClade</annotationName>
-		<template><![CDATA[${renderNestedProperty('sequence.sequenceID')} <#if sequence.subgenotype??>(${sequence.subgenotype})<#else>(${sequence.genotype})</#if>]]></template>
+		<template><![CDATA[${renderNestedProperty('sequence.sequenceID')}<#list sequence.alignmentMemberships as memb><#if memb.alignment.refSequence?? && memb.alignment.children?size = 0>: ${memb.alignment.displayName}</#if></#list>]]></template>
 	</freemarkerAnnotationGenerator>
 </treeVisualiser>
