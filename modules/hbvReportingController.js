@@ -226,11 +226,12 @@ function generateSingleFastaReport(fastaMap, resultMap, fastaFilePath) {
 				var nucleotides = fastaMap[sequenceResult.id].sequence;
 				var queryToTargetRefSegs = generateQueryToTargetRefSegs(targetRefName, nucleotides);
 				var queryNucleotides = fastaMap[sequenceResult.id].sequence;
+				var queryRotationNts = sequenceResult.rotationNts;
 				sequenceResult.featuresWithCoverage = generateFeaturesWithCoverage(targetRefName, queryToTargetRefSegs);
 				
 				sequenceResult.targetRefName = targetRefName;
 				
-				sequenceResult.visualisationHints = visualisationHints(queryNucleotides, targetRefName, genotypingResult, queryToTargetRefSegs);
+				sequenceResult.visualisationHints = visualisationHints(queryNucleotides, queryRotationNts, targetRefName, genotypingResult, queryToTargetRefSegs);
 			}
 		}
 	});
@@ -249,7 +250,7 @@ function generateSingleFastaReport(fastaMap, resultMap, fastaFilePath) {
 	glue.log("FINE", "hbvReportingController.generateSingleFastaReport hbvReport:", hbvReport);
 	return hbvReport;
 }
-function visualisationHints(queryNucleotides, targetRefName, genotypingResult, queryToTargetRefSegs) {
+function visualisationHints(queryNucleotides, queryRotationNts, targetRefName, genotypingResult, queryToTargetRefSegs) {
 	// consider the target ref, subtype ref, genotype ref and master ref as comparison refs.
 	var comparisonReferenceNames = ["REF_MASTER_NC_003977"];
 	var genotypeAlmtName = genotypingResult.genotypeCategoryResult.finalClade;
@@ -294,6 +295,7 @@ function visualisationHints(queryNucleotides, targetRefName, genotypingResult, q
 		"comparisonRefs": comparisonRefs,
 		"targetReferenceName":targetRefName,
 		"queryNucleotides":queryNucleotides,
+		"queryRotationNts":queryRotationNts,
 		"queryToTargetRefSegments": queryToTargetRefSegs,
 		"queryDetails": queryDetails
 	};
