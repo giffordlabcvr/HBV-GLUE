@@ -64,6 +64,7 @@
 </#if>
 </#if>
 	<@elem tag="length" expr="gb_length"/>
+	<@elem tag="rotation" expr="rotation"/>
 	<@elem tag="patentRelated" expr="patent_related" type="Boolean"/>
 	<creationDate>${renderProperty('gb_create_date')}</creationDate>
 	<updateDate>${renderProperty('gb_update_date')}</updateDate>
