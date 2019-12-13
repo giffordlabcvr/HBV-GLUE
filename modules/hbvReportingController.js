@@ -410,19 +410,28 @@ function genotypeFasta(fastaMap, resultMap, placerResultContainer) {
 			genotypingResult.subgenotypeCategoryResult = _.find(genotypingResult.queryCladeCategoryResult, 
 					function(cladeCategoryResult) { return cladeCategoryResult.categoryName == "subgenotype"; });
 			if(genotypingResult.genotypeCategoryResult.finalCladeRenderedName == null) {
-				genotypingResult.genotypeCategoryResult.shortRenderedName = "unknown";
+				genotypingResult.genotypeCategoryResult.shortRenderedName = "Unknown";
 			} else {
 				genotypingResult.genotypeCategoryResult.shortRenderedName = 
 					genotypingResult.genotypeCategoryResult.finalCladeRenderedName;
 			}
 			if(genotypingResult.subgenotypeCategoryResult.finalCladeRenderedName == null) {
-				genotypingResult.subgenotypeCategoryResult.shortRenderedName = "unknown";
+				var genotypeHasChildren = false;
+				if(genotypingResult.genotypeCategoryResult.finalClade != null) {
+					glue.inMode("alignment/"+genotypingResult.genotypeCategoryResult.finalClade, function() {
+						var numChildren = glue.tableToObjects(glue.command(["list", "children"])).length;
+						genotypeHasChildren = numChildren > 0;
+					});
+				}
+				if(genotypeHasChildren) {
+					genotypingResult.subgenotypeCategoryResult.shortRenderedName = "Unknown";
+				} else {
+					genotypingResult.subgenotypeCategoryResult.shortRenderedName = "N/A";
+				}
 			} else {
 				genotypingResult.subgenotypeCategoryResult.shortRenderedName = 
 					genotypingResult.subgenotypeCategoryResult.finalCladeRenderedName;
 			}
-				
-				
 			glue.log("FINE", "hbvReportingController.genotypeFasta genotypeCategoryResult", genotypingResult.genotypeCategoryResult);
 			glue.log("FINE", "hbvReportingController.genotypeFasta subgenotypeCategoryResult", genotypingResult.subgenotypeCategoryResult);
 			
