@@ -40,6 +40,19 @@ function reportFastaWeb(base64, filePath) {
 	if(numSequencesInFile > maxSequencesWithoutAuth && !glue.hasAuthorisation("hbvFastaAnalysisLargeSubmissions")) {
 		throw new Error("Not authorised to analyse FASTA files with more than "+maxSequencesWithoutAuth+" sequences");
 	}
+	result = reportDocument({
+		reportFastaDocument: {
+			"fastaDocument": fastaDocument, 
+			"filePath": filePath
+		}
+	});
+	glue.setRunningDescription("Collating report");
+	return result;
+}
+
+function reportDocument(document) {
+	var filePath = document.reportFastaDocument.filePath;
+	var fastaDocument = document.reportFastaDocument.fastaDocument;
 	var fastaMap = {};
 	var resultMap = {};
 	var placerResultContainer = {};
@@ -355,7 +368,6 @@ function genotypeFasta(fastaMap, resultMap, placerResultContainer) {
 		});
 		placerResultContainer.placerResult = placerResultDocument;
 		
-		glue.setRunningDescription("Collating report");
 
 		
 		// list the query summaries within the placer result document
