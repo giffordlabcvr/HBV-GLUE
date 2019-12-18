@@ -93,6 +93,16 @@
 				<matchPattern>(\d{4})</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
 			</propertyPopulator>
+			<!-- if collection year is specified here then we have tight bounds on the earliest / latest collection year -->
+			<propertyPopulator property="earliest_collection_year">
+				<matchPattern>(\d{4})</matchPattern>
+				<outputTemplate>${g1}</outputTemplate>
+			</propertyPopulator>
+			<propertyPopulator property="latest_collection_year">
+				<matchPattern>(\d{4})</matchPattern>
+				<outputTemplate>${g1}</outputTemplate>
+			</propertyPopulator>
+			
 		</gbQualifier>
 
 		<gbQualifier name="note">
