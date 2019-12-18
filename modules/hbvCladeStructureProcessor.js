@@ -94,7 +94,7 @@ function createAlignmentTree() {
 			glue.command(["set", "field", "clade_category", alignment.cladeCategory]);
 			if(alignment.almtDisplayName != null) {
 				glue.command(["set", "field", "displayName", alignment.almtDisplayName]);
-				// glue.command(["set", "field", "minimal_name", alignment.almtDisplayName.replace("Genotype ", "").replace("Subgenotype ", "")]);
+				glue.command(["set", "field", "minimal_name", alignment.almtDisplayName.replace("Genotype ", "").replace("Subgenotype ", "")]);
 			}
 		});
 		if(alignment.childAlignments != null) {
