@@ -8,6 +8,12 @@
 	<gbLength>
 		<propertyPopulator property="gb_length"/>
 	</gbLength>
+	<gbOtherID>
+		<propertyPopulator property="gb_gi_number">
+			<matchPattern>gi\|(\d+)</matchPattern>
+			<outputTemplate>${g1}</outputTemplate>
+		</propertyPopulator>
+	</gbOtherID>
 	<gbUpdateDate>
 		<propertyPopulator property="gb_update_date"/>
 	</gbUpdateDate>
