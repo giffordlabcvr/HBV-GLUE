@@ -28,9 +28,9 @@ glue.command(["multi-unset", "field", "sequence", "-w", whereClause, "rotation"]
  * Most refseqs meet the standard. Those that don't are just a little bit off.
  */
 shiftLeft("ncbi-refseqs/NC_003977", 2);
-shiftRight("ncbi-refseqs/X02763", 1812)
-shiftLeft("ncbi-outgroups/AF046996", 2)
-shiftLeft("ncbi-outgroups/KY703886", 11)
+shiftRight("ncbi-refseqs/X02763", 1812);
+shiftLeft("ncbi-outgroups/AF046996", 2);
+shiftLeft("ncbi-outgroups/KY703886", 11);
 
 function shiftLeft(refSeqId, leftShift) {
 	glue.inMode("sequence/"+refSeqId, function() {
