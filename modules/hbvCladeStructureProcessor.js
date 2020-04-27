@@ -1,6 +1,6 @@
 /**
  * This module generates various objects (reference sequences, module configs, alignments) based on a
- * single JSON file which defines the clade structure and reference sequence choices for each segment.
+ * single JSON file which defines the clade structure and reference sequence choices.
  * 
  * The point of this is to have these choices in one place, so that they can be updated easily.
  */
