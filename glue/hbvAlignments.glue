@@ -1,7 +1,0 @@
-
-  # ROOT alignment
-  module hbvReferenceAlignmentImporter
-    import AL_HBV_MASTER_UNCONSTRAINED -f alignments/hbv_ref_master.fna
-    exit
-
-
