@@ -2,6 +2,10 @@
   feature whole_genome set field displayName "Whole genome"
   feature whole_genome set metatag INFORMATIONAL true
 
+  create feature epsilon -p whole_genome "Epsilon element"
+  feature epsilon set field displayName "Epsilon element"
+  feature epsilon set metatag INCLUDE_IN_SUMMARY true
+
   # separate numbering for regions within the P gene
   # https://doi.org/10.1053/jhep.2001.22166 
   create feature P -p whole_genome "Polymerase"

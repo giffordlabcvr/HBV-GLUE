@@ -7,7 +7,12 @@
   feature-location whole_genome
     add segment 1 3221
     exit
-  
+
+  add feature-location epsilon
+  feature-location epsilon
+	add segment 1847 1907
+	exit
+
   add feature-location P
   feature-location P
     add segment 2307 3221 --spliceIndex 2 --transcriptionIndex 1
