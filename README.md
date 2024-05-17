@@ -43,7 +43,7 @@ A web instance of HBV-GLUE incorporating both these extension layers is hosted b
 
 If you have not done so already, install the GLUE software framework by following the [installation instructions](http://glue-tools.cvr.gla.ac.uk/#/installation) on the GLUE web site: 
 
-Note the HBV-GLUE project has a layered structure. This approach simplifies project management because it allows data items that are likely to be used across a wide range of analysis contexts to be maintained separately from those only required for more specialized purposes. The ‘base’ layer of HBV-GLUE contains only a minimal set of essential data items required for comparative analysis.
+Note the HBV-GLUE project has a layered structure. This approach simplifies project management because it allows data items that are likely to be used across a wide range of analysis contexts to be maintained separately from those only required for more specialized purposes. The ‘base’ layer of HBV-GLUE contains only a minimal set of essential data items required for comparative analysis. This layer can be extended by adding the NCBI-HBV-GLUE extension, which incorporates all HBV sequences in NCBI GenBank and their metadata. 
 
 Prebuilt versions of HBV-GLUE can be downloaded [here](http://hbv-glue.cvr.gla.ac.uk/#/aboutGlueProject).
 
