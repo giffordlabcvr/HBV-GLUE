@@ -45,7 +45,9 @@ If you have not done so already, install the GLUE software framework by followin
 
 Note the HBV-GLUE project has a layered structure. This approach simplifies project management because it allows data items that are likely to be used across a wide range of analysis contexts to be maintained separately from those only required for more specialized purposes. The ‘base’ layer of HBV-GLUE contains only a minimal set of essential data items required for comparative analysis.
 
-To build the base (or 'core') project, download the HBV-GLUE repository, navigate into the top-level directory, and start the GLUE command line interpreter, e.g.:
+Prebuilt versions of HBV-GLUE can be downloaded [here](http://hbv-glue.cvr.gla.ac.uk/#/aboutGlueProject).
+
+Alternatively, you can build the project locally. To do this, download the HBV-GLUE repository, navigate into the top-level directory, and start the GLUE command line interpreter, e.g.:
 
 ```
 rob$ gluetools.sh
