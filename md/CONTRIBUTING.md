@@ -1,6 +1,6 @@
-# RABV-GLUE Contributor Guidelines
+# HBV-GLUE Contributor Guidelines
 
-Welcome to RABV-GLUE! We appreciate your interest in contributing to our project. By contributing, you help make RABV-GLUE a better resource for the community.
+Welcome to HBV-GLUE! We appreciate your interest in contributing to our project. By contributing, you help make HBV-GLUE a better resource for the community.
 
 ## Table of Contents
 
@@ -48,6 +48,6 @@ Please follow the existing code style within the GLUE project to maintain consis
 
 ## License
 
-By contributing to RABV-GLUE, you agree that your contributions will be licensed under the [GNU Affero General Public License v. 3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
+By contributing to HBV-GLUE, you agree that your contributions will be licensed under the [GNU Affero General Public License v. 3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
 
-Thank you for contributing to RABV-GLUE!
+Thank you for contributing to HBV-GLUE!
