@@ -12,7 +12,7 @@ This **HBV-GLUE** base project can be extended with additional layers, openly av
   - **[HBV-DRUG-RESISTANCE ](https://github.com/giffordlabcvr/HBV_DRUG_RESISTANCE)**: a drug resistance-focused extension incorporating an analysis tool that provides genotypic assessment of drug resistance/susceptibility.
   - **[HBV-GLUE-WEB](https://github.com/giffordlabcvr/HBV-GLUE-WEB)**: a web interface that can be used to create a HBV-GLUE web-server.
 
-A web instance of HBV-GLUE incorporating both these extension layers is hosted by the University of Glasgow, and can be accessed here **[here](http://hbv-glue.cvr.gla.ac.uk/)**.
+A web instance of HBV-GLUE incorporating both these extension layers is hosted by the University of Glasgow, and can be accessed **[here](http://hbv-glue.cvr.gla.ac.uk/)**.
 
 ## Table of Contents
 
