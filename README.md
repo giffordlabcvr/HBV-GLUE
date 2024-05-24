@@ -4,6 +4,10 @@
 
 HBV-GLUE is a sequence-oriented resource for comparative genomic analysis of hepatitis B virus (HBV), developed using the [GLUE](https://github.com/giffordlabcvr/gluetools) software framework. 
 
+GLUE is an open, integrated software toolkit designed for storing and interpreting sequence data. It supports the creation of bespoke projects, incorporating essential data items for comparative genomic analysis, such as sequences, multiple sequence alignments, genome feature annotations, and other associated data.
+
+Projects are loaded into the GLUE "engine," forming a relational database that represents the semantic relationships between data items. This foundation supports systematic comparative analyses and the development of sequence-based resources.
+
 HBV-GLUE contains HBV feature definitions, annotated reference sequences for all HBV genotypes and subtypes, and heirarchically ordered multiple sequence alignments.
 
 This **HBV-GLUE** base project can be extended with additional layers, openly available via GitHub, including:
@@ -32,7 +36,7 @@ A web instance of HBV-GLUE incorporating both these extension layers is hosted b
 
 - **Automated Updates**: HBV-GLUE provides an automatically-updated collection of HBV sequence data, ensuring users have access to the latest information for their analyses.
 
-- **Rich Annotations**: Each sequence is annotated with gene features, enabling rigorous comparative genomic analysis related to conservation, adaptation, structural context, and genotype-to-phenotype associations.
+- **Rich Annotations**: Annotated reference sequences enable rigorous comparative genomic analysis related to conservation, adaptation, structural context, and genotype-to-phenotype associations.
 
 - **Automated Genotyping**: HBV-GLUE can perform automated genotyping of HBV sequences (including subgenomic sequences) using GLUE's maximum likelihood clade assignment (MLCA) algorithm, as described [here](https://doi.org/10.1186/s12859-018-2459-9).
 
