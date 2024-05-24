@@ -42,6 +42,7 @@ A web instance of HBV-GLUE incorporating both these extension layers is hosted b
 
 - **Web user interface**: The web user interface that supports online browsing of the HBV-GLUE sequence database, and provides web access to an in-built sequence analysis tool (provides genotyping, analysis and visualisation of submitted FASTA sequences).
 
+- **Exploratory and operational**: The GLUE framework allows sequence-based resources to be used for exploratory work in a research setting, as well as operational work in a public or animal health setting.
 
 ## Installation
 
