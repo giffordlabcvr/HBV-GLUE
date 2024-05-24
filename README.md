@@ -8,9 +8,9 @@ GLUE is an open, integrated software toolkit designed for storing and interpreti
 
 Projects are loaded into the GLUE "engine," forming a relational database that represents the semantic relationships between data items. This foundation supports systematic comparative analyses and the development of sequence-based resources.
 
-HBV-GLUE contains HBV feature definitions, annotated reference sequences for all HBV genotypes and subtypes, and heirarchically ordered multiple sequence alignments.
+This **HBV-GLUE** project contains HBV feature definitions, annotated reference sequences for all HBV genotypes and subtypes, and heirarchically ordered multiple sequence alignments.
 
-This **HBV-GLUE** base project can be extended with additional layers, openly available via GitHub, including:
+It can be extended with additional layers, also openly available via GitHub, including:
 
   - **[NCBI-HBV-GLUE](https://github.com/giffordlabcvr/NCBI-HBV-GLUE)**: extends HBV-GLUE through the incorporation of all HBV sequence data published in NCBI GenBank.
   - **[HBV-DRUG-RESISTANCE ](https://github.com/giffordlabcvr/HBV_DRUG_RESISTANCE)**: a drug resistance-focused extension incorporating an analysis tool that provides genotypic assessment of drug resistance/susceptibility.
