@@ -1,4 +1,4 @@
-# HBV-GLUE: Phylogenomic Analysis of Hepatitis B Virus
+# HBV-GLUE
 
 ## Overview
 
