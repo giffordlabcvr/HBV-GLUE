@@ -18,16 +18,6 @@ It can be extended with additional layers, also openly available via GitHub, inc
 
 A web instance of HBV-GLUE incorporating both these extension layers is hosted by the University of Glasgow, and can be accessed **[here](http://hbv-glue.cvr.gla.ac.uk/)**.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
 ## Key Features
 
 - **GLUE Framework Integration**: Built on the GLUE software framework, HBV-GLUE offers an extensible platform for efficient, standardized, and reproducible computational genomic analysis of HBV.
