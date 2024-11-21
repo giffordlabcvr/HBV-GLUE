@@ -16,7 +16,7 @@ schema-project hbv
     create field gb_create_date DATE
     create field gb_update_date DATE
     
-	# extracted from GenBank, can be safely ignored!
+    # extracted from GenBank, can be safely ignored!
     create field gb_genotype VARCHAR
     create field gb_subgenotype VARCHAR
 
