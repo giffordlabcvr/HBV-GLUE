@@ -21,6 +21,8 @@ You can also use some of HBV-GLUE's functionality via its web UI.
 
 **A web instance of HBV-GLUE incorporating extension layers is hosted by the University of Glasgow, and can be accessed [here](http://hbv-glue.cvr.gla.ac.uk/)**.
 
+⚠️ Note: Externally hosted websites may not reflect the latest builds. This repository reflects the current state of the resource.
+
 * * * * *
 
 ### Key Features
